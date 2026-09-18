@@ -10,9 +10,9 @@ import { OpeningHours } from "@/components/OpeningHours";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { isOpenNow } from "@/lib/hours";
-import signCloseup from "@/assets/naturalis-sign-closeup.png.asset.json";
-import shopEntrance from "@/assets/naturalis-entrance.webp.asset.json";
-import shopStorefront from "@/assets/naturalis-storefront.png.asset.json";
+import heroStorefront from "@/assets/hero-storefront.jpg";
+import heroEntrance from "@/assets/hero-entrance.png";
+import heroInterior from "@/assets/hero-interior.png";
 import shopShelves from "@/assets/shop-shelves.webp.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -38,9 +38,9 @@ const leaves = Array.from({ length: 10 }).map((_, i) => ({
 }));
 
 const heroPhotos = [
-  { src: signCloseup.url, alt: "Naturalis tabla ispred radnje" },
-  { src: shopEntrance.url, alt: "Ulaz u prodavnicu Naturalis" },
-  { src: shopStorefront.url, alt: "Prodavnica Naturalis u Malom Iđošu" },
+  { src: heroStorefront, alt: "Naturalis tabla ispred radnje" },
+  { src: heroEntrance, alt: "Ulaz u prodavnicu Naturalis" },
+  { src: heroInterior, alt: "Enterijer prodavnice Naturalis" },
 ];
 
 function Index() {
@@ -102,30 +102,31 @@ function Index() {
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
-            <div className="group relative">
-              <div className="relative h-[26rem] overflow-hidden sm:h-[32rem] [mask-image:linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]">
-                <div className="flex w-full animate-hero-marquee flex-col gap-4 will-change-transform motion-reduce:animate-none group-hover:[animation-play-state:paused]">
-                  {[...heroPhotos, ...heroPhotos].map((photo, i) => (
-                    <figure
-                      key={`${photo.src}-${i}`}
-                      className="relative shrink-0 overflow-hidden rounded-[1.75rem] border border-white/45 bg-card/25 p-1.5 shadow-lift backdrop-blur-md"
-                    >
-                      <img
-                        src={photo.src}
-                        alt={i < heroPhotos.length ? photo.alt : ""}
-                        width={1024}
-                        height={1280}
-                        className="aspect-[4/5] w-full rounded-[1.35rem] object-cover"
-                        fetchPriority={i === 0 ? "high" : undefined}
-                        loading={i === 0 ? "eager" : "lazy"}
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] bg-gradient-to-t from-forest-deep/15 via-transparent to-white/15 ring-1 ring-inset ring-white/35" />
-                    </figure>
+            <div className="group hero-gallery-mask relative overflow-hidden rounded-[2rem] glass p-2 shadow-soft">
+              <div className="relative h-[22rem] overflow-hidden rounded-[1.6rem] [mask-image:linear-gradient(to_right,transparent,black_7%,black_93%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_7%,black_93%,transparent)] sm:h-[28rem] lg:h-[32rem]">
+                <div className="flex h-full w-max animate-hero-marquee will-change-transform motion-reduce:animate-none group-hover:[animation-play-state:paused]">
+                  {[0, 1].map((copy) => (
+                    <div key={copy} className="flex h-full gap-4 pr-4" aria-hidden={copy === 1 || undefined}>
+                      {heroPhotos.map((photo, i) => (
+                        <figure
+                          key={`${copy}-${photo.alt}-${i}`}
+                          className="relative h-full shrink-0 overflow-hidden rounded-[1.35rem] shadow-soft"
+                        >
+                          <img
+                            src={photo.src}
+                            alt={copy === 0 ? photo.alt : ""}
+                            className="h-full w-auto max-w-none"
+                            fetchPriority={copy === 0 && i === 0 ? "high" : undefined}
+                            loading={copy === 0 && i === 0 ? "eager" : "lazy"}
+                          />
+                        </figure>
+                      ))}
+                    </div>
                   ))}
                 </div>
               </div>
             </div>
-            <div className="absolute -right-2 top-6 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
+            <div className="absolute -right-2 top-6 z-20 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
               <span className="block font-display text-2xl text-primary">{new Date().getFullYear() - STORE.since}+</span>
               <span className="text-muted-foreground">{tr(t.story.years)}</span>
             </div>

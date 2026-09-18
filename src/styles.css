@@ -60,7 +60,7 @@
   --shadow-lift: 0 24px 50px -20px color-mix(in oklab, var(--forest) 35%, transparent);
   --animate-float: float 9s ease-in-out infinite;
   --animate-drift: drift 14s linear infinite;
-  --animate-hero-marquee: hero-marquee 28s linear infinite;
+  --animate-hero-marquee: hero-marquee 32s linear infinite;
 
   @keyframes float {
     0%, 100% { transform: translateY(0) rotate(0deg); }
@@ -73,8 +73,8 @@
     100% { transform: translate3d(40px, -120px, 0) rotate(160deg); opacity: 0; }
   }
   @keyframes hero-marquee {
-    from { transform: translate3d(0, 0, 0); }
-    to { transform: translate3d(0, -50%, 0); }
+    from { transform: translate3d(-50%, 0, 0); }
+    to { transform: translate3d(0, 0, 0); }
   }
 }
 
@@ -188,6 +188,15 @@
   backdrop-filter: blur(16px) saturate(135%);
   -webkit-backdrop-filter: blur(16px) saturate(135%);
   border: 1px solid color-mix(in oklab, white 42%, var(--forest) 8%);
+}
+
+@utility hero-gallery-mask {
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
 
 @utility eyebrow {
