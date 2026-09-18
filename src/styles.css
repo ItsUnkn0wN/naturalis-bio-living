@@ -196,7 +196,7 @@
 }
 
 @keyframes review-marquee {
-  from { transform: translateX(calc(-50% - 0.5rem)); }
+  from { transform: translateX(calc(-1 * var(--review-set-width, 0px))); }
   to { transform: translateX(0); }
 }
 

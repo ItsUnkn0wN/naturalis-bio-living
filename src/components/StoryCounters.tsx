@@ -29,11 +29,9 @@ export function StoryCounters() {
   const items = [
     { value: <Counter to={years} suffix="+" />, label: tr(t.story.years) },
     { value: <Counter to={100} suffix="%" />, label: tr(t.story.quality) },
-    { value: <Counter to={1} />, label: tr(t.story.address) },
-    { value: <Counter to={2} />, label: tr(t.story.langs) },
   ];
   return (
-    <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <dl className="grid max-w-xl grid-cols-2 gap-4">
       {items.map((it, i) => (
         <div key={i} className="rounded-3xl border border-border bg-card p-5 text-center shadow-soft">
           <dt className="order-2 mt-1 text-xs text-muted-foreground">{it.label}</dt>
