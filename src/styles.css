@@ -60,6 +60,7 @@
   --shadow-lift: 0 24px 50px -20px color-mix(in oklab, var(--forest) 35%, transparent);
   --animate-float: float 9s ease-in-out infinite;
   --animate-drift: drift 14s linear infinite;
+  --animate-hero-marquee: hero-marquee 28s linear infinite;
 
   @keyframes float {
     0%, 100% { transform: translateY(0) rotate(0deg); }
@@ -70,6 +71,10 @@
     10% { opacity: 0.8; }
     90% { opacity: 0.6; }
     100% { transform: translate3d(40px, -120px, 0) rotate(160deg); opacity: 0; }
+  }
+  @keyframes hero-marquee {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(0, -50%, 0); }
   }
 }
 
