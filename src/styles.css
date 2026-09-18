@@ -191,8 +191,42 @@
   background: color-mix(in oklab, var(--card) 82%, transparent);
 }
 
+.bio-match-shell {
+  background: linear-gradient(135deg, oklch(0.4 0.07 160), oklch(0.32 0.055 185));
+}
+
+.bio-match-panel {
+  background: color-mix(in oklab, white 90%, var(--sage-soft) 10%);
+}
+
+.bio-match-accent,
+.bio-match-step-active {
+  color: oklch(0.84 0.09 165);
+}
+
+.bio-match-step-active {
+  background: oklch(0.84 0.09 165);
+}
+
 .dark .site-header {
   background: color-mix(in oklab, var(--card) 88%, transparent);
+}
+
+.dark .bio-match-shell {
+  background: linear-gradient(135deg, oklch(0.25 0.045 170), oklch(0.17 0.03 185));
+}
+
+.dark .bio-match-panel {
+  background: color-mix(in oklab, var(--card) 92%, oklch(0.38 0.06 170) 8%);
+}
+
+.dark .bio-match-accent,
+.dark .bio-match-step-active {
+  color: oklch(0.78 0.1 165);
+}
+
+.dark .bio-match-step-active {
+  background: oklch(0.78 0.1 165);
 }
 
 @keyframes review-marquee {

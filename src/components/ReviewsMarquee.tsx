@@ -34,7 +34,7 @@ export function ReviewsMarquee() {
       </div>
       <div className="relative mt-8 overflow-hidden" aria-label={tr(t.reviews.ariaLabel)}>
         <div className="review-marquee-track flex w-max" style={trackStyle}>
-          {[0, 1].map((setIndex) => (
+          {Array.from({ length: 4 }, (_, setIndex) => (
             <div
               key={setIndex}
               ref={setIndex === 0 ? setRef : undefined}

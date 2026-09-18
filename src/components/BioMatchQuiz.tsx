@@ -36,21 +36,21 @@ export function BioMatchQuiz() {
 
   return (
     <section id="bio-match" className="scroll-mt-24">
-      <div className="grain overflow-hidden rounded-[2rem] bg-primary text-primary-foreground shadow-lift">
+      <div className="bio-match-shell grain overflow-hidden rounded-[2rem] text-white shadow-lift">
         <div className="relative z-10 grid gap-8 p-6 sm:p-10 lg:grid-cols-[1fr_1.4fr]">
           <div>
-            <span className="eyebrow text-sun">{tr(t.quiz.eyebrow)}</span>
+            <span className="eyebrow bio-match-accent">{tr(t.quiz.eyebrow)}</span>
             <h2 className="mt-3 font-display text-3xl font-medium leading-tight sm:text-4xl">{tr(t.quiz.title)}</h2>
-            <p className="mt-4 max-w-md text-primary-foreground/80">{tr(t.quiz.sub)}</p>
+            <p className="mt-4 max-w-md text-white/80">{tr(t.quiz.sub)}</p>
             <ol className="mt-8 flex gap-2">
               {[1, 2, 3].map((n) => (
-                <li key={n} className={cn("h-1.5 flex-1 rounded-full transition-colors", n <= step ? "bg-sun" : "bg-primary-foreground/25")} aria-label={`${tr(t.quiz.step)} ${n}`} />
+                <li key={n} className={cn("h-1.5 flex-1 rounded-full transition-colors", n <= step ? "bio-match-step-active" : "bg-white/25")} aria-label={`${tr(t.quiz.step)} ${n}`} />
               ))}
             </ol>
-            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-primary-foreground/60">{tr(t.quiz.step)} {step} / 3</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.2em] text-white/60">{tr(t.quiz.step)} {step} / 3</p>
           </div>
 
-          <div className="rounded-3xl bg-sand p-4 text-foreground sm:p-6">
+          <div className="bio-match-panel rounded-3xl p-4 text-foreground sm:p-6">
             <AnimatePresence mode="wait">
               {step === 1 && (
                 <motion.div key="s1" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}>
