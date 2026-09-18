@@ -10,33 +10,63 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as PricaRouteImport } from './routes/prica'
+import { Route as ProizvodiRouteImport } from './routes/proizvodi'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricaRoute = PricaRouteImport.update({
+  id: '/prica',
+  path: '/prica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProizvodiRoute = ProizvodiRouteImport.update({
+  id: '/proizvodi',
+  path: '/proizvodi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/prica': typeof PricaRoute
+  '/proizvodi': typeof ProizvodiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/prica': typeof PricaRoute
+  '/proizvodi': typeof ProizvodiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/prica': typeof PricaRoute
+  '/proizvodi': typeof ProizvodiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/kontakt' | '/prica' | '/proizvodi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/kontakt' | '/prica' | '/proizvodi'
+  id: '__root__' | '/' | '/kontakt' | '/prica' | '/proizvodi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  PricaRoute: typeof PricaRoute
+  ProizvodiRoute: typeof ProizvodiRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +78,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/prica': {
+      id: '/prica'
+      path: '/prica'
+      fullPath: '/prica'
+      preLoaderRoute: typeof PricaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/proizvodi': {
+      id: '/proizvodi'
+      path: '/proizvodi'
+      fullPath: '/proizvodi'
+      preLoaderRoute: typeof ProizvodiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  PricaRoute: PricaRoute,
+  ProizvodiRoute: ProizvodiRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
