@@ -10,9 +10,6 @@ import { OpeningHours } from "@/components/OpeningHours";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { isOpenNow } from "@/lib/hours";
-import heroStorefront from "@/assets/hero-storefront.jpg";
-import heroEntrance from "@/assets/hero-entrance.png";
-import heroInterior from "@/assets/hero-interior.png";
 import shopShelves from "@/assets/shop-shelves.webp.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -38,9 +35,9 @@ const leaves = Array.from({ length: 10 }).map((_, i) => ({
 }));
 
 const heroPhotos = [
-  { src: heroStorefront, alt: "Naturalis tabla ispred radnje" },
-  { src: heroEntrance, alt: "Ulaz u prodavnicu Naturalis" },
-  { src: heroInterior, alt: "Enterijer prodavnice Naturalis" },
+  { src: "/images/hero-storefront.jpg", alt: "Naturalis tabla ispred radnje" },
+  { src: "/images/hero-entrance.png", alt: "Ulaz u prodavnicu Naturalis" },
+  { src: "/images/hero-interior.png", alt: "Enterijer prodavnice Naturalis" },
 ];
 
 function Index() {
