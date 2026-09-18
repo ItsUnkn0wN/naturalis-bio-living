@@ -3,6 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "motion/react";
 import { ArrowRight, Leaf, Phone } from "lucide-react";
 import { BioMatchQuiz } from "@/components/BioMatchQuiz";
+import { HeroPhotos } from "@/components/HeroPhotos";
 import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
 import { StoryCounters } from "@/components/StoryCounters";
@@ -102,29 +103,7 @@ function Index() {
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
-            <div className="group relative">
-              <div className="relative h-[26rem] overflow-hidden sm:h-[32rem] [mask-image:linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]">
-                <div className="flex w-full animate-hero-marquee flex-col gap-4 will-change-transform motion-reduce:animate-none group-hover:[animation-play-state:paused]">
-                  {[...heroPhotos, ...heroPhotos].map((photo, i) => (
-                    <figure
-                      key={`${photo.src}-${i}`}
-                      className="relative shrink-0 overflow-hidden rounded-[1.75rem] border border-white/45 bg-card/25 p-1.5 shadow-lift backdrop-blur-md"
-                    >
-                      <img
-                        src={photo.src}
-                        alt={i < heroPhotos.length ? photo.alt : ""}
-                        width={1024}
-                        height={1280}
-                        className="aspect-[4/5] w-full rounded-[1.35rem] object-cover"
-                        fetchPriority={i === 0 ? "high" : undefined}
-                        loading={i === 0 ? "eager" : "lazy"}
-                      />
-                      <div className="pointer-events-none absolute inset-0 rounded-[1.75rem] bg-gradient-to-t from-forest-deep/15 via-transparent to-white/15 ring-1 ring-inset ring-white/35" />
-                    </figure>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <HeroPhotos photos={heroPhotos} />
             <div className="absolute -right-2 top-6 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
               <span className="block font-display text-2xl text-primary">{new Date().getFullYear() - STORE.since}+</span>
               <span className="text-muted-foreground">{tr(t.story.years)}</span>
