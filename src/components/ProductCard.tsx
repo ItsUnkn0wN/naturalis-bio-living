@@ -39,7 +39,7 @@ export function ProductCard({
               key={tag}
               className={cn(
                 "rounded-full px-2.5 py-1 text-[11px] font-semibold backdrop-blur",
-                tag === "new" ? "bg-accent text-accent-foreground" : "bg-sand/85 text-forest-deep",
+                tag === "new" ? "bg-accent text-accent-foreground" : "bg-sand/85 text-foreground",
               )}
             >
               {tr(tagLabels[tag])}
@@ -54,7 +54,7 @@ export function ProductCard({
         aria-pressed={fav}
         className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-sand/85 backdrop-blur transition-transform hover:scale-110"
       >
-        <Heart className={cn("h-4 w-4 transition-colors", fav ? "fill-accent text-accent" : "text-forest-deep")} />
+        <Heart className={cn("h-4 w-4 transition-colors", fav ? "fill-accent text-accent" : "text-foreground")} />
       </button>
       <div className="flex flex-1 flex-col p-4">
         <h3 className="font-display text-lg leading-snug">{tr(product.name)}</h3>

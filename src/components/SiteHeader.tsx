@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeToggle } from "./ThemeToggle";
 import { t, useLang } from "@/lib/i18n";
-import { STORE } from "@/data/products";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -19,12 +19,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 glass">
-      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6">
-        <Link to="/" search={(p) => p} className="flex min-w-0 items-center" onClick={() => setOpen(false)}>
+      <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+        <Link to="/" search={(p) => p} className="flex min-w-0 items-center justify-self-start" onClick={() => setOpen(false)}>
           <Logo />
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
+        <nav className="hidden items-center justify-self-center md:flex" aria-label="Main">
           {links.map((l) => (
             <Link
               key={l.to}
@@ -44,36 +44,28 @@ export function SiteHeader() {
           >
             {tr(t.nav.quiz)}
           </Link>
-          <LanguageSwitcher className="ml-2" />
-          <a
-            href={`tel:${STORE.phoneTel}`}
-            className="ml-2 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground shadow-soft transition-transform hover:-translate-y-0.5"
-          >
-            <Phone className="h-4 w-4" /> {STORE.phone}
-          </a>
         </nav>
 
-        <div className="flex items-center gap-2 md:hidden">
-          <a
-            href={`tel:${STORE.phoneTel}`}
-            aria-label={tr(t.nav.call)}
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-accent text-accent-foreground shadow-soft"
-          >
-            <Phone className="h-4 w-4" />
-          </a>
+        <div className="hidden items-center justify-self-end gap-2 md:flex">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
+
+        <div className="flex items-center justify-self-end gap-2 md:hidden">
+          <ThemeToggle />
           <button
             type="button"
             aria-label="Menu"
             aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border bg-card/70"
+            onClick={() => setOpen((value) => !value)}
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border bg-card/70 transition-colors hover:bg-secondary"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
       </div>
 
-      <div className={cn("md:hidden overflow-hidden transition-[max-height] duration-300", open ? "max-h-96" : "max-h-0")}>
+      <div className={cn("overflow-hidden transition-[max-height] duration-300 md:hidden", open ? "max-h-96" : "max-h-0")}>
         <nav className="flex flex-col gap-1 border-t border-border px-4 pb-4 pt-3" aria-label="Mobile">
           {links.map((l) => (
             <Link

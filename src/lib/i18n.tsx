@@ -12,14 +12,15 @@ const STORAGE_KEY = "naturalis-lang";
 export const t = {
   nav: {
     products: { sr: "Proizvodi", hu: "Termékek", en: "Products" },
-    quiz: { sr: "Bio-Match", hu: "Bio-Match", en: "Bio-Match" },
+    quiz: { sr: "Bio Match", hu: "Bio Match", en: "Bio Match" },
     story: { sr: "Naša priča", hu: "Történetünk", en: "Our story" },
     contact: { sr: "Posetite nas", hu: "Látogasson el", en: "Visit us" },
     call: { sr: "Pozovi", hu: "Hívás", en: "Call" },
     tagline: { sr: "Inspirisano prirodom", hu: "A természet ihlette", en: "Inspired by nature" },
+    useDarkTheme: { sr: "Uključi tamni režim", hu: "Sötét mód bekapcsolása", en: "Use dark mode" },
+    useLightTheme: { sr: "Uključi svetli režim", hu: "Világos mód bekapcsolása", en: "Use light mode" },
   },
   hero: {
-    eyebrow: { sr: "Mali Iđoš · od 2012.", hu: "Kishegyes · 2012 óta", en: "Mali Iđoš · since 2012" },
     title: {
       sr: "Zdravlje počinje na polici pored vas.",
       hu: "Az egészség a szomszéd polcon kezdődik.",
@@ -32,11 +33,9 @@ export const t = {
     },
     cta: { sr: "Pogledaj ponudu", hu: "Nézze meg a kínálatot", en: "Browse the range" },
     call: { sr: "Pozovi 024 731 608", hu: "Hívjon: 024 731 608", en: "Call 024 731 608" },
-    openNow: { sr: "Otvoreno danas", hu: "Ma nyitva", en: "Open today" },
-    closedNow: { sr: "Danas zatvoreno", hu: "Ma zárva", en: "Closed today" },
-    badge1: { sr: "Bio i prirodno", hu: "Bio és természetes", en: "Bio & natural" },
-    badge2: { sr: "Lični savet", hu: "Személyes tanács", en: "Personal advice" },
-    badge3: { sr: "Merenje na gram", hu: "Kimérve, grammra", en: "Weighed by the gram" },
+    openNow: { sr: "Otvoreno sada", hu: "Most nyitva", en: "Open now" },
+    opensLater: { sr: "Danas otvara u", hu: "Ma nyit:", en: "Opens today at" },
+    closedNow: { sr: "Danas je već zatvoreno", hu: "Ma már zárva", en: "Already closed today" },
   },
   categories: {
     title: { sr: "Šta ćete naći kod nas", hu: "Mit talál nálunk", en: "What you'll find here" },

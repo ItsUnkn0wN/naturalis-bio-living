@@ -9,7 +9,7 @@ import { StoryCounters } from "@/components/StoryCounters";
 import { OpeningHours } from "@/components/OpeningHours";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
-import { isOpenNow } from "@/lib/hours";
+import { getStoreStatus, type StoreStatus } from "@/lib/hours";
 import shopShelves from "@/assets/shop-shelves.webp.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -42,15 +42,14 @@ const heroPhotos = [
 
 function HeroCarousel({ photos }: { photos: typeof heroPhotos }) {
   const [index, setIndex] = useState(0);
-  const [cycle, setCycle] = useState(0);
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const id = window.setInterval(() => {
       setIndex((current) => (current + 1) % photos.length);
-    }, 5000);
+    }, 2800);
     return () => window.clearInterval(id);
-  }, [photos.length, cycle]);
+  }, [photos.length]);
 
   return (
     <>
@@ -81,11 +80,8 @@ function HeroCarousel({ photos }: { photos: typeof heroPhotos }) {
               role="tab"
               aria-label={photo.alt}
               aria-selected={isActive}
-              onClick={() => {
-                setIndex(i);
-                setCycle((n) => n + 1);
-              }}
-              className="grid h-8 w-8 place-items-center"
+              onClick={() => setIndex(i)}
+              className="grid h-8 w-8 place-items-center rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
             >
               <span
                 className={`block h-2.5 rounded-full transition-all duration-300 ${
@@ -102,55 +98,62 @@ function HeroCarousel({ photos }: { photos: typeof heroPhotos }) {
 
 function Index() {
   const { tr } = useLang();
-  const [open, setOpen] = useState<boolean | null>(null);
-  useEffect(() => setOpen(isOpenNow()), []);
+  const [status, setStatus] = useState<StoreStatus | null>(null);
+
+  useEffect(() => {
+    const updateStatus = () => setStatus(getStoreStatus());
+    updateStatus();
+    const intervalId = window.setInterval(updateStatus, 60_000);
+    return () => window.clearInterval(intervalId);
+  }, []);
+
+  const statusText =
+    status?.kind === "open"
+      ? tr(t.hero.openNow)
+      : status?.kind === "before-open"
+        ? `${tr(t.hero.opensLater)} ${String(status.opensAt).padStart(2, "0")}:00`
+        : tr(t.hero.closedNow);
 
   return (
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
           {leaves.map((l, i) => (
             <Leaf
               key={i}
-              className="absolute text-sage/60 animate-drift"
-              style={{ left: l.left, bottom: l.bottom, animationDelay: l.delay, width: l.size, height: l.size }}
+              className="absolute text-sage/50"
+              style={{ left: l.left, bottom: l.bottom, width: l.size, height: l.size, transform: `rotate(${i * 31}deg)` }}
             />
           ))}
         </div>
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,22rem)] xl:grid-cols-[minmax(0,1.1fr)_minmax(0,26rem)] lg:pt-16">
-          <motion.div className="min-w-0" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <span className="eyebrow">{tr(t.hero.eyebrow)}</span>
-            <h1 className="mt-4 font-display text-4xl font-medium leading-[1.05] text-forest-deep sm:text-5xl lg:text-6xl">
+        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
+          <motion.div className="min-w-0 rounded-[2rem] glass p-6 shadow-soft sm:p-8 lg:p-10" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+            <h1 className="font-display text-5xl font-medium leading-[1.03] text-foreground sm:text-6xl lg:text-[4.25rem] xl:text-[4.5rem]">
               {tr(t.hero.title)}
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-foreground/75 sm:text-lg">{tr(t.hero.sub)}</p>
+            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-foreground/80 sm:text-xl lg:text-[1.35rem]">{tr(t.hero.sub)}</p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 to="/proizvodi"
                 search={(p) => p}
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
+                className="relative z-10 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 {tr(t.hero.cta)} <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href={`tel:${STORE.phoneTel}`}
-                className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/70 px-6 py-3.5 font-semibold text-primary transition-colors hover:bg-secondary"
+                className="relative z-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/70 px-6 py-3.5 font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               >
                 <Phone className="h-4 w-4" /> {tr(t.hero.call)}
               </a>
             </div>
-            <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
-              {[t.hero.badge1, t.hero.badge2, t.hero.badge3].map((b, i) => (
-                <li key={i} className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-accent" />{tr(b)}</li>
-              ))}
-              {open !== null && (
-                <li className="flex items-center gap-2 font-medium text-primary">
-                  <span className={`h-2 w-2 rounded-full ${open ? "bg-sage animate-pulse" : "bg-muted-foreground"}`} />
-                  {open ? tr(t.hero.openNow) : tr(t.hero.closedNow)} · {STORE.street}
-                </li>
-              )}
-            </ul>
+            {status && (
+              <p className="mt-7 flex items-center gap-2 text-sm font-medium text-primary">
+                <span className={`h-2 w-2 rounded-full ${status.kind === "open" ? "bg-sage animate-pulse" : "bg-muted-foreground"}`} />
+                {statusText}
+              </p>
+            )}
           </motion.div>
 
           <motion.div
