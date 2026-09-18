@@ -192,6 +192,7 @@
 }
 
 .bio-match-shell {
+  /* Dedicated natural palette; intentionally independent from the yellow accent. */
   background: linear-gradient(135deg, oklch(0.4 0.07 160), oklch(0.32 0.055 185));
 }
 

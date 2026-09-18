@@ -9,6 +9,8 @@ const reviews = [
   { name: "Robert L***", quote: "Ellátott szaküzlet, biobolt, érdemes benézni!" },
 ] as const;
 
+const REVIEW_SET_COUNT = 4;
+
 export function ReviewsMarquee() {
   const { tr } = useLang();
   const setRef = useRef<HTMLDivElement>(null);
@@ -33,8 +35,8 @@ export function ReviewsMarquee() {
         <h2 id="reviews-title" className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.reviews.title)}</h2>
       </div>
       <div className="relative mt-8 overflow-hidden" aria-label={tr(t.reviews.ariaLabel)}>
-        <div className="review-marquee-track flex w-max" style={trackStyle}>
-          {Array.from({ length: 4 }, (_, setIndex) => (
+        <div className="review-marquee-track flex w-max" data-review-set-count={REVIEW_SET_COUNT} style={trackStyle}>
+          {Array.from({ length: REVIEW_SET_COUNT }, (_, setIndex) => (
             <div
               key={setIndex}
               ref={setIndex === 0 ? setRef : undefined}

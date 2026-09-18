@@ -129,7 +129,7 @@ function Index() {
           ))}
         </div>
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
-          <motion.div className="min-w-0 rounded-[2rem] glass p-7 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+          <motion.div data-hero-grid="fixed" className="min-w-0 rounded-[2rem] glass p-7 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
             <h1 className="font-display text-6xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
               {tr(t.hero.title)}
             </h1>
