@@ -10,8 +10,9 @@ import { OpeningHours } from "@/components/OpeningHours";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { isOpenNow } from "@/lib/hours";
-import heroImg from "@/assets/hero-table.jpg";
-import shopSign from "@/assets/shop-sign.webp.asset.json";
+import signCloseup from "@/assets/naturalis-sign-closeup.png.asset.json";
+import shopEntrance from "@/assets/naturalis-entrance.webp.asset.json";
+import shopStorefront from "@/assets/naturalis-storefront.png.asset.json";
 import shopShelves from "@/assets/shop-shelves.webp.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -35,6 +36,12 @@ const leaves = Array.from({ length: 10 }).map((_, i) => ({
   delay: `${(i * 1.7) % 12}s`,
   size: 14 + ((i * 5) % 14),
 }));
+
+const heroPhotos = [
+  { src: signCloseup.url, alt: "Naturalis tabla ispred radnje" },
+  { src: shopEntrance.url, alt: "Ulaz u prodavnicu Naturalis" },
+  { src: shopStorefront.url, alt: "Prodavnica Naturalis u Malom Iđošu" },
+];
 
 function Index() {
   const { tr } = useLang();
@@ -95,11 +102,22 @@ function Index() {
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="relative mx-auto w-full max-w-md lg:max-w-none"
           >
-            <div className="overflow-hidden rounded-[2rem] shadow-lift">
-              <img src={heroImg} alt="" width={1280} height={1600} className="aspect-[4/5] w-full object-cover" fetchPriority="high" />
-            </div>
-            <div className="absolute -bottom-5 -left-3 w-40 rotate-[-4deg] overflow-hidden rounded-2xl border-4 border-card shadow-lift sm:-left-8 sm:w-52 animate-float">
-              <img src={shopSign.url} alt="Naturalis – tabla ispred radnje" width={400} height={300} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+            <div className="group relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-card/70 bg-card/35 shadow-lift backdrop-blur-sm">
+              <div className="flex h-full w-[600%] animate-hero-marquee motion-reduce:animate-none group-hover:[animation-play-state:paused]">
+                {[...heroPhotos, ...heroPhotos].map((photo, i) => (
+                  <img
+                    key={`${photo.src}-${i}`}
+                    src={photo.src}
+                    alt={i < heroPhotos.length ? photo.alt : ""}
+                    width={1024}
+                    height={1280}
+                    className="h-full basis-1/6 object-cover"
+                    fetchPriority={i === 0 ? "high" : undefined}
+                    loading={i === 0 ? "eager" : "lazy"}
+                  />
+                ))}
+              </div>
+              <div className="pointer-events-none absolute inset-0 border border-card/40 bg-gradient-to-t from-forest-deep/15 via-transparent to-card/10" />
             </div>
             <div className="absolute -right-2 top-6 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
               <span className="block font-display text-2xl text-primary">{new Date().getFullYear() - STORE.since}+</span>
