@@ -82,6 +82,7 @@ export const t = {
   products: {
     eyebrow: { sr: "Iz naših polica", hu: "Polcainkról", en: "From our shelves" },
     title: { sr: "Izdvajamo", hu: "Kiemelt termékeink", en: "Featured" },
+    featuredTitle: { sr: "Izdvojeni proizvodi sa naših polica", hu: "Polcainkról kiemelt termékeink", en: "Featured products from our shelves" },
     pageTitle: { sr: "Ponuda", hu: "Kínálat", en: "Our range" },
     pageSub: {
       sr: "Cene i zalihe se menjaju, zato ih ne pišemo ovde. Pozovite ili svratite – uvek ima nečeg novog na polici.",
@@ -103,6 +104,11 @@ export const t = {
       en: "Nothing saved yet. Tap the heart on a product.",
     },
     empty: { sr: "Nema proizvoda u ovoj kategoriji.", hu: "Nincs termék ebben a kategóriában.", en: "No products in this category." },
+  },
+  reviews: {
+    eyebrow: { sr: "Utisci kupaca", hu: "Vásárlói vélemények", en: "Customer reviews" },
+    title: { sr: "Reči naših kupaca", hu: "Vásárlóink szavai", en: "What our customers say" },
+    ariaLabel: { sr: "Recenzije kupaca", hu: "Vásárlói vélemények", en: "Customer reviews" },
   },
   story: {
     eyebrow: { sr: "Naša priča", hu: "Történetünk", en: "Our story" },

@@ -18,7 +18,7 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 glass">
+    <header className="site-header sticky top-0 z-40 glass">
       <div className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 py-3 sm:px-6 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
         <Link to="/" search={(p) => p} className="flex min-w-0 items-center justify-self-start" onClick={() => setOpen(false)}>
           <Logo />

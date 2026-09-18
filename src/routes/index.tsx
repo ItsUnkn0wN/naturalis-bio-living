@@ -7,6 +7,7 @@ import { ProductGrid } from "@/components/ProductGrid";
 import { Reveal } from "@/components/Reveal";
 import { StoryCounters } from "@/components/StoryCounters";
 import { OpeningHours } from "@/components/OpeningHours";
+import { ReviewsMarquee } from "@/components/ReviewsMarquee";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { getStoreStatus, type StoreStatus } from "@/lib/hours";
@@ -128,12 +129,12 @@ function Index() {
           ))}
         </div>
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
-          <motion.div className="min-w-0 rounded-[2rem] glass p-6 shadow-soft sm:p-8 lg:p-10" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
-            <h1 className="font-display text-5xl font-medium leading-[1.03] text-foreground sm:text-6xl lg:text-[4.25rem] xl:text-[4.5rem]">
+          <motion.div className="min-w-0 rounded-[2rem] glass p-6 shadow-soft sm:p-8 lg:flex lg:min-h-[42.5rem] lg:flex-col lg:justify-center lg:p-10" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+            <h1 className="font-display text-5xl font-medium leading-[1.03] text-foreground sm:text-6xl lg:text-[4.35rem] xl:text-[4.5rem]">
               {tr(t.hero.title)}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-relaxed text-foreground/80 sm:text-xl lg:text-[1.35rem]">{tr(t.hero.sub)}</p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-foreground/80 sm:text-xl lg:text-[1.4rem]">{tr(t.hero.sub)}</p>
+            <div className="mt-9 flex flex-wrap items-center gap-3">
               <Link
                 to="/proizvodi"
                 search={(p) => p}
@@ -163,44 +164,8 @@ function Index() {
             className="relative mx-auto w-full min-w-0 max-w-md lg:max-w-none"
           >
             <HeroCarousel photos={heroPhotos} />
-            <div className="absolute -right-2 top-6 z-20 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
-              <span className="block font-display text-2xl text-primary">{new Date().getFullYear() - STORE.since}+</span>
-              <span className="text-muted-foreground">{tr(t.story.years)}</span>
-            </div>
           </motion.div>
         </div>
-      </section>
-
-      {/* CATEGORIES */}
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <Reveal>
-          <span className="eyebrow">{tr(t.nav.products)}</span>
-          <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.categories.title)}</h2>
-          <p className="mt-4 max-w-2xl text-foreground/70">{tr(t.categories.sub)}</p>
-        </Reveal>
-        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-          {categories.map((c, i) => (
-            <Reveal key={c.id} delay={i * 0.05}>
-              <Link
-                to="/proizvodi"
-                search={(p) => p}
-                className="group relative block aspect-[4/5] overflow-hidden rounded-3xl shadow-soft sm:aspect-[5/4]"
-              >
-                <img src={c.image} alt="" width={816} height={816} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/20 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-4 text-primary-foreground sm:p-5">
-                  <h3 className="font-display text-lg leading-tight sm:text-xl">{tr(c.label)}</h3>
-                  <p className="mt-1 hidden text-xs text-primary-foreground/75 sm:block">{tr(c.blurb)}</p>
-                </div>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* QUIZ */}
-      <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <Reveal><BioMatchQuiz /></Reveal>
       </section>
 
       {/* FEATURED */}
@@ -208,7 +173,7 @@ function Index() {
         <Reveal className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <span className="eyebrow">{tr(t.products.eyebrow)}</span>
-            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.products.title)}</h2>
+            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.products.featuredTitle)}</h2>
           </div>
           <Link to="/proizvodi" search={(p) => p} className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
             {tr(t.products.viewAll)} <ArrowRight className="h-4 w-4" />
@@ -216,6 +181,35 @@ function Index() {
         </Reveal>
         <div className="mt-8">
           <ProductGrid items={featuredProducts.slice(0, 6)} showFilters={false} />
+        </div>
+      </section>
+
+      {/* BIO-MATCH */}
+      <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+        <Reveal><BioMatchQuiz /></Reveal>
+      </section>
+
+      <ReviewsMarquee />
+
+      {/* CATEGORIES */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <Reveal>
+          <h2 className="font-display text-3xl font-medium sm:text-4xl">{tr(t.categories.title)}</h2>
+          <p className="mt-4 max-w-2xl text-foreground/70">{tr(t.categories.sub)}</p>
+        </Reveal>
+        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
+          {categories.map((c, i) => (
+            <Reveal key={c.id} delay={i * 0.05}>
+              <Link to="/proizvodi" search={(p) => p} className="group relative block aspect-[4/5] overflow-hidden rounded-3xl shadow-soft sm:aspect-[5/4]">
+                <img src={c.image} alt="" width={816} height={816} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-4 text-white sm:p-5">
+                  <h3 className="font-display text-lg leading-tight sm:text-xl">{tr(c.label)}</h3>
+                  <p className="mt-1 hidden text-xs text-white/80 sm:block">{tr(c.blurb)}</p>
+                </div>
+              </Link>
+            </Reveal>
+          ))}
         </div>
       </section>
 

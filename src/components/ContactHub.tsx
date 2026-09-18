@@ -74,7 +74,7 @@ export function ContactHub({ compact = false }: { compact?: boolean }) {
                 placeholder={tr(t.contact.message)}
                 className="w-full resize-none rounded-2xl border border-input bg-background px-4 py-3 text-sm outline-none transition focus:ring-2 focus:ring-ring"
               />
-              <button type="submit" className="w-full rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-forest-deep">
+              <button type="submit" className="w-full rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
                 {tr(t.contact.send)}
               </button>
             </div>

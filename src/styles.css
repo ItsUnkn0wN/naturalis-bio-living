@@ -187,6 +187,31 @@
   border: 1px solid color-mix(in oklab, var(--border) 72%, white 28%);
 }
 
+.site-header {
+  background: color-mix(in oklab, var(--card) 82%, transparent);
+}
+
+.dark .site-header {
+  background: color-mix(in oklab, var(--card) 88%, transparent);
+}
+
+@keyframes review-marquee {
+  from { transform: translateX(calc(-50% - 0.5rem)); }
+  to { transform: translateX(0); }
+}
+
+.review-marquee-track {
+  animation: review-marquee 34s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .review-marquee-track {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transform: translateX(0);
+  }
+}
+
 @utility eyebrow {
   font-size: 0.72rem;
   letter-spacing: 0.22em;
