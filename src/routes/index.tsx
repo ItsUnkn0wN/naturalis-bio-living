@@ -40,6 +40,66 @@ const heroPhotos = [
   { src: "/images/hero-interior.png", alt: "Enterijer prodavnice Naturalis" },
 ];
 
+function HeroCarousel({ photos }: { photos: typeof heroPhotos }) {
+  const [index, setIndex] = useState(0);
+  const [cycle, setCycle] = useState(0);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(() => {
+      setIndex((current) => (current + 1) % photos.length);
+    }, 5000);
+    return () => window.clearInterval(id);
+  }, [photos.length, cycle]);
+
+  return (
+    <>
+      <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-card/70 bg-card/35 shadow-lift backdrop-blur-sm">
+        {photos.map((photo, i) => (
+          <img
+            key={photo.src}
+            src={photo.src}
+            alt={i === index ? photo.alt : ""}
+            width={1024}
+            height={1280}
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
+              i === index ? "opacity-100" : "opacity-0"
+            }`}
+            fetchPriority={i === 0 ? "high" : undefined}
+            loading={i === 0 ? "eager" : "lazy"}
+          />
+        ))}
+        <div className="pointer-events-none absolute inset-0 border border-card/40 bg-gradient-to-t from-forest-deep/15 via-transparent to-card/10" />
+      </div>
+      <div className="mt-4 flex items-center justify-center gap-1" role="tablist" aria-label="Fotografije radnje">
+        {photos.map((photo, i) => {
+          const isActive = index === i;
+          return (
+            <button
+              key={photo.src}
+              type="button"
+              role="tab"
+              aria-label={photo.alt}
+              aria-selected={isActive}
+              onClick={() => {
+                setIndex(i);
+                setCycle((n) => n + 1);
+              }}
+              className="grid h-8 w-8 place-items-center"
+            >
+              <span
+                className={`block h-2.5 rounded-full transition-all duration-300 ${
+                  isActive ? "w-7 bg-primary" : "w-2.5 bg-primary/30 hover:bg-primary/55"
+                }`}
+              />
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
 function Index() {
   const { tr } = useLang();
   const [open, setOpen] = useState<boolean | null>(null);
@@ -58,8 +118,8 @@ function Index() {
             />
           ))}
         </div>
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:pt-16">
-          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,22rem)] xl:grid-cols-[minmax(0,1.1fr)_minmax(0,26rem)] lg:pt-16">
+          <motion.div className="min-w-0" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
             <span className="eyebrow">{tr(t.hero.eyebrow)}</span>
             <h1 className="mt-4 font-display text-4xl font-medium leading-[1.05] text-forest-deep sm:text-5xl lg:text-6xl">
               {tr(t.hero.title)}
@@ -97,32 +157,9 @@ function Index() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="relative mx-auto w-full max-w-md lg:max-w-none"
+            className="relative mx-auto w-full min-w-0 max-w-md lg:max-w-none"
           >
-            <div className="group hero-gallery-mask relative overflow-hidden rounded-[2rem] glass p-2 shadow-soft">
-              <div className="relative h-[22rem] overflow-hidden rounded-[1.6rem] [mask-image:linear-gradient(to_right,transparent,black_7%,black_93%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_7%,black_93%,transparent)] sm:h-[28rem] lg:h-[32rem]">
-                <div className="flex h-full w-max animate-hero-marquee will-change-transform motion-reduce:animate-none group-hover:[animation-play-state:paused]">
-                  {[0, 1].map((copy) => (
-                    <div key={copy} className="flex h-full gap-4 pr-4" aria-hidden={copy === 1 || undefined}>
-                      {heroPhotos.map((photo, i) => (
-                        <figure
-                          key={`${copy}-${photo.alt}-${i}`}
-                          className="relative h-full shrink-0 overflow-hidden rounded-[1.35rem] shadow-soft"
-                        >
-                          <img
-                            src={photo.src}
-                            alt={copy === 0 ? photo.alt : ""}
-                            className="h-full w-auto max-w-none"
-                            fetchPriority={copy === 0 && i === 0 ? "high" : undefined}
-                            loading={copy === 0 && i === 0 ? "eager" : "lazy"}
-                          />
-                        </figure>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <HeroCarousel photos={heroPhotos} />
             <div className="absolute -right-2 top-6 z-20 hidden rounded-2xl glass px-4 py-3 text-sm shadow-soft sm:block">
               <span className="block font-display text-2xl text-primary">{new Date().getFullYear() - STORE.since}+</span>
               <span className="text-muted-foreground">{tr(t.story.years)}</span>
