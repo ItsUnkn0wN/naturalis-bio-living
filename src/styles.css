@@ -188,7 +188,8 @@
 }
 
 .site-header {
-  background: color-mix(in oklab, var(--card) 82%, transparent);
+  background: color-mix(in oklab, var(--card) 82%, var(--forest) 18%);
+  border-color: color-mix(in oklab, var(--forest) 24%, var(--border));
 }
 
 .bio-match-shell {
@@ -210,7 +211,7 @@
 }
 
 .dark .site-header {
-  background: color-mix(in oklab, var(--card) 88%, transparent);
+  background: color-mix(in oklab, var(--card) 94%, var(--forest-deep) 6%);
 }
 
 .dark .bio-match-shell {
