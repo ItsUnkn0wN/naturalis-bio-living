@@ -298,10 +298,13 @@ export function LangProvider({ children }: { children: ReactNode }) {
   return <LangContext.Provider value={value}>{children}</LangContext.Provider>;
 }
 
+const FALLBACK_CTX: Ctx = { lang: "sr", setLang: () => {}, tr: (s) => s["sr"] };
+
 export function useLang() {
   const ctx = useContext(LangContext);
-  if (!ctx) throw new Error("useLang outside LangProvider");
-  return ctx;
+  // During hot reloads / partial hydration the provider module can be re-evaluated,
+  // leaving consumers without context. Fall back instead of crashing the page.
+  return ctx ?? FALLBACK_CTX;
 }
 
 /** Resolve a language from a search object in loaders/head() where no context exists. */
