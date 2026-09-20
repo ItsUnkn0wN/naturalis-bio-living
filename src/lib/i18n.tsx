@@ -20,6 +20,36 @@ export const t = {
     useDarkTheme: { sr: "Uključi tamni režim", hu: "Sötét mód bekapcsolása", en: "Use dark mode" },
     useLightTheme: { sr: "Uključi svetli režim", hu: "Világos mód bekapcsolása", en: "Use light mode" },
   },
+  cookies: {
+    eyebrow: { sr: "Vaša privatnost", hu: "Az Ön adatvédelme", en: "Your privacy" },
+    title: { sr: "Kolačići, po vašoj meri", hu: "Sütik, az Ön választása szerint", en: "Cookies, your choice" },
+    description: {
+      sr: "Neophodni kolačići omogućavaju da sajt radi. Ostale koristimo samo uz vašu dozvolu.",
+      hu: "A szükséges sütik biztosítják az oldal működését. A többit csak az Ön engedélyével használjuk.",
+      en: "Required cookies keep the site working. We only use the others with your permission.",
+    },
+    details: { sr: "Pogledajte šta prihvatate", hu: "Nézze meg, mit fogad el", en: "See what you accept" },
+    required: { sr: "Neophodni", hu: "Szükséges", en: "Required" },
+    requiredInfo: {
+      sr: "Pamte jezik, temu i vaš izbor kolačića. Uvek su uključeni.",
+      hu: "Megjegyzik a nyelvet, a témát és a sütiválasztást. Mindig aktívak.",
+      en: "Remember language, theme and cookie choice. Always active.",
+    },
+    preferences: { sr: "Podešavanja", hu: "Beállítások", en: "Preferences" },
+    preferencesInfo: {
+      sr: "Pamte sačuvane proizvode i vaše izbore na sajtu.",
+      hu: "Megjegyzik a mentett termékeket és az oldalon végzett választásait.",
+      en: "Remember saved products and choices you make on the site.",
+    },
+    analytics: { sr: "Analitika", hu: "Analitika", en: "Analytics" },
+    analyticsInfo: {
+      sr: "Pomaže nam da razumemo koje stranice posetioci koriste.",
+      hu: "Segít megérteni, mely oldalakat használják a látogatók.",
+      en: "Helps us understand which pages visitors use.",
+    },
+    acceptAll: { sr: "Prihvati sve", hu: "Összes elfogadása", en: "Accept all" },
+    requiredOnly: { sr: "Samo neophodni", hu: "Csak szükséges", en: "Required only" },
+  },
   hero: {
     title: {
       sr: "Zdravlje počinje na polici pored vas.",
