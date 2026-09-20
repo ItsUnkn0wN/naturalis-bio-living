@@ -4,10 +4,10 @@ import { Reveal } from "@/components/Reveal";
 import { StoryCounters } from "@/components/StoryCounters";
 import { STORE } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
-import shopSign from "@/assets/shop-sign.webp.asset.json";
-import shopShelves from "@/assets/shop-shelves.webp.asset.json";
-import shopCounter from "@/assets/shop-counter.webp.asset.json";
-import shopCollage from "@/assets/shop-logo-collage.jpg.asset.json";
+const shopSign = { url: "/images/shop-sign.webp" };
+const shopShelves = { url: "/images/shop-shelves.webp" };
+const shopCounter = { url: "/images/shop-counter.webp" };
+const shopCollage = { url: "/images/shop-logo-collage.jpg" };
 
 export const Route = createFileRoute("/prica")({
   head: ({ match }) => {
