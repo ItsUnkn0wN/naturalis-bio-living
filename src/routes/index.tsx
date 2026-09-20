@@ -11,7 +11,7 @@ import { ReviewsMarquee } from "@/components/ReviewsMarquee";
 import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { getStoreStatus, type StoreStatus } from "@/lib/hours";
-import shopShelves from "@/assets/shop-shelves.webp.asset.json";
+const shopShelves = { url: "/images/shop-shelves.webp" };
 
 export const Route = createFileRoute("/")({
   head: ({ match }) => {
