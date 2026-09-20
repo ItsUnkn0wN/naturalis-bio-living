@@ -49,6 +49,7 @@ export const t = {
     },
     acceptAll: { sr: "Prihvati sve", hu: "Összes elfogadása", en: "Accept all" },
     requiredOnly: { sr: "Samo neophodni", hu: "Csak szükséges", en: "Required only" },
+    saveSelection: { sr: "Sačuvaj izbor", hu: "Választás mentése", en: "Save selection" },
   },
   hero: {
     title: {

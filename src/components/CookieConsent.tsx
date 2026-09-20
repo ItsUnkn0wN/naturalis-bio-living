@@ -86,7 +86,7 @@ export function CookieConsent() {
             onClick={() => save({ required: true, preferences, analytics })}
           >
             <Check className="h-4 w-4" aria-hidden="true" />
-            {tr(t.cookies.details)}
+            {tr(t.cookies.saveSelection)}
           </Button>
         )}
       </div>
