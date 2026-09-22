@@ -28,10 +28,9 @@ export function StoryCounters() {
   const years = new Date().getFullYear() - STORE.since;
   const items = [
     { value: <Counter to={years} suffix="+" />, label: tr(t.story.years) },
-    { value: <Counter to={100} suffix="%" />, label: tr(t.story.quality) },
   ];
   return (
-    <dl className="grid max-w-xl grid-cols-2 gap-4">
+    <dl className="grid max-w-[18rem] grid-cols-1 gap-4">
       {items.map((it, i) => (
         <div key={i} className="rounded-3xl border border-border bg-card p-5 text-center shadow-soft">
           <dt className="order-2 mt-1 text-xs text-muted-foreground">{it.label}</dt>

@@ -5,17 +5,24 @@ export function Logo({ className, compact = false }: { className?: string; compa
   return (
     <span className={cn("inline-flex items-center gap-2", className)} aria-label="Naturalis">
       <svg viewBox="0 0 64 64" className="h-9 w-9 shrink-0" aria-hidden="true">
-        <g className="origin-[32px_40px] animate-[spin_40s_linear_infinite]" style={{ transformBox: "fill-box", transformOrigin: "center 70%" }}>
-          {Array.from({ length: 9 }).map((_, i) => {
-            const a = (-160 + i * 20) * (Math.PI / 180);
-            const x1 = 32 + Math.cos(a) * 18;
-            const y1 = 40 + Math.sin(a) * 18;
-            const x2 = 32 + Math.cos(a) * 27;
-            const y2 = 40 + Math.sin(a) * 27;
-            return (
-              <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeWidth="3.2" strokeLinecap="round" className="stroke-sun" />
-            );
-          })}
+        <defs>
+          <clipPath id="naturalis-sun-horizon">
+            <rect x="0" y="0" width="64" height="39.5" />
+          </clipPath>
+        </defs>
+        <g clipPath="url(#naturalis-sun-horizon)">
+          <g className="origin-[32px_40px] animate-[spin_40s_linear_infinite] motion-reduce:animate-none" style={{ transformBox: "fill-box", transformOrigin: "center 70%" }}>
+            {Array.from({ length: 9 }).map((_, i) => {
+              const a = (-160 + i * 20) * (Math.PI / 180);
+              const x1 = 32 + Math.cos(a) * 18;
+              const y1 = 40 + Math.sin(a) * 18;
+              const x2 = 32 + Math.cos(a) * 27;
+              const y2 = 40 + Math.sin(a) * 27;
+              return (
+                <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeWidth="3.2" strokeLinecap="round" className="stroke-sun" />
+              );
+            })}
+          </g>
         </g>
         <path d="M18 40a14 14 0 0 1 28 0z" className="fill-sun" />
         <path d="M6 44c14-8 38-10 52-4" fill="none" strokeWidth="5" strokeLinecap="round" className="stroke-primary" />
