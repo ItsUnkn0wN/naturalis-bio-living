@@ -31,7 +31,7 @@ export function StoryCounters() {
   const { tr } = useLang();
   const items = [
     { value: <Counter to={17} suffix="+" />, label: tr(t.story.years) },
-    { value: <Counter to={5} />, suffix: "★", label: tr(t.story.fiveStarReviews) },
+    { value: <Counter to={5} />, label: tr(t.story.fiveStarReviews) },
     { value: <Counter to={100} suffix="%" />, label: tr(t.story.genuineProducts) },
   ];
   return (

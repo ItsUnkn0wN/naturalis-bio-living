@@ -204,12 +204,12 @@ export const t = {
     years: { sr: "godina poverenja", hu: "év bizalom", en: "years of trust" },
     fiveStarReviews: {
       sr: "recenzije sa pet zvezdica",
-      hu: "csillagos értékelések",
+      hu: "Csillagos Értékelések",
       en: "five-star reviews",
     },
     genuineProducts: {
       sr: "originalni proizvodi",
-      hu: "eredeti termékek",
+      hu: "Eredeti Termékek",
       en: "genuine products",
     },
     quality: {
