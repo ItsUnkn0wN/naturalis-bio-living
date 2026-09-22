@@ -1,9 +1,4 @@
 import type { Localized } from "@/lib/i18n";
-import glutenfree from "@/assets/p-glutenfree.jpg";
-import oil from "@/assets/p-oil.jpg";
-import tea from "@/assets/p-tea.jpg";
-import vitamins from "@/assets/p-vitamins.jpg";
-import cosmetics from "@/assets/p-cosmetics.jpg";
 import eco from "@/assets/p-eco.jpg";
 
 export type CategoryId = "food" | "oils" | "teas" | "supplements" | "cosmetics" | "eco";
@@ -20,7 +15,7 @@ export const categories: { id: CategoryId; label: Localized; blurb: Localized; i
       hu: "Lisztek, pelyhek, méz, lekvár, fűszerek, rágcsálnivalók",
       en: "Flours, flakes, honey, jams, spices, snacks",
     },
-    image: glutenfree,
+    image: "/images/products/kukuruzna-palenta-128.webp",
   },
   {
     id: "oils",
@@ -30,7 +25,7 @@ export const categories: { id: CategoryId; label: Localized; blurb: Localized; i
       hu: "Olajok, ecetek és növényi készítmények",
       en: "Oils, vinegars and botanical products",
     },
-    image: oil,
+    image: "/images/products/eterra-crni-kim-73.webp",
   },
   {
     id: "teas",
@@ -40,7 +35,7 @@ export const categories: { id: CategoryId; label: Localized; blurb: Localized; i
       hu: "Teák és gyógynövényes termékek",
       en: "Teas and herbal products",
     },
-    image: tea,
+    image: "/images/products/deverra-cajevac-57.webp",
   },
   {
     id: "supplements",
@@ -50,7 +45,7 @@ export const categories: { id: CategoryId; label: Localized; blurb: Localized; i
       hu: "Vitaminok, ásványi anyagok és étrend-kiegészítők",
       en: "Vitamins, minerals and supplements",
     },
-    image: vitamins,
+    image: "/images/products/ostrovit-spiruline-1.webp",
   },
   {
     id: "cosmetics",
@@ -60,7 +55,7 @@ export const categories: { id: CategoryId; label: Localized; blurb: Localized; i
       hu: "Hedera Vita, arc-, test- és hajápolás",
       en: "Hedera Vita, face, body and hair care",
     },
-    image: cosmetics,
+    image: "/images/products/hederavita-anti-spots-soap-146.webp",
   },
   {
     id: "eco",

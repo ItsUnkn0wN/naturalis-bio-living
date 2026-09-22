@@ -12,6 +12,7 @@ import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { getStoreStatus, type StoreStatus } from "@/lib/hours";
 const shopShelves = { url: "/images/shop-shelves.webp" };
+const homepageCategories = categories.filter((category) => category.id !== "eco");
 
 export const Route = createFileRoute("/")({
   head: ({ match }) => {
@@ -71,7 +72,11 @@ function HeroCarousel({ photos }: { photos: typeof heroPhotos }) {
         ))}
         <div className="pointer-events-none absolute inset-0 border border-card/40 bg-gradient-to-t from-forest-deep/15 via-transparent to-card/10" />
       </div>
-      <div className="mt-4 flex items-center justify-center gap-1" role="tablist" aria-label="Fotografije radnje">
+      <div
+        className="mt-4 flex items-center justify-center gap-1"
+        role="tablist"
+        aria-label="Fotografije radnje"
+      >
         {photos.map((photo, i) => {
           const isActive = index === i;
           return (
@@ -124,16 +129,30 @@ function Index() {
             <Leaf
               key={i}
               className="absolute text-sage/50"
-              style={{ left: l.left, bottom: l.bottom, width: l.size, height: l.size, transform: `rotate(${i * 31}deg)` }}
+              style={{
+                left: l.left,
+                bottom: l.bottom,
+                width: l.size,
+                height: l.size,
+                transform: `rotate(${i * 31}deg)`,
+              }}
             />
           ))}
         </div>
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
-          <motion.div data-hero-grid="fixed" className="min-w-0 rounded-[2rem] glass p-7 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}>
+          <motion.div
+            data-hero-grid="fixed"
+            className="min-w-0 rounded-[2rem] glass p-7 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
             <h1 className="font-display text-6xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
               {tr(t.hero.title)}
             </h1>
-            <p className="mt-9 max-w-2xl text-xl leading-[1.7] text-foreground/80 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">{tr(t.hero.sub)}</p>
+            <p className="mt-9 max-w-2xl text-xl leading-[1.7] text-foreground/80 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">
+              {tr(t.hero.sub)}
+            </p>
             <div className="mt-11 flex flex-wrap items-center gap-4">
               <Link
                 to="/proizvodi"
@@ -151,7 +170,9 @@ function Index() {
             </div>
             {status && (
               <p className="mt-9 flex items-center gap-2 text-base font-medium text-primary">
-                <span className={`h-2 w-2 rounded-full ${status.kind === "open" ? "bg-sage animate-pulse" : "bg-muted-foreground"}`} />
+                <span
+                  className={`h-2 w-2 rounded-full ${status.kind === "open" ? "bg-sage animate-pulse" : "bg-muted-foreground"}`}
+                />
                 {statusText}
               </p>
             )}
@@ -173,9 +194,15 @@ function Index() {
         <Reveal className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <span className="eyebrow">{tr(t.products.eyebrow)}</span>
-            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.products.featuredTitle)}</h2>
+            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">
+              {tr(t.products.featuredTitle)}
+            </h2>
           </div>
-          <Link to="/proizvodi" search={(p) => p} className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+          <Link
+            to="/proizvodi"
+            search={(p) => p}
+            className="inline-flex items-center gap-2 font-semibold text-primary hover:underline"
+          >
             {tr(t.products.viewAll)} <ArrowRight className="h-4 w-4" />
           </Link>
         </Reveal>
@@ -186,7 +213,9 @@ function Index() {
 
       {/* BIO-MATCH */}
       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <Reveal><BioMatchQuiz /></Reveal>
+        <Reveal>
+          <BioMatchQuiz />
+        </Reveal>
       </section>
 
       <ReviewsMarquee />
@@ -194,14 +223,31 @@ function Index() {
       {/* CATEGORIES */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <Reveal>
-          <h2 className="font-display text-3xl font-medium sm:text-4xl">{tr(t.categories.title)}</h2>
+          <h2 className="font-display text-3xl font-medium sm:text-4xl">
+            {tr(t.categories.title)}
+          </h2>
           <p className="mt-4 max-w-2xl text-foreground/70">{tr(t.categories.sub)}</p>
         </Reveal>
-        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
-          {categories.map((c, i) => (
-            <Reveal key={c.id} delay={i * 0.05}>
-              <Link to="/proizvodi" search={(p) => p} className="group relative block aspect-[4/5] overflow-hidden rounded-3xl shadow-soft sm:aspect-[5/4]">
-                <img src={c.image} alt="" width={816} height={816} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-6">
+          {homepageCategories.map((c, i) => (
+            <Reveal
+              key={c.id}
+              delay={i * 0.05}
+              className={`md:col-span-2 ${i === 3 ? "md:col-start-2" : ""} ${i === 4 ? "col-span-2 mx-auto w-1/2 sm:w-full md:col-start-4 md:mx-0 md:w-full" : ""}`}
+            >
+              <Link
+                to="/proizvodi"
+                search={(p) => p}
+                className="group relative block aspect-[4/5] overflow-hidden rounded-3xl shadow-soft sm:aspect-[5/4]"
+              >
+                <img
+                  src={c.image}
+                  alt=""
+                  width={816}
+                  height={816}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/20 to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-4 text-white sm:p-5">
                   <h3 className="font-display text-lg leading-tight sm:text-xl">{tr(c.label)}</h3>
@@ -218,7 +264,14 @@ function Index() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Reveal>
             <div className="relative">
-              <img src={shopShelves.url} alt="Police u radnji Naturalis" width={784} height={588} loading="lazy" className="w-full rounded-[2rem] object-cover shadow-lift" />
+              <img
+                src={shopShelves.url}
+                alt="Police u radnji Naturalis"
+                width={784}
+                height={588}
+                loading="lazy"
+                className="w-full rounded-[2rem] object-cover shadow-lift"
+              />
               <div className="absolute -bottom-6 right-4 max-w-[220px] rounded-2xl bg-sun p-4 font-display text-sm italic leading-snug text-forest-deep shadow-soft sm:right-8">
                 „{tr(t.nav.tagline)}“
               </div>
@@ -226,10 +279,18 @@ function Index() {
           </Reveal>
           <Reveal delay={0.1}>
             <span className="eyebrow">{tr(t.story.eyebrow)}</span>
-            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.story.title)}</h2>
+            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">
+              {tr(t.story.title)}
+            </h2>
             <p className="mt-5 leading-relaxed text-foreground/75">{tr(t.story.p1)}</p>
-            <div className="mt-8"><StoryCounters /></div>
-            <Link to="/prica" search={(p) => p} className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+            <div className="mt-8">
+              <StoryCounters />
+            </div>
+            <Link
+              to="/prica"
+              search={(p) => p}
+              className="mt-8 inline-flex items-center gap-2 font-semibold text-primary hover:underline"
+            >
               {tr(t.nav.story)} <ArrowRight className="h-4 w-4" />
             </Link>
           </Reveal>
@@ -241,16 +302,29 @@ function Index() {
         <div className="grid gap-8 rounded-[2rem] border border-border bg-card/60 p-6 sm:p-10 lg:grid-cols-[1.2fr_1fr]">
           <Reveal>
             <span className="eyebrow">{tr(t.contact.eyebrow)}</span>
-            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">{tr(t.contact.title)}</h2>
+            <h2 className="mt-3 font-display text-3xl font-medium sm:text-4xl">
+              {tr(t.contact.title)}
+            </h2>
             <p className="mt-4 max-w-md text-foreground/70">{tr(t.contact.sub)}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href={`tel:${STORE.phoneTel}`} className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-semibold text-accent-foreground shadow-soft"><Phone className="h-4 w-4" /> {STORE.phone}</a>
-              <Link to="/kontakt" search={(p) => p} className="inline-flex items-center gap-2 rounded-full border border-primary/30 px-5 py-3 font-semibold text-primary hover:bg-secondary">
+              <a
+                href={`tel:${STORE.phoneTel}`}
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 font-semibold text-accent-foreground shadow-soft"
+              >
+                <Phone className="h-4 w-4" /> {STORE.phone}
+              </a>
+              <Link
+                to="/kontakt"
+                search={(p) => p}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/30 px-5 py-3 font-semibold text-primary hover:bg-secondary"
+              >
                 {tr(t.contact.directions)} <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </Reveal>
-          <Reveal delay={0.1}><OpeningHours /></Reveal>
+          <Reveal delay={0.1}>
+            <OpeningHours />
+          </Reveal>
         </div>
       </section>
     </>
