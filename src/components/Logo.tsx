@@ -7,13 +7,13 @@ export function Logo({ className, compact = false }: { className?: string; compa
       <svg viewBox="0 0 64 64" className="h-9 w-9 shrink-0" aria-hidden="true">
         <defs>
           <clipPath id="naturalis-sun-horizon">
-            <rect x="0" y="0" width="64" height="39.5" />
+            <path d="M0 0H64V37C47 31 20 34 4 43L0 45Z" />
           </clipPath>
         </defs>
         <g clipPath="url(#naturalis-sun-horizon)">
           <g className="origin-[32px_40px] animate-[spin_40s_linear_infinite] motion-reduce:animate-none" style={{ transformBox: "fill-box", transformOrigin: "center 70%" }}>
-            {Array.from({ length: 9 }).map((_, i) => {
-              const a = (-160 + i * 20) * (Math.PI / 180);
+            {Array.from({ length: 18 }).map((_, i) => {
+              const a = (i * 20) * (Math.PI / 180);
               const x1 = 32 + Math.cos(a) * 18;
               const y1 = 40 + Math.sin(a) * 18;
               const x2 = 32 + Math.cos(a) * 27;

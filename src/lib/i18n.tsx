@@ -202,6 +202,16 @@ export const t = {
       en: "We don't believe in miracles from a bottle. We believe in good ingredients, honest herbs and habits built slowly. That's what we sell – and how we live.",
     },
     years: { sr: "godina poverenja", hu: "év bizalom", en: "years of trust" },
+    fiveStarReviews: {
+      sr: "recenzije sa pet zvezdica",
+      hu: "csillagos értékelések",
+      en: "five-star reviews",
+    },
+    genuineProducts: {
+      sr: "originalni proizvodi",
+      hu: "eredeti termékek",
+      en: "genuine products",
+    },
     quality: {
       sr: "birano, ništa nasumično",
       hu: "válogatott, semmi véletlen",
