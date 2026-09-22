@@ -43,7 +43,7 @@ export function StoryCounters() {
         >
           <dt className="order-2 mt-2 text-xs font-medium leading-snug text-muted-foreground sm:text-sm">{it.label}</dt>
           <dd className="font-display text-3xl font-semibold text-primary sm:text-5xl">
-            {it.value}{it.suffix}
+            {it.value}
           </dd>
         </div>
       ))}
