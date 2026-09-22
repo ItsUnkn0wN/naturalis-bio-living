@@ -201,7 +201,7 @@ export const t = {
       hu: "Nem hiszünk az üvegcsébe zárt csodákban. Hiszünk a jó alapanyagban, a tisztességes gyógynövényben és a lassan épülő szokásokban. Ezt áruljuk – és ezt éljük.",
       en: "We don't believe in miracles from a bottle. We believe in good ingredients, honest herbs and habits built slowly. That's what we sell – and how we live.",
     },
-    years: { sr: "godina poverenja", hu: "év bizalom", en: "years of trust" },
+    years: { sr: "godina poverenja", hu: "Év Bizalom", en: "years of trust" },
     fiveStarReviews: {
       sr: "recenzije sa pet zvezdica",
       hu: "Csillagos Értékelések",
