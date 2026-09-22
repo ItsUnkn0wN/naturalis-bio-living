@@ -25,33 +25,33 @@ export function ProductQuickView({
 
   return (
     <Dialog open={!!product} onOpenChange={(o) => !o && onClose()}>
-      <DialogContent className="w-[calc(100%-1.5rem)] max-h-[92vh] max-w-5xl overflow-x-hidden overflow-y-auto rounded-[2rem] border-border/70 bg-background/95 p-0 shadow-2xl backdrop-blur-xl sm:w-[calc(100%-3rem)] sm:max-w-5xl">
+      <DialogContent className="w-[calc(100%-1rem)] max-h-[94vh] max-w-6xl overflow-x-hidden overflow-y-auto rounded-[2rem] border-white/10 bg-forest-deep p-0 text-white shadow-2xl backdrop-blur-xl sm:w-[calc(100%-2rem)]">
         {product && (
-          <div className="grid min-w-0 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
+          <div className="grid min-w-0 lg:min-h-[38rem] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             {product.image ? (
               <img
                 src={product.image}
                 alt={tr(product.name)}
                 width={816}
                 height={816}
-                className="aspect-[4/3] h-full w-full object-cover sm:aspect-[5/4] lg:aspect-auto lg:min-h-[34rem] lg:rounded-l-[2rem]"
+                className="aspect-[4/3] h-full w-full object-cover sm:aspect-[5/4] lg:aspect-auto lg:min-h-[38rem] lg:rounded-l-[2rem]"
               />
             ) : (
-              <div className="aspect-[4/3] sm:aspect-[5/4] lg:min-h-[34rem] lg:rounded-l-[2rem]">
+              <div className="aspect-[4/3] sm:aspect-[5/4] lg:min-h-[38rem] lg:rounded-l-[2rem]">
                 <ProductPlaceholder category={product.category} />
               </div>
             )}
-            <div className="min-w-0 p-6 sm:p-8 lg:p-10">
+            <div className="min-w-0 bg-forest-deep p-6 text-white sm:p-9 lg:p-12">
               <DialogHeader className="text-left">
                 {cat && <span className="eyebrow">{tr(cat.label)}</span>}
                 <DialogTitle className="font-display text-2xl font-medium leading-tight">
                   {tr(product.name)}
                 </DialogTitle>
-                <DialogDescription className="text-base text-foreground/80">
+                <DialogDescription className="text-base text-white/75">
                   {tr(product.desc)}
                 </DialogDescription>
               </DialogHeader>
-              <p className="mt-3 text-lg font-semibold text-primary">
+              <p className="mt-3 text-lg font-semibold text-sage">
                 {tr(t.products.price)}:{" "}
                 {product.priceRsd.toLocaleString(
                   lang === "en" ? "en-US" : lang === "hu" ? "hu-HU" : "sr-Latn-RS",
@@ -63,18 +63,18 @@ export function ProductQuickView({
                   {product.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full bg-secondary px-2.5 py-1 text-[11px] font-semibold text-secondary-foreground"
+                      className="rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[11px] font-semibold text-white"
                     >
                       {tr(tagLabels[tag])}
                     </span>
                   ))}
                 </div>
               )}
-              <div className="mt-5 rounded-2xl bg-sand-deep/70 p-4">
-                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              <div className="mt-6 rounded-2xl border border-white/10 bg-black/15 p-4">
+                <p className="text-xs font-semibold uppercase tracking-widest text-white/55">
                   {tr(t.products.usage)}
                 </p>
-                <p className="mt-1.5 text-sm leading-relaxed">{tr(product.usage)}</p>
+                <p className="mt-1.5 text-sm leading-relaxed text-white/85">{tr(product.usage)}</p>
               </div>
               <div className="mt-5 flex flex-wrap gap-2">
                 <a
@@ -85,7 +85,7 @@ export function ProductQuickView({
                 </a>
                 <a
                   href={mail}
-                  className="inline-flex items-center gap-2 rounded-full border border-primary px-4 py-2.5 text-sm font-semibold text-primary hover:bg-secondary"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/35 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
                 >
                   <Mail className="h-4 w-4" /> {tr(t.products.ask)}
                 </a>
