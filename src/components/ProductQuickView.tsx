@@ -25,23 +25,23 @@ export function ProductQuickView({
 
   return (
     <Dialog open={!!product} onOpenChange={(o) => !o && onClose()}>
-      <DialogContent className="max-h-[90vh] overflow-y-auto rounded-3xl p-0 sm:max-w-2xl">
+      <DialogContent className="w-[calc(100%-1.5rem)] max-h-[92vh] max-w-5xl overflow-x-hidden overflow-y-auto rounded-[2rem] border-border/70 bg-background/95 p-0 shadow-2xl backdrop-blur-xl sm:w-[calc(100%-3rem)] sm:max-w-5xl">
         {product && (
-          <div className="grid sm:grid-cols-[1fr_1.2fr]">
+          <div className="grid min-w-0 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
             {product.image ? (
               <img
                 src={product.image}
                 alt={tr(product.name)}
                 width={816}
                 height={816}
-                className="aspect-square h-full w-full object-cover sm:rounded-l-3xl"
+                className="aspect-[4/3] h-full w-full object-cover sm:aspect-[5/4] lg:aspect-auto lg:min-h-[34rem] lg:rounded-l-[2rem]"
               />
             ) : (
-              <div className="aspect-square sm:rounded-l-3xl">
+              <div className="aspect-[4/3] sm:aspect-[5/4] lg:min-h-[34rem] lg:rounded-l-[2rem]">
                 <ProductPlaceholder category={product.category} />
               </div>
             )}
-            <div className="p-6">
+            <div className="min-w-0 p-6 sm:p-8 lg:p-10">
               <DialogHeader className="text-left">
                 {cat && <span className="eyebrow">{tr(cat.label)}</span>}
                 <DialogTitle className="font-display text-2xl font-medium leading-tight">
