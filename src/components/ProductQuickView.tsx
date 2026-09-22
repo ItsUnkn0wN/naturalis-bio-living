@@ -27,14 +27,14 @@ export function ProductQuickView({
     <Dialog open={!!product} onOpenChange={(o) => !o && onClose()}>
       <DialogContent className="w-[calc(100%-1rem)] max-h-[94vh] max-w-6xl overflow-x-hidden overflow-y-auto rounded-[2rem] border-white/10 bg-forest-deep p-0 text-white shadow-2xl backdrop-blur-xl sm:w-[calc(100%-2rem)]">
         {product && (
-          <div className="grid min-w-0 lg:min-h-[38rem] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+          <div className="grid min-w-0 overflow-hidden rounded-[2rem] lg:min-h-[38rem] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
             {product.image ? (
               <img
                 src={product.image}
                 alt={tr(product.name)}
                 width={816}
                 height={816}
-                className="aspect-[4/3] h-full w-full bg-sage-soft/35 object-contain p-8 sm:aspect-[5/4] lg:aspect-auto lg:min-h-[38rem] lg:rounded-l-[2rem]"
+                className="aspect-[4/3] h-full w-full bg-sage-soft object-contain p-8 sm:aspect-[5/4] lg:aspect-auto lg:min-h-[38rem]"
               />
             ) : (
               <div className="aspect-[4/3] sm:aspect-[5/4] lg:min-h-[38rem] lg:rounded-l-[2rem]">

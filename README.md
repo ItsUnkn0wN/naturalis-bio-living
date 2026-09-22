@@ -178,13 +178,13 @@ Act as a Principal UI/UX Architect and Lead Frontend Engineer specializing in mo
 
 - One-click action buttons:
 
-  - "Direct Call": `tel:+38124731608` / `tel:+38163547580`
+  - "Direct Call": `tel:+381244731608`
 
   - "Send Email": `lenart.robert.magda@gmail.com`
 
   - "Get Directions" (opens Google Maps)
 
-- Business Hours card and quick inquiry form with floating field animations.
+- Enlarged Business Hours card for quick reference.
 
 
 

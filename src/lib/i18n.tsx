@@ -26,13 +26,21 @@ export const t = {
   },
   cookies: {
     eyebrow: { sr: "Vaša privatnost", hu: "Az Ön adatvédelme", en: "Your privacy" },
-    title: { sr: "Kolačići, po vašoj meri", hu: "Sütik, az Ön választása szerint", en: "Cookies, your choice" },
+    title: {
+      sr: "Kolačići, po vašoj meri",
+      hu: "Sütik, az Ön választása szerint",
+      en: "Cookies, your choice",
+    },
     description: {
       sr: "Neophodni kolačići omogućavaju da sajt radi. Ostale koristimo samo uz vašu dozvolu.",
       hu: "A szükséges sütik biztosítják az oldal működését. A többit csak az Ön engedélyével használjuk.",
       en: "Required cookies keep the site working. We only use the others with your permission.",
     },
-    details: { sr: "Pogledajte šta prihvatate", hu: "Nézze meg, mit fogad el", en: "See what you accept" },
+    details: {
+      sr: "Pogledajte šta prihvatate",
+      hu: "Nézze meg, mit fogad el",
+      en: "See what you accept",
+    },
     required: { sr: "Neophodni", hu: "Szükséges", en: "Required" },
     requiredInfo: {
       sr: "Pamte jezik, temu i vaš izbor kolačića. Uvek su uključeni.",
@@ -67,7 +75,7 @@ export const t = {
       en: "Cold-pressed oils, herbal drops, teas, gluten-free food and natural cosmetics – carefully chosen, with advice given in person at Zanatlijska 10.",
     },
     cta: { sr: "Pogledaj ponudu", hu: "Nézze meg a kínálatot", en: "Browse the range" },
-    call: { sr: "Pozovi 024 731 608", hu: "Hívjon: 024 731 608", en: "Call 024 731 608" },
+    call: { sr: "Pozovi 024 4731 608", hu: "Hívjon: 024 4731 608", en: "Call 024 4731 608" },
     openNow: { sr: "Otvoreno sada", hu: "Most nyitva", en: "Open now" },
     opensLater: { sr: "Danas otvara u", hu: "Ma nyit:", en: "Opens today at" },
     closedNow: { sr: "Danas je već zatvoreno", hu: "Ma már zárva", en: "Already closed today" },
@@ -179,9 +187,9 @@ export const t = {
       en: "A small shop with a big heart.",
     },
     p1: {
-      sr: "Naturalis je 14. marta 2012. otvorio Robert Lenart u Malom Iđošu, u vreme kad se „zdrava hrana“ još uvek tražila po većim gradovima. Ideja je bila jednostavna: da komšije ne moraju da putuju do Subotice ili Novog Sada po dobro ulje, čaj koji zaista pomaže ili brašno bez glutena.",
-      hu: "A Naturalist Lenart Róbert nyitotta meg 2012. március 14-én Kishegyesen, amikor az „egészséges élelmiszert” még a nagyobb városokban kellett keresni. Az ötlet egyszerű volt: a szomszédoknak ne kelljen Szabadkára vagy Újvidékre utazniuk egy jó olajért, egy valóban segítő teáért vagy gluténmentes lisztért.",
-      en: 'Naturalis was opened on 14 March 2012 by Robert Lenart in Mali Iđoš, back when "health food" still meant a trip to a bigger city. The idea was simple: neighbours shouldn\'t have to travel to Subotica or Novi Sad for a good oil, a tea that actually helps, or gluten-free flour.',
+      sr: "Naturalis je 14. marta 2009. otvorio Robert Lenart u Malom Iđošu, u vreme kad se „zdrava hrana“ još uvek tražila po većim gradovima. Ideja je bila da ljudi ne moraju da putuju do Subotice ili Novog Sada po dobro ulje ili čaj koji zaista pomaže.",
+      hu: "A Naturalist Lenart Róbert nyitotta meg 2009. március 14-én Kishegyesen, amikor az „egészséges élelmiszert” még a nagyobb városokban kellett keresni. Az volt az elképzelés, hogy az embereknek ne kelljen Szabadkára vagy Újvidékre utazniuk egy jó olajért vagy egy valóban segítő teáért.",
+      en: 'Naturalis was opened on 2009 March 14 by Robert Lenart in Mali Iđoš, back when "health food" still meant a trip to a bigger city. The idea was that people shouldn\'t have to travel to Subotica or Novi Sad for a good oil or a tea that actually helps.',
     },
     p2: {
       sr: "Trinaest godina kasnije, police su drvene, tegle pune bilja i orašastih plodova na meru, a ponuda se širila zajedno sa pitanjima kupaca. Ovde se govori srpski i mađarski, a najčešće rečenica koju čujemo je: „Šta biste vi uzeli?“",
@@ -237,26 +245,16 @@ export const t = {
       en: "Zanatlijska 10, Mali Iđoš",
     },
     sub: {
-      sr: "Zelena ograda, žuta tabla, oslikan zid – ne možete promašiti.",
-      hu: "Zöld kerítés, sárga tábla, festett fal – nem lehet eltéveszteni.",
-      en: "Green fence, yellow sign, painted wall – you can't miss it.",
+      sr: "Drvena ograda, žuta tabla, oslikan zid, ne možete promašiti.",
+      hu: "Fakerítés, sárga tábla, festett fal, nem lehet eltéveszteni.",
+      en: "Wooden fence, yellow sign, painted wall, you can't miss it.",
     },
     call: { sr: "Pozovi radnju", hu: "Üzlet hívása", en: "Call the shop" },
-    mobile: { sr: "Mobilni", hu: "Mobil", en: "Mobile" },
     email: { sr: "Pošalji e-mail", hu: "E-mail küldése", en: "Send an email" },
     directions: { sr: "Uputstva do nas", hu: "Útvonalterv", en: "Get directions" },
     hours: { sr: "Radno vreme", hu: "Nyitvatartás", en: "Opening hours" },
     today: { sr: "danas", hu: "ma", en: "today" },
     closed: { sr: "Zatvoreno", hu: "Zárva", en: "Closed" },
-    formTitle: { sr: "Brzo pitanje", hu: "Gyors kérdés", en: "Quick question" },
-    formSub: {
-      sr: "Tražite određeni proizvod? Napišite nam – otvoriće se vaš e-mail sa spremnom porukom.",
-      hu: "Egy adott terméket keres? Írjon nekünk – megnyílik az e-mail programja kész üzenettel.",
-      en: "Looking for something specific? Write to us – your email app opens with the message ready.",
-    },
-    name: { sr: "Vaše ime", hu: "Az Ön neve", en: "Your name" },
-    message: { sr: "Šta vas zanima?", hu: "Mi érdekli?", en: "What are you looking for?" },
-    send: { sr: "Pošalji", hu: "Küldés", en: "Send" },
     company: { sr: "Podaci o radnji", hu: "Cégadatok", en: "Business details" },
   },
   days: {
@@ -266,19 +264,11 @@ export const t = {
   },
   footer: {
     blurb: {
-      sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu. Inspirisano prirodom od 2012.",
-      hu: "Természetes és bio termékek boltja Kishegyesen. A természet ihlette, 2012 óta.",
-      en: "Natural and bio products shop in Mali Iđoš. Inspired by nature since 2012.",
+      sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu. Inspirisano prirodom od 2009.",
+      hu: "Természetes és bio termékek boltja Kishegyesen. A természet ihlette, 2009 óta.",
+      en: "Natural and bio products shop in Mali Iđoš. Inspired by nature since 2009.",
     },
     links: { sr: "Stranice", hu: "Oldalak", en: "Pages" },
-    tips: { sr: "Saveti iz prirode", hu: "Tippek a természetből", en: "Tips from nature" },
-    tipsSub: {
-      sr: "Povremeno pišemo šta je novo na polici i kako se koristi. Bez spama.",
-      hu: "Időnként megírjuk, mi új a polcon és hogyan használják. Spam nélkül.",
-      en: "Occasionally we write about what's new on the shelf and how to use it. No spam.",
-    },
-    subscribe: { sr: "Prijavi se", hu: "Feliratkozás", en: "Subscribe" },
-    emailPh: { sr: "vaš@email.com", hu: "on@email.hu", en: "you@email.com" },
     rights: { sr: "Sva prava zadržana.", hu: "Minden jog fenntartva.", en: "All rights reserved." },
     legal: {
       sr: "Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš",
@@ -294,9 +284,9 @@ export const t = {
         en: "Naturalis Mali Iđoš – bio & natural products",
       },
       desc: {
-        sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu od 2012: hladno ceđena ulja, biljne kapi, čajevi, bezglutenska hrana, suplementi i prirodna kozmetika.",
-        hu: "Természetes és bio termékek boltja Kishegyesen 2012 óta: hidegen sajtolt olajok, gyógynövénycseppek, teák, gluténmentes élelmiszer, étrend-kiegészítők és természetes kozmetikumok.",
-        en: "Natural and bio products shop in Mali Iđoš since 2012: cold-pressed oils, herbal drops, teas, gluten-free food, supplements and natural cosmetics.",
+        sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu od 2009: hladno ceđena ulja, biljne kapi, čajevi, bezglutenska hrana, suplementi i prirodna kozmetika.",
+        hu: "Természetes és bio termékek boltja Kishegyesen 2009 óta: hidegen sajtolt olajok, gyógynövénycseppek, teák, gluténmentes élelmiszer, étrend-kiegészítők és természetes kozmetikumok.",
+        en: "Natural and bio products shop in Mali Iđoš since 2009: cold-pressed oils, herbal drops, teas, gluten-free food, supplements and natural cosmetics.",
       },
     },
     products: {
@@ -318,9 +308,9 @@ export const t = {
         en: "Our story – Naturalis Mali Iđoš",
       },
       desc: {
-        sr: "Kako je Robert Lenart 2012. otvorio malu bio radnju u Malom Iđošu i zašto komšije i dalje pitaju: „Šta biste vi uzeli?“",
-        hu: "Hogyan nyitott Lenart Róbert 2012-ben egy kis bioboltot Kishegyesen, és miért kérdezik ma is a szomszédok: „Ön mit venne?”",
-        en: 'How Robert Lenart opened a small bio shop in Mali Iđoš in 2012 and why neighbours still ask: "What would you take?"',
+        sr: "Kako je Robert Lenart 2009. otvorio malu bio radnju u Malom Iđošu i zašto komšije i dalje pitaju: „Šta biste vi uzeli?“",
+        hu: "Hogyan nyitott Lenart Róbert 2009-ben egy kis bioboltot Kishegyesen, és miért kérdezik ma is a szomszédok: „Ön mit venne?”",
+        en: 'How Robert Lenart opened a small bio shop in Mali Iđoš in 2009 and why neighbours still ask: "What would you take?"',
       },
     },
     contact: {
