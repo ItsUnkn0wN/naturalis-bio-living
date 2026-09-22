@@ -7,7 +7,7 @@ import { t, useLang, langFromSearch } from "@/lib/i18n";
 const shopStorefront = { url: "/images/uzlet.webp" };
 const shopShelves = { url: "/images/shop-shelves.webp" };
 const shopCounter = { url: "/images/shop-counter.webp" };
-const shopCollage = { url: "/images/shop-logo-collage.jpg" };
+const shopCollage = { url: "/images/uzlet.webp" };
 
 export const Route = createFileRoute("/prica")({
   head: ({ match }) => {
@@ -113,11 +113,11 @@ function StoryPage() {
           <h2 className="font-display text-3xl font-medium sm:text-4xl">{tr(t.story.gallery)}</h2>
           <img
             src={shopCollage.url}
-            alt="Naturalis logo i unutrašnjost radnje"
-            width={1080}
-            height={1030}
+            alt="Naturalis storefront"
+            width={2048}
+            height={1536}
             loading="lazy"
-            className="mt-6 w-full rounded-[2rem] object-cover shadow-lift"
+            className="mt-6 aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift"
           />
         </Reveal>
         <Reveal className="mt-10 text-center">
