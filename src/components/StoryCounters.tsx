@@ -29,17 +29,22 @@ function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 
 export function StoryCounters() {
   const { tr } = useLang();
-  const years = 14;
-  const items = [{ value: <Counter to={years} suffix="+" />, label: tr(t.story.years) }];
+  const items = [
+    { value: <Counter to={17} suffix="+" />, label: tr(t.story.years) },
+    { value: <Counter to={5} />, label: tr(t.story.fiveStarReviews) },
+    { value: <Counter to={100} suffix="%" />, label: tr(t.story.genuineProducts) },
+  ];
   return (
-    <dl className="grid max-w-[18rem] grid-cols-1 gap-4">
+    <dl className="grid w-full grid-cols-3 gap-2 sm:gap-4">
       {items.map((it, i) => (
         <div
           key={i}
-          className="rounded-3xl border border-border bg-card p-5 text-center shadow-soft"
+          className="flex min-h-32 flex-col items-center justify-center rounded-2xl border border-border bg-card px-2 py-5 text-center shadow-soft sm:min-h-40 sm:rounded-3xl sm:px-4"
         >
-          <dt className="order-2 mt-1 text-xs text-muted-foreground">{it.label}</dt>
-          <dd className="font-display text-4xl font-medium text-primary">{it.value}</dd>
+          <dt className="order-2 mt-2 text-xs font-medium leading-snug text-muted-foreground sm:text-sm">{it.label}</dt>
+          <dd className="font-display text-3xl font-semibold text-primary sm:text-5xl">
+            {it.value}
+          </dd>
         </div>
       ))}
     </dl>

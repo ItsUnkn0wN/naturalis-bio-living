@@ -5011,7 +5011,7 @@ export function recommend(need: Need, goal: Goal): Product[] {
 export const STORE = {
   name: "Naturalis",
   legal: "Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš",
-  owner: "Robert Lenart",
+  owner: "Róbert Lénárt",
   street: "Zanatlijska 10",
   city: "24321 Mali Iđoš",
   phone: "024 4731 608",

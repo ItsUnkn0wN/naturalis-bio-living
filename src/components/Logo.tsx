@@ -7,17 +7,17 @@ export function Logo({ className, compact = false }: { className?: string; compa
       <svg viewBox="0 0 64 64" className="h-9 w-9 shrink-0" aria-hidden="true">
         <defs>
           <clipPath id="naturalis-sun-horizon">
-            <rect x="0" y="0" width="64" height="39.5" />
+            <path d="M0 0H64V37C47 31 20 34 4 43L0 45Z" />
           </clipPath>
         </defs>
         <g clipPath="url(#naturalis-sun-horizon)">
           <g className="origin-[32px_40px] animate-[spin_40s_linear_infinite] motion-reduce:animate-none" style={{ transformBox: "fill-box", transformOrigin: "center 70%" }}>
-            {Array.from({ length: 9 }).map((_, i) => {
-              const a = (-160 + i * 20) * (Math.PI / 180);
-              const x1 = 32 + Math.cos(a) * 18;
-              const y1 = 40 + Math.sin(a) * 18;
-              const x2 = 32 + Math.cos(a) * 27;
-              const y2 = 40 + Math.sin(a) * 27;
+            {Array.from({ length: 18 }).map((_, i) => {
+              const a = (i * 20) * (Math.PI / 180);
+              const x1 = Number((32 + Math.cos(a) * 18).toFixed(5));
+              const y1 = Number((40 + Math.sin(a) * 18).toFixed(5));
+              const x2 = Number((32 + Math.cos(a) * 27).toFixed(5));
+              const y2 = Number((40 + Math.sin(a) * 27).toFixed(5));
               return (
                 <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} strokeWidth="3.2" strokeLinecap="round" className="stroke-sun" />
               );
