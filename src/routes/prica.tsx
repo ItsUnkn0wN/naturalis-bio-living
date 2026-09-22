@@ -83,7 +83,7 @@ function StoryPage() {
               className="aspect-[4/3] w-full rounded-3xl object-cover shadow-soft"
             />
           </div>
-          <div className="mt-5 flex justify-end">
+          <div className="mt-5 w-full">
             <StoryCounters />
           </div>
         </Reveal>
