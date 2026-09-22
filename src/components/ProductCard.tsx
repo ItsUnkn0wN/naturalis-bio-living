@@ -37,7 +37,7 @@ export function ProductCard({
             width={816}
             height={816}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+            className="h-full w-full object-contain bg-white/35 p-4 transition-transform duration-700 group-hover:scale-[1.03] dark:bg-black/10"
           />
         ) : (
           <ProductPlaceholder category={product.category} />

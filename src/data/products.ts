@@ -103,6 +103,7 @@ export const products: Product[] = [
     id: "ostrovit-spiruline-1",
     category: "supplements",
     priceRsd: 1860,
+    image: "/images/products/ostrovit-spiruline-1.webp",
     name: { sr: "OstroVit Spiruline", hu: "OstroVit Spiruline", en: "OstroVit Spiruline" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -128,6 +129,7 @@ export const products: Product[] = [
     id: "haya-maca-root-2",
     category: "supplements",
     priceRsd: 1490,
+    image: "/images/products/haya-maca-root-2.webp",
     name: { sr: "Haya Maca Root", hu: "Haya Maca Root", en: "Haya Maca Root" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -153,6 +155,7 @@ export const products: Product[] = [
     id: "nature-essential-maca-3",
     category: "supplements",
     priceRsd: 1190,
+    image: "/images/products/nature-essential-maca-3.webp",
     name: { sr: "Nature Essential Maca", hu: "Nature Essential Maca", en: "Nature Essential Maca" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -178,6 +181,7 @@ export const products: Product[] = [
     id: "nature-essential-alcachofa-4",
     category: "supplements",
     priceRsd: 990,
+    image: "/images/products/nature-essential-alcachofa-4.webp",
     name: {
       sr: "Nature Essential Alcachofa",
       hu: "Nature Essential Alcachofa",
@@ -207,6 +211,7 @@ export const products: Product[] = [
     id: "nature-essential-reishi-5",
     category: "supplements",
     priceRsd: 1410,
+    image: "/images/products/nature-essential-reishi-5.webp",
     name: {
       sr: "Nature Essential Reishi",
       hu: "Nature Essential Reishi",
@@ -236,6 +241,7 @@ export const products: Product[] = [
     id: "magnezan-c-6",
     category: "supplements",
     priceRsd: 790,
+    image: "/images/products/magnezan-c-6.webp",
     name: { sr: "Magnezan C", hu: "Magnezan C", en: "Magnezan C" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -261,6 +267,7 @@ export const products: Product[] = [
     id: "ostrovit-magnesium-citrate-7",
     category: "supplements",
     priceRsd: 1630,
+    image: "/images/products/ostrovit-magnesium-citrate-7.webp",
     name: {
       sr: "OstroVit Magnesium Citrate",
       hu: "OstroVit Magnesium Citrate",
@@ -290,6 +297,7 @@ export const products: Product[] = [
     id: "7nutrition-magnesium-taurate-8",
     category: "supplements",
     priceRsd: 2750,
+    image: "/images/products/7nutrition-magnesium-taurate-8.webp",
     name: {
       sr: "7Nutrition Magnesium Taurate",
       hu: "7Nutrition Magnesium Taurate",
@@ -319,6 +327,7 @@ export const products: Product[] = [
     id: "magnesium-bisglycinate-9",
     category: "supplements",
     priceRsd: 1810,
+    image: "/images/products/magnesium-bisglycinate-9.webp",
     name: {
       sr: "Magnesium Bisglycinate",
       hu: "Magnesium Bisglycinate",
@@ -348,6 +357,7 @@ export const products: Product[] = [
     id: "magne-d-oro-b-complex-10",
     category: "supplements",
     priceRsd: 490,
+    image: "/images/products/magne-d-oro-b-complex-10.webp",
     name: {
       sr: "Magne D'Oro B- Complex",
       hu: "Magne D'Oro B- Complex",
@@ -377,6 +387,7 @@ export const products: Product[] = [
     id: "magne-d-oro-liquid-11",
     category: "supplements",
     priceRsd: 1170,
+    image: "/images/products/magne-d-oro-liquid-11.webp",
     name: { sr: "Magne D'Oro Liquid", hu: "Magne D'Oro Liquid", en: "Magne D'Oro Liquid" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -402,6 +413,7 @@ export const products: Product[] = [
     id: "calcium-magnesium-12",
     category: "supplements",
     priceRsd: 1180,
+    image: "/images/products/calcium-magnesium-12.webp",
     name: { sr: "Calcium Magnesium", hu: "Calcium Magnesium", en: "Calcium Magnesium" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -427,6 +439,7 @@ export const products: Product[] = [
     id: "calcium-matrix-13",
     category: "supplements",
     priceRsd: 1290,
+    image: "/images/products/calcium-matrix-13.webp",
     name: { sr: "Calcium Matrix", hu: "Calcium Matrix", en: "Calcium Matrix" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -451,6 +464,7 @@ export const products: Product[] = [
     id: "bioactive-kollagen-c-14",
     category: "supplements",
     priceRsd: 2290,
+    image: "/images/products/bioactive-kollagen-c-14.webp",
     name: { sr: "BioActive Kollagen+C", hu: "BioActive Kollagen+C", en: "BioActive Kollagen+C" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -475,6 +489,7 @@ export const products: Product[] = [
     id: "collagen-hyaluronic-matrix-15",
     category: "supplements",
     priceRsd: 2290,
+    image: "/images/products/collagen-hyaluronic-matrix-15.webp",
     name: {
       sr: "Collagen Hyaluronic Matrix",
       hu: "Collagen Hyaluronic Matrix",
@@ -503,6 +518,7 @@ export const products: Product[] = [
     id: "optimum-d3-16",
     category: "supplements",
     priceRsd: 550,
+    image: "/images/products/optimum-d3-16.webp",
     name: { sr: "Optimum D3", hu: "Optimum D3", en: "Optimum D3" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -527,6 +543,7 @@ export const products: Product[] = [
     id: "d3-k2-17",
     category: "supplements",
     priceRsd: 2450,
+    image: "/images/products/d3-k2-17.webp",
     name: { sr: "D3+K2", hu: "D3+K2", en: "D3+K2" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -551,6 +568,7 @@ export const products: Product[] = [
     id: "q10-coenzyme-18",
     category: "supplements",
     priceRsd: 2290,
+    image: "/images/products/q10-coenzyme-18.webp",
     name: { sr: "Q10 Coenzyme", hu: "Q10 Coenzyme", en: "Q10 Coenzyme" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -575,6 +593,7 @@ export const products: Product[] = [
     id: "vitamin-c-complex-19",
     category: "supplements",
     priceRsd: 1430,
+    image: "/images/products/vitamin-c-complex-19.webp",
     name: { sr: "Vitamin C Complex", hu: "Vitamin C Complex", en: "Vitamin C Complex" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -599,6 +618,7 @@ export const products: Product[] = [
     id: "vitamin-c-zinc-vitamin-d3-20",
     category: "supplements",
     priceRsd: 1660,
+    image: "/images/products/vitamin-c-zinc-vitamin-d3-20.webp",
     name: {
       sr: "Vitamin C + Zinc + Vitamin D3",
       hu: "Vitamin C + Zinc + Vitamin D3",
@@ -627,6 +647,7 @@ export const products: Product[] = [
     id: "ostrovit-vitamin-c-21",
     category: "supplements",
     priceRsd: 2590,
+    image: "/images/products/ostrovit-vitamin-c-21.webp",
     name: { sr: "OstroVit Vitamin C", hu: "OstroVit Vitamin C", en: "OstroVit Vitamin C" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -651,6 +672,7 @@ export const products: Product[] = [
     id: "ostrovit-tribulus-terrestris-90-22",
     category: "supplements",
     priceRsd: 1680,
+    image: "/images/products/ostrovit-tribulus-terrestris-90-22.webp",
     name: {
       sr: "OstroVit Tribulus Terrestris 90",
       hu: "OstroVit Tribulus Terrestris 90",
@@ -679,6 +701,7 @@ export const products: Product[] = [
     id: "ginkgo-biloba-23",
     category: "supplements",
     priceRsd: 1400,
+    image: "/images/products/ginkgo-biloba-23.webp",
     name: { sr: "Ginkgo Biloba", hu: "Ginkgo Biloba", en: "Ginkgo Biloba" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -703,6 +726,7 @@ export const products: Product[] = [
     id: "regenil-hepa-forte-24",
     category: "supplements",
     priceRsd: 1550,
+    image: "/images/products/regenil-hepa-forte-24.webp",
     name: { sr: "Regenil Hepa Forte", hu: "Regenil Hepa Forte", en: "Regenil Hepa Forte" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -727,6 +751,7 @@ export const products: Product[] = [
     id: "now-vitamin-a-25",
     category: "supplements",
     priceRsd: 1450,
+    image: "/images/products/now-vitamin-a-25.webp",
     name: { sr: "Now Vitamin A", hu: "Now Vitamin A", en: "Now Vitamin A" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -751,6 +776,7 @@ export const products: Product[] = [
     id: "fat-burner-matrix-26",
     category: "supplements",
     priceRsd: 1810,
+    image: "/images/products/fat-burner-matrix-26.webp",
     name: { sr: "Fat Burner Matrix", hu: "Fat Burner Matrix", en: "Fat Burner Matrix" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -775,6 +801,7 @@ export const products: Product[] = [
     id: "ostrovit-cla-1000-27",
     category: "supplements",
     priceRsd: 1000,
+    image: "/images/products/ostrovit-cla-1000-27.webp",
     name: { sr: "Ostrovit CLA 1000", hu: "Ostrovit CLA 1000", en: "Ostrovit CLA 1000" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -799,6 +826,7 @@ export const products: Product[] = [
     id: "nature-essential-garcinia-28",
     category: "supplements",
     priceRsd: 2340,
+    image: "/images/products/nature-essential-garcinia-28.webp",
     name: {
       sr: "Nature Essential Garcinia",
       hu: "Nature Essential Garcinia",
@@ -827,6 +855,7 @@ export const products: Product[] = [
     id: "creatine-pure-29",
     category: "supplements",
     priceRsd: 3100,
+    image: "/images/products/creatine-pure-29.webp",
     name: { sr: "Creatine Pure", hu: "Creatine Pure", en: "Creatine Pure" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -851,6 +880,7 @@ export const products: Product[] = [
     id: "now-b-1-30",
     category: "supplements",
     priceRsd: 1810,
+    image: "/images/products/now-b-1-30.webp",
     name: { sr: "Now B-1", hu: "Now B-1", en: "Now B-1" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -875,6 +905,7 @@ export const products: Product[] = [
     id: "now-b-2-31",
     category: "supplements",
     priceRsd: 1750,
+    image: "/images/products/now-b-2-31.webp",
     name: { sr: "Now B-2", hu: "Now B-2", en: "Now B-2" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -899,6 +930,7 @@ export const products: Product[] = [
     id: "now-b-6-32",
     category: "supplements",
     priceRsd: 2330,
+    image: "/images/products/now-b-6-32.webp",
     name: { sr: "Now B-6", hu: "Now B-6", en: "Now B-6" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -923,6 +955,7 @@ export const products: Product[] = [
     id: "now-biotin-33",
     category: "supplements",
     priceRsd: 1860,
+    image: "/images/products/now-biotin-33.webp",
     name: { sr: "Now Biotin", hu: "Now Biotin", en: "Now Biotin" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -947,6 +980,7 @@ export const products: Product[] = [
     id: "now-b-12-34",
     category: "supplements",
     priceRsd: 2070,
+    image: "/images/products/now-b-12-34.webp",
     name: { sr: "Now B-12", hu: "Now B-12", en: "Now B-12" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -971,6 +1005,7 @@ export const products: Product[] = [
     id: "msm-and-glucosamine-matrix-35",
     category: "supplements",
     priceRsd: 1290,
+    image: "/images/products/msm-and-glucosamine-matrix-35.webp",
     name: {
       sr: "MSM & Glucosamine Matrix",
       hu: "MSM & Glucosamine Matrix",
@@ -999,6 +1034,7 @@ export const products: Product[] = [
     id: "nutriversum-vitaminb-complex-36",
     category: "supplements",
     priceRsd: 1390,
+    image: "/images/products/nutriversum-vitaminb-complex-36.webp",
     name: {
       sr: "Nutriversum VitaminB Complex",
       hu: "Nutriversum VitaminB Complex",
@@ -1027,6 +1063,7 @@ export const products: Product[] = [
     id: "ashwagandha-37",
     category: "supplements",
     priceRsd: 1250,
+    image: "/images/products/ashwagandha-37.webp",
     name: { sr: "Ashwagandha", hu: "Ashwagandha", en: "Ashwagandha" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1051,6 +1088,7 @@ export const products: Product[] = [
     id: "now-inositol-38",
     category: "supplements",
     priceRsd: 2330,
+    image: "/images/products/now-inositol-38.webp",
     name: { sr: "Now Inositol", hu: "Now Inositol", en: "Now Inositol" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1075,6 +1113,7 @@ export const products: Product[] = [
     id: "oleifera-moringa-39",
     category: "supplements",
     priceRsd: 1860,
+    image: "/images/products/oleifera-moringa-39.webp",
     name: { sr: "Oleifera Moringa", hu: "Oleifera Moringa", en: "Oleifera Moringa" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1099,6 +1138,7 @@ export const products: Product[] = [
     id: "selenium-40",
     category: "supplements",
     priceRsd: 1360,
+    image: "/images/products/selenium-40.webp",
     name: { sr: "Selenium", hu: "Selenium", en: "Selenium" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1123,6 +1163,7 @@ export const products: Product[] = [
     id: "ostrovit-rhodiola-rosea-41",
     category: "supplements",
     priceRsd: 2220,
+    image: "/images/products/ostrovit-rhodiola-rosea-41.webp",
     name: {
       sr: "OstroVit Rhodiola Rosea",
       hu: "OstroVit Rhodiola Rosea",
@@ -1151,6 +1192,7 @@ export const products: Product[] = [
     id: "haya-l-theanie-42",
     category: "supplements",
     priceRsd: 1950,
+    image: "/images/products/haya-l-theanie-42.webp",
     name: { sr: "Haya L-Theanie", hu: "Haya L-Theanie", en: "Haya L-Theanie" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1175,6 +1217,7 @@ export const products: Product[] = [
     id: "now-zinc-43",
     category: "supplements",
     priceRsd: 1360,
+    image: "/images/products/now-zinc-43.webp",
     name: { sr: "Now Zinc", hu: "Now Zinc", en: "Now Zinc" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1199,6 +1242,7 @@ export const products: Product[] = [
     id: "now-chromium-picolinate-44",
     category: "supplements",
     priceRsd: 1580,
+    image: "/images/products/now-chromium-picolinate-44.webp",
     name: {
       sr: "Now Chromium Picolinate",
       hu: "Now Chromium Picolinate",
@@ -1227,6 +1271,7 @@ export const products: Product[] = [
     id: "detox-glina-u-prahu-45",
     category: "supplements",
     priceRsd: 1020,
+    image: "/images/products/detox-glina-u-prahu-45.webp",
     name: { sr: "Detox Glina U Prahu", hu: "Detox Glina U Prahu", en: "Detox Glina U Prahu" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1251,6 +1296,7 @@ export const products: Product[] = [
     id: "zeo-medic-46",
     category: "supplements",
     priceRsd: 930,
+    image: "/images/products/zeo-medic-46.webp",
     name: { sr: "Zeo Medic", hu: "Zeo Medic", en: "Zeo Medic" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1275,6 +1321,7 @@ export const products: Product[] = [
     id: "now-silymarin-47",
     category: "oils",
     priceRsd: 1890,
+    image: "/images/products/now-silymarin-47.webp",
     name: { sr: "Now Silymarin", hu: "Now Silymarin", en: "Now Silymarin" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1299,6 +1346,7 @@ export const products: Product[] = [
     id: "now-sunflower-lecithin-48",
     category: "supplements",
     priceRsd: 2680,
+    image: "/images/products/now-sunflower-lecithin-48.webp",
     name: {
       sr: "Now Sunflower Lecithin",
       hu: "Now Sunflower Lecithin",
@@ -1327,6 +1375,7 @@ export const products: Product[] = [
     id: "haya-taurine-49",
     category: "supplements",
     priceRsd: 1860,
+    image: "/images/products/haya-taurine-49.webp",
     name: { sr: "Haya Taurine", hu: "Haya Taurine", en: "Haya Taurine" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1351,6 +1400,7 @@ export const products: Product[] = [
     id: "basic-supplements-nac-50",
     category: "supplements",
     priceRsd: 2460,
+    image: "/images/products/basic-supplements-nac-50.webp",
     name: { sr: "Basic Supplements NAC", hu: "Basic Supplements NAC", en: "Basic Supplements NAC" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1375,6 +1425,7 @@ export const products: Product[] = [
     id: "zmb-matrix-51",
     category: "supplements",
     priceRsd: 950,
+    image: "/images/products/zmb-matrix-51.webp",
     name: { sr: "ZMB Matrix", hu: "ZMB Matrix", en: "ZMB Matrix" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1399,6 +1450,7 @@ export const products: Product[] = [
     id: "now-melatonin-52",
     category: "supplements",
     priceRsd: 1860,
+    image: "/images/products/now-melatonin-52.webp",
     name: { sr: "Now Melatonin", hu: "Now Melatonin", en: "Now Melatonin" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1423,6 +1475,7 @@ export const products: Product[] = [
     id: "probotanic-origano-strong-53",
     category: "oils",
     priceRsd: 2190,
+    image: "/images/products/probotanic-origano-strong-53.webp",
     name: {
       sr: "Probotanic Origano Strong",
       hu: "Probotanic Origano Strong",
@@ -1451,6 +1504,7 @@ export const products: Product[] = [
     id: "ostrovit-garlic-54",
     category: "supplements",
     priceRsd: 1350,
+    image: "/images/products/ostrovit-garlic-54.webp",
     name: { sr: "Ostrovit Garlic", hu: "Ostrovit Garlic", en: "Ostrovit Garlic" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1475,6 +1529,7 @@ export const products: Product[] = [
     id: "eterra-grejpfrut-55",
     category: "supplements",
     priceRsd: 1000,
+    image: "/images/products/eterra-grejpfrut-55.webp",
     name: { sr: "Eterra Grejpfrut", hu: "Eterra Grejpfrut", en: "Eterra Grejpfrut" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1499,6 +1554,7 @@ export const products: Product[] = [
     id: "eterra-macja-kandza-56",
     category: "oils",
     priceRsd: 1000,
+    image: "/images/products/eterra-macja-kandza-56.webp",
     name: { sr: "Eterra Mačja kandža", hu: "Eterra Mačja kandža", en: "Eterra Mačja kandža" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1523,6 +1579,7 @@ export const products: Product[] = [
     id: "deverra-cajevac-57",
     category: "teas",
     priceRsd: 580,
+    image: "/images/products/deverra-cajevac-57.webp",
     name: { sr: "Deverra Čajevac", hu: "Deverra Čajevac", en: "Deverra Čajevac" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -1547,6 +1604,7 @@ export const products: Product[] = [
     id: "sanaterra-cejlonski-cimet-58",
     category: "food",
     priceRsd: 275,
+    image: "/images/products/sanaterra-cejlonski-cimet-58.webp",
     name: {
       sr: "Sanaterra Cejlonski cimet",
       hu: "Sanaterra Cejlonski cimet",
@@ -1575,6 +1633,7 @@ export const products: Product[] = [
     id: "haya-resveratrol-59",
     category: "supplements",
     priceRsd: 1980,
+    image: "/images/products/haya-resveratrol-59.webp",
     name: { sr: "Haya Resveratrol", hu: "Haya Resveratrol", en: "Haya Resveratrol" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1599,6 +1658,7 @@ export const products: Product[] = [
     id: "eterra-origanik-kapsule-60",
     category: "supplements",
     priceRsd: 1500,
+    image: "/images/products/eterra-origanik-kapsule-60.webp",
     name: {
       sr: "Eterra Origanik kapsule",
       hu: "Eterra Origanik kapsule",
@@ -1627,6 +1687,7 @@ export const products: Product[] = [
     id: "stara-planinska-riznica-eliksir-kapi-61",
     category: "supplements",
     priceRsd: 940,
+    image: "/images/products/stara-planinska-riznica-eliksir-kapi-61.webp",
     name: {
       sr: "Stara Planinska Riznica Eliksir kapi",
       hu: "Stara Planinska Riznica Eliksir kapi",
@@ -1655,6 +1716,7 @@ export const products: Product[] = [
     id: "swedish-bitter-62",
     category: "oils",
     priceRsd: 1230,
+    image: "/images/products/swedish-bitter-62.webp",
     name: { sr: "Swedish Bitter", hu: "Swedish Bitter", en: "Swedish Bitter" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1679,6 +1741,7 @@ export const products: Product[] = [
     id: "svedska-gorcica-63",
     category: "oils",
     priceRsd: 1150,
+    image: "/images/products/svedska-gorcica-63.webp",
     name: { sr: "Švedska gorčica", hu: "Švedska gorčica", en: "Švedska gorčica" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1703,6 +1766,7 @@ export const products: Product[] = [
     id: "probotanic-oregano-tea-64",
     category: "teas",
     priceRsd: 660,
+    image: "/images/products/probotanic-oregano-tea-64.webp",
     name: {
       sr: "Probotanic Oregano Tea",
       hu: "Probotanic Oregano Tea",
@@ -1731,6 +1795,7 @@ export const products: Product[] = [
     id: "kombuha-65",
     category: "supplements",
     priceRsd: 465,
+    image: "/images/products/kombuha-65.webp",
     name: { sr: "Kombuha", hu: "Kombuha", en: "Kombuha" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1755,6 +1820,7 @@ export const products: Product[] = [
     id: "epsom-soli-gel-66",
     category: "oils",
     priceRsd: 780,
+    image: "/images/products/epsom-soli-gel-66.webp",
     name: { sr: "Epsom Soli Gel", hu: "Epsom Soli Gel", en: "Epsom Soli Gel" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1779,6 +1845,7 @@ export const products: Product[] = [
     id: "magnesium-chloride-gel-67",
     category: "oils",
     priceRsd: 700,
+    image: "/images/products/magnesium-chloride-gel-67.webp",
     name: {
       sr: "Magnesium Chloride Gel",
       hu: "Magnesium Chloride Gel",
@@ -1807,6 +1874,7 @@ export const products: Product[] = [
     id: "dmso-33-68",
     category: "oils",
     priceRsd: 890,
+    image: "/images/products/dmso-33-68.webp",
     name: { sr: "DMSO 33%", hu: "DMSO 33%", en: "DMSO 33%" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1831,6 +1899,7 @@ export const products: Product[] = [
     id: "shirko-magnesium-oil-69",
     category: "oils",
     priceRsd: 590,
+    image: "/images/products/shirko-magnesium-oil-69.webp",
     name: { sr: "Shirko Magnesium Oil", hu: "Shirko Magnesium Oil", en: "Shirko Magnesium Oil" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1855,6 +1924,7 @@ export const products: Product[] = [
     id: "dr-andra-jabukovo-sirce-70",
     category: "oils",
     priceRsd: 200,
+    image: "/images/products/dr-andra-jabukovo-sirce-70.webp",
     name: {
       sr: "Dr Andra Jabukovo Sirče",
       hu: "Dr Andra Jabukovo Sirče",
@@ -1883,6 +1953,7 @@ export const products: Product[] = [
     id: "jabukovo-sirce-71",
     category: "oils",
     priceRsd: 150,
+    image: "/images/products/jabukovo-sirce-71.webp",
     name: { sr: "Jabukovo Sirče", hu: "Jabukovo Sirče", en: "Jabukovo Sirče" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1907,6 +1978,7 @@ export const products: Product[] = [
     id: "linum-makovo-ulje-72",
     category: "oils",
     priceRsd: 850,
+    image: "/images/products/linum-makovo-ulje-72.webp",
     name: { sr: "Linum Makovo ulje", hu: "Linum Makovo ulje", en: "Linum Makovo ulje" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -1931,6 +2003,7 @@ export const products: Product[] = [
     id: "eterra-crni-kim-73",
     category: "supplements",
     priceRsd: 1750,
+    image: "/images/products/eterra-crni-kim-73.webp",
     name: { sr: "Eterra Crni kim", hu: "Eterra Crni kim", en: "Eterra Crni kim" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1955,6 +2028,7 @@ export const products: Product[] = [
     id: "linum-lana-74",
     category: "supplements",
     priceRsd: 425,
+    image: "/images/products/linum-lana-74.webp",
     name: { sr: "Linum Lana", hu: "Linum Lana", en: "Linum Lana" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -1979,6 +2053,7 @@ export const products: Product[] = [
     id: "biouna-tikve-75",
     category: "supplements",
     priceRsd: 1230,
+    image: "/images/products/biouna-tikve-75.webp",
     name: { sr: "Biouna Tikve", hu: "Biouna Tikve", en: "Biouna Tikve" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2003,6 +2078,7 @@ export const products: Product[] = [
     id: "linum-susama-76",
     category: "supplements",
     priceRsd: 840,
+    image: "/images/products/linum-susama-76.webp",
     name: { sr: "Linum Susama", hu: "Linum Susama", en: "Linum Susama" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2027,6 +2103,7 @@ export const products: Product[] = [
     id: "granumfood-ulje-od-repice-77",
     category: "oils",
     priceRsd: 465,
+    image: "/images/products/granumfood-ulje-od-repice-77.webp",
     name: {
       sr: "GranumFood Ulje od Repice",
       hu: "GranumFood Ulje od Repice",
@@ -2055,6 +2132,7 @@ export const products: Product[] = [
     id: "linum-oraha-78",
     category: "supplements",
     priceRsd: 1360,
+    image: "/images/products/linum-oraha-78.webp",
     name: { sr: "Linum Oraha", hu: "Linum Oraha", en: "Linum Oraha" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2079,6 +2157,7 @@ export const products: Product[] = [
     id: "palmino-ulje-79",
     category: "oils",
     priceRsd: 620,
+    image: "/images/products/palmino-ulje-79.webp",
     name: { sr: "Palmino Ulje", hu: "Palmino Ulje", en: "Palmino Ulje" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -2103,6 +2182,7 @@ export const products: Product[] = [
     id: "granumfood-balzamiko-sirce-od-nara-80",
     category: "oils",
     priceRsd: 395,
+    image: "/images/products/granumfood-balzamiko-sirce-od-nara-80.webp",
     name: {
       sr: "GranumFood Balzamiko Sirce od nara",
       hu: "GranumFood Balzamiko Sirce od nara",
@@ -2131,6 +2211,7 @@ export const products: Product[] = [
     id: "monari-federzoni-aceto-balsamico-di-modena-igp-81",
     category: "oils",
     priceRsd: 525,
+    image: "/images/products/monari-federzoni-aceto-balsamico-di-modena-igp-81.webp",
     name: {
       sr: "Monari Federzoni Aceto Balsamico Di Modena IGP",
       hu: "Monari Federzoni Aceto Balsamico Di Modena IGP",
@@ -2159,6 +2240,7 @@ export const products: Product[] = [
     id: "heinz-soja-sauce-82",
     category: "oils",
     priceRsd: 499,
+    image: "/images/products/heinz-soja-sauce-82.webp",
     name: { sr: "Heinz Soja Sauce", hu: "Heinz Soja Sauce", en: "Heinz Soja Sauce" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -2183,6 +2265,7 @@ export const products: Product[] = [
     id: "granumfood-ulje-semena-grozda-83",
     category: "oils",
     priceRsd: 1320,
+    image: "/images/products/granumfood-ulje-semena-grozda-83.webp",
     name: {
       sr: "GranumFood Ulje Semena Grozda",
       hu: "GranumFood Ulje Semena Grozda",
@@ -2211,6 +2294,7 @@ export const products: Product[] = [
     id: "il-capitano-ulje-od-kostice-grozda-84",
     category: "oils",
     priceRsd: 1350,
+    image: "/images/products/il-capitano-ulje-od-kostice-grozda-84.webp",
     name: {
       sr: "Il Capitano Ulje od Kostice Grozda",
       hu: "Il Capitano Ulje od Kostice Grozda",
@@ -2239,6 +2323,7 @@ export const products: Product[] = [
     id: "ybarra-extra-virgin-oil-250ml-85",
     category: "oils",
     priceRsd: 550,
+    image: "/images/products/ybarra-extra-virgin-oil-250ml-85.webp",
     name: {
       sr: "Ybarra Extra Virgin Oil 250ml",
       hu: "Ybarra Extra Virgin Oil 250ml",
@@ -2267,6 +2352,7 @@ export const products: Product[] = [
     id: "ybarra-extra-virgin-oil-500ml-86",
     category: "oils",
     priceRsd: 1020,
+    image: "/images/products/ybarra-extra-virgin-oil-500ml-86.webp",
     name: {
       sr: "Ybarra Extra Virgin Oil 500ml",
       hu: "Ybarra Extra Virgin Oil 500ml",
@@ -2295,6 +2381,7 @@ export const products: Product[] = [
     id: "ybarra-extra-virgin-oil-1l-87",
     category: "oils",
     priceRsd: 1580,
+    image: "/images/products/ybarra-extra-virgin-oil-1l-87.webp",
     name: {
       sr: "Ybarra Extra Virgin Oil 1L",
       hu: "Ybarra Extra Virgin Oil 1L",
@@ -2323,6 +2410,7 @@ export const products: Product[] = [
     id: "panonsko-sunflower-seed-oil-88",
     category: "oils",
     priceRsd: 585,
+    image: "/images/products/panonsko-sunflower-seed-oil-88.webp",
     name: {
       sr: "Panonsko Sunflower Seed Oil",
       hu: "Panonsko Sunflower Seed Oil",
@@ -2351,6 +2439,7 @@ export const products: Product[] = [
     id: "fructus-sipak-rosehip-89",
     category: "teas",
     priceRsd: 179,
+    image: "/images/products/fructus-sipak-rosehip-89.webp",
     name: { sr: "Fructus Sipak Rosehip", hu: "Fructus Sipak Rosehip", en: "Fructus Sipak Rosehip" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -2375,6 +2464,7 @@ export const products: Product[] = [
     id: "fructus-divlja-tresnja-wild-cherry-90",
     category: "teas",
     priceRsd: 179,
+    image: "/images/products/fructus-divlja-tresnja-wild-cherry-90.webp",
     name: {
       sr: "Fructus Divlja Tresnja Wild Cherry",
       hu: "Fructus Divlja Tresnja Wild Cherry",
@@ -2403,6 +2493,7 @@ export const products: Product[] = [
     id: "fructus-sumsko-voce-forest-fruit-91",
     category: "teas",
     priceRsd: 179,
+    image: "/images/products/fructus-sumsko-voce-forest-fruit-91.webp",
     name: {
       sr: "Fructus Sumsko Voce Forest Fruit",
       hu: "Fructus Sumsko Voce Forest Fruit",
@@ -2431,6 +2522,7 @@ export const products: Product[] = [
     id: "fructus-aronija-borovnica-92",
     category: "teas",
     priceRsd: 179,
+    image: "/images/products/fructus-aronija-borovnica-92.webp",
     name: {
       sr: "Fructus Aronija Borovnica",
       hu: "Fructus Aronija Borovnica",
@@ -2459,6 +2551,7 @@ export const products: Product[] = [
     id: "fructus-detox-93",
     category: "supplements",
     priceRsd: 250,
+    image: "/images/products/fructus-detox-93.webp",
     name: { sr: "Fructus Detox", hu: "Fructus Detox", en: "Fructus Detox" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2483,6 +2576,7 @@ export const products: Product[] = [
     id: "kirkolina-herba-body-line-94",
     category: "supplements",
     priceRsd: 369,
+    image: "/images/products/kirkolina-herba-body-line-94.webp",
     name: {
       sr: "KirkOlina Herba Body Line",
       hu: "KirkOlina Herba Body Line",
@@ -2511,6 +2605,7 @@ export const products: Product[] = [
     id: "fructus-fitness-95",
     category: "supplements",
     priceRsd: 180,
+    image: "/images/products/fructus-fitness-95.webp",
     name: { sr: "Fructus Fitness", hu: "Fructus Fitness", en: "Fructus Fitness" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2535,6 +2630,7 @@ export const products: Product[] = [
     id: "fructus-fitness-plus-96",
     category: "supplements",
     priceRsd: 240,
+    image: "/images/products/fructus-fitness-plus-96.webp",
     name: { sr: "Fructus Fitness Plus", hu: "Fructus Fitness Plus", en: "Fructus Fitness Plus" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2559,6 +2655,7 @@ export const products: Product[] = [
     id: "probien-forte-sa-saccharomyces-boulardii-97",
     category: "supplements",
     priceRsd: 540,
+    image: "/images/products/probien-forte-sa-saccharomyces-boulardii-97.webp",
     name: {
       sr: "Probien Forte sa Saccharomyces Boulardii",
       hu: "Probien Forte sa Saccharomyces Boulardii",
@@ -2587,6 +2684,7 @@ export const products: Product[] = [
     id: "probien-daily-98",
     category: "supplements",
     priceRsd: 350,
+    image: "/images/products/probien-daily-98.webp",
     name: { sr: "Probien Daily", hu: "Probien Daily", en: "Probien Daily" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2611,6 +2709,7 @@ export const products: Product[] = [
     id: "ostrovit-omega-3-99",
     category: "supplements",
     priceRsd: 1250,
+    image: "/images/products/ostrovit-omega-3-99.webp",
     name: { sr: "Ostrovit Omega 3", hu: "Ostrovit Omega 3", en: "Ostrovit Omega 3" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2635,6 +2734,7 @@ export const products: Product[] = [
     id: "vitamix-hair-skin-and-nails-100",
     category: "supplements",
     priceRsd: 915,
+    image: "/images/products/vitamix-hair-skin-and-nails-100.webp",
     name: {
       sr: "Vitamix Hair,Skin and Nails",
       hu: "Vitamix Hair,Skin and Nails",
@@ -2663,6 +2763,7 @@ export const products: Product[] = [
     id: "vitamix-vitamin-c-101",
     category: "supplements",
     priceRsd: 915,
+    image: "/images/products/vitamix-vitamin-c-101.webp",
     name: { sr: "Vitamix Vitamin C+", hu: "Vitamix Vitamin C+", en: "Vitamix Vitamin C+" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2687,6 +2788,7 @@ export const products: Product[] = [
     id: "vitamix-za-zglobove-i-misice-102",
     category: "supplements",
     priceRsd: 1100,
+    image: "/images/products/vitamix-za-zglobove-i-misice-102.webp",
     name: {
       sr: "Vitamix Za zglobove i Misice",
       hu: "Vitamix Za zglobove i Misice",
@@ -2715,6 +2817,7 @@ export const products: Product[] = [
     id: "vitamix-za-oci-103",
     category: "supplements",
     priceRsd: 1390,
+    image: "/images/products/vitamix-za-oci-103.webp",
     name: { sr: "Vitamix Za Oci", hu: "Vitamix Za Oci", en: "Vitamix Za Oci" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2739,6 +2842,7 @@ export const products: Product[] = [
     id: "vitamix-za-memoriju-i-koncetraciju-104",
     category: "supplements",
     priceRsd: 880,
+    image: "/images/products/vitamix-za-memoriju-i-koncetraciju-104.webp",
     name: {
       sr: "Vitamix Za Memoriju I Koncetraciju",
       hu: "Vitamix Za Memoriju I Koncetraciju",
@@ -2767,6 +2871,7 @@ export const products: Product[] = [
     id: "vitamix-multivitamin-105",
     category: "supplements",
     priceRsd: 790,
+    image: "/images/products/vitamix-multivitamin-105.webp",
     name: { sr: "Vitamix Multivitamin", hu: "Vitamix Multivitamin", en: "Vitamix Multivitamin" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2791,6 +2896,7 @@ export const products: Product[] = [
     id: "adonis-glog-106",
     category: "supplements",
     priceRsd: 105,
+    image: "/images/products/adonis-glog-106.webp",
     name: { sr: "Adonis Glog", hu: "Adonis Glog", en: "Adonis Glog" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2815,6 +2921,7 @@ export const products: Product[] = [
     id: "fructus-rooibos-107",
     category: "teas",
     priceRsd: 240,
+    image: "/images/products/fructus-rooibos-107.webp",
     name: { sr: "Fructus Rooibos", hu: "Fructus Rooibos", en: "Fructus Rooibos" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -2839,6 +2946,7 @@ export const products: Product[] = [
     id: "ziya-dede-atom-propolis-caj-108",
     category: "teas",
     priceRsd: 480,
+    image: "/images/products/ziya-dede-atom-propolis-caj-108.webp",
     name: {
       sr: "Ziya Dede Atom Propolis Caj",
       hu: "Ziya Dede Atom Propolis Caj",
@@ -2867,6 +2975,7 @@ export const products: Product[] = [
     id: "ziya-dede-atom-cayi-109",
     category: "supplements",
     priceRsd: 480,
+    image: "/images/products/ziya-dede-atom-cayi-109.webp",
     name: { sr: "Ziya Dede Atom Cayi", hu: "Ziya Dede Atom Cayi", en: "Ziya Dede Atom Cayi" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -2891,6 +3000,7 @@ export const products: Product[] = [
     id: "fructus-kantarion-110",
     category: "teas",
     priceRsd: 115,
+    image: "/images/products/fructus-kantarion-110.webp",
     name: { sr: "Fructus Kantarion", hu: "Fructus Kantarion", en: "Fructus Kantarion" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -2915,6 +3025,7 @@ export const products: Product[] = [
     id: "fructus-majcina-dusica-111",
     category: "teas",
     priceRsd: 95,
+    image: "/images/products/fructus-majcina-dusica-111.webp",
     name: {
       sr: "Fructus Majcina Dusica",
       hu: "Fructus Majcina Dusica",
@@ -2943,6 +3054,7 @@ export const products: Product[] = [
     id: "fructus-kopriva-112",
     category: "teas",
     priceRsd: 95,
+    image: "/images/products/fructus-kopriva-112.webp",
     name: { sr: "Fructus Kopriva", hu: "Fructus Kopriva", en: "Fructus Kopriva" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -2967,6 +3079,7 @@ export const products: Product[] = [
     id: "fructus-nana-113",
     category: "teas",
     priceRsd: 95,
+    image: "/images/products/fructus-nana-113.webp",
     name: { sr: "Fructus Nana", hu: "Fructus Nana", en: "Fructus Nana" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -2991,6 +3104,7 @@ export const products: Product[] = [
     id: "fructus-kamilica-114",
     category: "teas",
     priceRsd: 95,
+    image: "/images/products/fructus-kamilica-114.webp",
     name: { sr: "Fructus Kamilica", hu: "Fructus Kamilica", en: "Fructus Kamilica" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -3015,6 +3129,7 @@ export const products: Product[] = [
     id: "fructus-planinski-115",
     category: "teas",
     priceRsd: 95,
+    image: "/images/products/fructus-planinski-115.webp",
     name: { sr: "Fructus Planinski", hu: "Fructus Planinski", en: "Fructus Planinski" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -3039,6 +3154,7 @@ export const products: Product[] = [
     id: "fructus-hibiskus-116",
     category: "teas",
     priceRsd: 115,
+    image: "/images/products/fructus-hibiskus-116.webp",
     name: { sr: "Fructus Hibiskus", hu: "Fructus Hibiskus", en: "Fructus Hibiskus" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -3063,6 +3179,7 @@ export const products: Product[] = [
     id: "fructus-zeleni-caj-sa-limunom-117",
     category: "teas",
     priceRsd: 149,
+    image: "/images/products/fructus-zeleni-caj-sa-limunom-117.webp",
     name: {
       sr: "Fructus Zeleni Caj Sa Limunom",
       hu: "Fructus Zeleni Caj Sa Limunom",
@@ -3091,6 +3208,7 @@ export const products: Product[] = [
     id: "fructus-zeleni-caj-118",
     category: "teas",
     priceRsd: 115,
+    image: "/images/products/fructus-zeleni-caj-118.webp",
     name: { sr: "Fructus Zeleni Caj", hu: "Fructus Zeleni Caj", en: "Fructus Zeleni Caj" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -3115,6 +3233,7 @@ export const products: Product[] = [
     id: "euroherba-e-var-119",
     category: "supplements",
     priceRsd: 605,
+    image: "/images/products/euroherba-e-var-119.webp",
     name: { sr: "Euroherba E-Var", hu: "Euroherba E-Var", en: "Euroherba E-Var" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3139,6 +3258,7 @@ export const products: Product[] = [
     id: "vega-razeno-120",
     category: "supplements",
     priceRsd: 140,
+    image: "/images/products/vega-razeno-120.webp",
     name: { sr: "Vega Razeno", hu: "Vega Razeno", en: "Vega Razeno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3163,6 +3283,7 @@ export const products: Product[] = [
     id: "vega-psenicno-121",
     category: "supplements",
     priceRsd: 119,
+    image: "/images/products/vega-psenicno-121.webp",
     name: { sr: "Vega Psenicno", hu: "Vega Psenicno", en: "Vega Psenicno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3187,6 +3308,7 @@ export const products: Product[] = [
     id: "deljin-jecmeno-122",
     category: "supplements",
     priceRsd: 100,
+    image: "/images/products/deljin-jecmeno-122.webp",
     name: { sr: "Deljin Jecmeno", hu: "Deljin Jecmeno", en: "Deljin Jecmeno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3211,6 +3333,7 @@ export const products: Product[] = [
     id: "deljin-ovseno-123",
     category: "supplements",
     priceRsd: 128,
+    image: "/images/products/deljin-ovseno-123.webp",
     name: { sr: "Deljin Ovseno", hu: "Deljin Ovseno", en: "Deljin Ovseno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3235,6 +3358,7 @@ export const products: Product[] = [
     id: "deljin-heljdino-124",
     category: "supplements",
     priceRsd: 350,
+    image: "/images/products/deljin-heljdino-124.webp",
     name: { sr: "Deljin Heljdino", hu: "Deljin Heljdino", en: "Deljin Heljdino" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3259,6 +3383,7 @@ export const products: Product[] = [
     id: "ekomark-cikorija-125",
     category: "supplements",
     priceRsd: 290,
+    image: "/images/products/ekomark-cikorija-125.webp",
     name: { sr: "Ekomark Cikorija", hu: "Ekomark Cikorija", en: "Ekomark Cikorija" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3283,6 +3408,7 @@ export const products: Product[] = [
     id: "deverra-gel-gavez-126",
     category: "oils",
     priceRsd: 655,
+    image: "/images/products/deverra-gel-gavez-126.webp",
     name: { sr: "Deverra Gel Gavez", hu: "Deverra Gel Gavez", en: "Deverra Gel Gavez" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -3307,6 +3433,7 @@ export const products: Product[] = [
     id: "mast-protiv-hemoroida-127",
     category: "oils",
     priceRsd: 440,
+    image: "/images/products/mast-protiv-hemoroida-127.webp",
     name: { sr: "Mast Protiv Hemoroida", hu: "Mast Protiv Hemoroida", en: "Mast Protiv Hemoroida" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -3331,6 +3458,7 @@ export const products: Product[] = [
     id: "kukuruzna-palenta-128",
     category: "food",
     priceRsd: 110,
+    image: "/images/products/kukuruzna-palenta-128.webp",
     name: { sr: "Kukuruzna Palenta", hu: "Kukuruzna Palenta", en: "Kukuruzna Palenta" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3355,6 +3483,7 @@ export const products: Product[] = [
     id: "psenici-griz-129",
     category: "food",
     priceRsd: 125,
+    image: "/images/products/psenici-griz-129.webp",
     name: { sr: "Psenici Griz", hu: "Psenici Griz", en: "Psenici Griz" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3379,6 +3508,7 @@ export const products: Product[] = [
     id: "kokosovo-ulje-130",
     category: "oils",
     priceRsd: 1250,
+    image: "/images/products/kokosovo-ulje-130.webp",
     name: { sr: "Kokosovo Ulje", hu: "Kokosovo Ulje", en: "Kokosovo Ulje" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -3403,6 +3533,7 @@ export const products: Product[] = [
     id: "crazy-coconut-oil-131",
     category: "oils",
     priceRsd: 460,
+    image: "/images/products/crazy-coconut-oil-131.webp",
     name: { sr: "Crazy Coconut Oil", hu: "Crazy Coconut Oil", en: "Crazy Coconut Oil" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
@@ -3427,6 +3558,7 @@ export const products: Product[] = [
     id: "makedonski-tahini-132",
     category: "food",
     priceRsd: 605,
+    image: "/images/products/makedonski-tahini-132.webp",
     name: { sr: "Makedonski Tahini", hu: "Makedonski Tahini", en: "Makedonski Tahini" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3451,6 +3583,7 @@ export const products: Product[] = [
     id: "kikiriki-puter-133",
     category: "food",
     priceRsd: 510,
+    image: "/images/products/kikiriki-puter-133.webp",
     name: { sr: "Kikiriki Puter", hu: "Kikiriki Puter", en: "Kikiriki Puter" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3475,6 +3608,7 @@ export const products: Product[] = [
     id: "granumfood-bundevin-puter-134",
     category: "food",
     priceRsd: 580,
+    image: "/images/products/granumfood-bundevin-puter-134.webp",
     name: {
       sr: "Granumfood Bundevin Puter",
       hu: "Granumfood Bundevin Puter",
@@ -3503,6 +3637,7 @@ export const products: Product[] = [
     id: "schwan-krem-stevia-135",
     category: "supplements",
     priceRsd: 320,
+    image: "/images/products/schwan-krem-stevia-135.webp",
     name: { sr: "Schwan Krem Stevia", hu: "Schwan Krem Stevia", en: "Schwan Krem Stevia" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3527,6 +3662,7 @@ export const products: Product[] = [
     id: "crazy-vegan-protein-136",
     category: "food",
     priceRsd: 440,
+    image: "/images/products/crazy-vegan-protein-136.webp",
     name: { sr: "Crazy Vegan Protein", hu: "Crazy Vegan Protein", en: "Crazy Vegan Protein" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3551,6 +3687,7 @@ export const products: Product[] = [
     id: "urma-krem-namaz-137",
     category: "supplements",
     priceRsd: 655,
+    image: "/images/products/urma-krem-namaz-137.webp",
     name: { sr: "Urma Krem Namaz", hu: "Urma Krem Namaz", en: "Urma Krem Namaz" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3575,6 +3712,7 @@ export const products: Product[] = [
     id: "lesnik-krem-kamaz-138",
     category: "supplements",
     priceRsd: 860,
+    image: "/images/products/lesnik-krem-kamaz-138.webp",
     name: { sr: "Lesnik Krem Kamaz", hu: "Lesnik Krem Kamaz", en: "Lesnik Krem Kamaz" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -3599,6 +3737,7 @@ export const products: Product[] = [
     id: "lesnik-sa-urmom-krem-namaz-139",
     category: "supplements",
     priceRsd: 860,
+    image: "/images/products/lesnik-sa-urmom-krem-namaz-139.webp",
     name: {
       sr: "Lesnik Sa Urmom Krem Namaz",
       hu: "Lesnik Sa Urmom Krem Namaz",
@@ -3627,6 +3766,7 @@ export const products: Product[] = [
     id: "sunoko-secer-smedi-140",
     category: "food",
     priceRsd: 225,
+    image: "/images/products/sunoko-secer-smedi-140.webp",
     name: { sr: "Sunoko Secer Smedi", hu: "Sunoko Secer Smedi", en: "Sunoko Secer Smedi" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3651,6 +3791,7 @@ export const products: Product[] = [
     id: "beyond-brezin-secer-141",
     category: "food",
     priceRsd: 795,
+    image: "/images/products/beyond-brezin-secer-141.webp",
     name: { sr: "Beyond Brezin Secer", hu: "Beyond Brezin Secer", en: "Beyond Brezin Secer" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3675,6 +3816,7 @@ export const products: Product[] = [
     id: "beyond-eritritol-142",
     category: "food",
     priceRsd: 515,
+    image: "/images/products/beyond-eritritol-142.webp",
     name: { sr: "Beyond Eritritol", hu: "Beyond Eritritol", en: "Beyond Eritritol" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3699,6 +3841,7 @@ export const products: Product[] = [
     id: "sweet-adventure-2-brezin-secer-143",
     category: "food",
     priceRsd: 540,
+    image: "/images/products/sweet-adventure-2-brezin-secer-143.webp",
     name: {
       sr: "Sweet Adventure 2 Brezin Secer",
       hu: "Sweet Adventure 2 Brezin Secer",
@@ -3727,6 +3870,7 @@ export const products: Product[] = [
     id: "sweet-adventure-3-eritritol-144",
     category: "food",
     priceRsd: 560,
+    image: "/images/products/sweet-adventure-3-eritritol-144.webp",
     name: {
       sr: "Sweet Adventure 3 Eritritol",
       hu: "Sweet Adventure 3 Eritritol",
@@ -3755,6 +3899,7 @@ export const products: Product[] = [
     id: "sanaterra-agava-sirup-145",
     category: "food",
     priceRsd: 485,
+    image: "/images/products/sanaterra-agava-sirup-145.webp",
     name: { sr: "Sanaterra Agava Sirup", hu: "Sanaterra Agava Sirup", en: "Sanaterra Agava Sirup" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -3779,6 +3924,7 @@ export const products: Product[] = [
     id: "hederavita-anti-spots-soap-146",
     category: "cosmetics",
     priceRsd: 300,
+    image: "/images/products/hederavita-anti-spots-soap-146.webp",
     name: {
       sr: "Hederavita Anti Spots Soap",
       hu: "Hederavita Anti Spots Soap",
@@ -3807,6 +3953,7 @@ export const products: Product[] = [
     id: "hederavita-anti-spots-tonic-147",
     category: "cosmetics",
     priceRsd: 430,
+    image: "/images/products/hederavita-anti-spots-tonic-147.webp",
     name: {
       sr: "Hederavita Anti Spots Tonic",
       hu: "Hederavita Anti Spots Tonic",
@@ -3835,6 +3982,7 @@ export const products: Product[] = [
     id: "hederavita-anti-spots-foam-148",
     category: "cosmetics",
     priceRsd: 600,
+    image: "/images/products/hederavita-anti-spots-foam-148.webp",
     name: {
       sr: "Hederavita Anti Spots Foam",
       hu: "Hederavita Anti Spots Foam",
@@ -3863,6 +4011,7 @@ export const products: Product[] = [
     id: "hederavita-anti-spots-face-mask-149",
     category: "cosmetics",
     priceRsd: 400,
+    image: "/images/products/hederavita-anti-spots-face-mask-149.webp",
     name: {
       sr: "Hederavita Anti Spots Face Mask",
       hu: "Hederavita Anti Spots Face Mask",
@@ -3891,6 +4040,7 @@ export const products: Product[] = [
     id: "hederavita-anti-ox-150",
     category: "cosmetics",
     priceRsd: 1100,
+    image: "/images/products/hederavita-anti-ox-150.webp",
     name: { sr: "Hederavita Anti Ox", hu: "Hederavita Anti Ox", en: "Hederavita Anti Ox" },
     short: {
       sr: "Prirodna nega i kozmetika.",
@@ -3915,6 +4065,7 @@ export const products: Product[] = [
     id: "hederavita-skin-cycling-151",
     category: "cosmetics",
     priceRsd: 890,
+    image: "/images/products/hederavita-skin-cycling-151.webp",
     name: {
       sr: "Hederavita Skin Cycling",
       hu: "Hederavita Skin Cycling",
@@ -3943,6 +4094,7 @@ export const products: Product[] = [
     id: "hederavita-hyaluronic-acid-152",
     category: "cosmetics",
     priceRsd: 1300,
+    image: "/images/products/hederavita-hyaluronic-acid-152.webp",
     name: {
       sr: "Hederavita Hyaluronic Acid",
       hu: "Hederavita Hyaluronic Acid",
@@ -3971,6 +4123,7 @@ export const products: Product[] = [
     id: "hederavita-shower-gel-153",
     category: "cosmetics",
     priceRsd: 435,
+    image: "/images/products/hederavita-shower-gel-153.webp",
     name: { sr: "Hederavita Shower Gel", hu: "Hederavita Shower Gel", en: "Hederavita Shower Gel" },
     short: {
       sr: "Prirodna nega i kozmetika.",
@@ -3995,6 +4148,7 @@ export const products: Product[] = [
     id: "hederavita-deodorant-154",
     category: "cosmetics",
     priceRsd: 410,
+    image: "/images/products/hederavita-deodorant-154.webp",
     name: { sr: "Hederavita Deodorant", hu: "Hederavita Deodorant", en: "Hederavita Deodorant" },
     short: {
       sr: "Prirodna nega i kozmetika.",
@@ -4019,6 +4173,7 @@ export const products: Product[] = [
     id: "hederavita-pantheol-emulsion-155",
     category: "cosmetics",
     priceRsd: 690,
+    image: "/images/products/hederavita-pantheol-emulsion-155.webp",
     name: {
       sr: "Hederavita Pantheol Emulsion",
       hu: "Hederavita Pantheol Emulsion",
@@ -4047,6 +4202,7 @@ export const products: Product[] = [
     id: "hederavita-ivy-massage-gel-156",
     category: "cosmetics",
     priceRsd: 600,
+    image: "/images/products/hederavita-ivy-massage-gel-156.webp",
     name: {
       sr: "Hederavita Ivy Massage Gel",
       hu: "Hederavita Ivy Massage Gel",
@@ -4075,6 +4231,7 @@ export const products: Product[] = [
     id: "hederavita-cinnamon-massage-gel-157",
     category: "cosmetics",
     priceRsd: 900,
+    image: "/images/products/hederavita-cinnamon-massage-gel-157.webp",
     name: {
       sr: "Hederavita Cinnamon Massage Gel",
       hu: "Hederavita Cinnamon Massage Gel",
@@ -4103,6 +4260,7 @@ export const products: Product[] = [
     id: "hederavita-mild-shampoo-158",
     category: "cosmetics",
     priceRsd: 700,
+    image: "/images/products/hederavita-mild-shampoo-158.webp",
     name: {
       sr: "Hederavita Mild Shampoo",
       hu: "Hederavita Mild Shampoo",
@@ -4131,6 +4289,7 @@ export const products: Product[] = [
     id: "hederavita-herbal-shampoo-159",
     category: "cosmetics",
     priceRsd: 700,
+    image: "/images/products/hederavita-herbal-shampoo-159.webp",
     name: {
       sr: "Hederavita Herbal Shampoo",
       hu: "Hederavita Herbal Shampoo",
@@ -4159,6 +4318,7 @@ export const products: Product[] = [
     id: "hederavita-redensyl-and-camellia-hair-mask-160",
     category: "cosmetics",
     priceRsd: 800,
+    image: "/images/products/hederavita-redensyl-and-camellia-hair-mask-160.webp",
     name: {
       sr: "Hederavita Redensyl & Camellia Hair Mask",
       hu: "Hederavita Redensyl & Camellia Hair Mask",
@@ -4187,6 +4347,7 @@ export const products: Product[] = [
     id: "face-fluid-awakening-energy-161",
     category: "cosmetics",
     priceRsd: 2550,
+    image: "/images/products/face-fluid-awakening-energy-161.webp",
     name: {
       sr: "Face Fluid Awakening Energy",
       hu: "Face Fluid Awakening Energy",
@@ -4215,6 +4376,7 @@ export const products: Product[] = [
     id: "morsus-gel-sa-effektom-hiadenja-162",
     category: "cosmetics",
     priceRsd: 1450,
+    image: "/images/products/morsus-gel-sa-effektom-hiadenja-162.webp",
     name: {
       sr: "Morsus Gel sa effektom Hiadenja",
       hu: "Morsus Gel sa effektom Hiadenja",
@@ -4243,6 +4405,7 @@ export const products: Product[] = [
     id: "brahmi-amla-hair-oil-163",
     category: "cosmetics",
     priceRsd: 620,
+    image: "/images/products/brahmi-amla-hair-oil-163.webp",
     name: { sr: "Brahmi Amla Hair Oil", hu: "Brahmi Amla Hair Oil", en: "Brahmi Amla Hair Oil" },
     short: {
       sr: "Prirodna nega i kozmetika.",
@@ -4267,6 +4430,7 @@ export const products: Product[] = [
     id: "rabenhorst-ananas-164",
     category: "teas",
     priceRsd: 665,
+    image: "/images/products/rabenhorst-ananas-164.webp",
     name: { sr: "Rabenhorst Ananas", hu: "Rabenhorst Ananas", en: "Rabenhorst Ananas" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -4291,6 +4455,7 @@ export const products: Product[] = [
     id: "rabenhorst-for-the-immune-system-165",
     category: "supplements",
     priceRsd: 685,
+    image: "/images/products/rabenhorst-for-the-immune-system-165.webp",
     name: {
       sr: "Rabenhorst For the Immune System",
       hu: "Rabenhorst For the Immune System",
@@ -4319,6 +4484,7 @@ export const products: Product[] = [
     id: "rabenhorst-wheatgrass-166",
     category: "supplements",
     priceRsd: 755,
+    image: "/images/products/rabenhorst-wheatgrass-166.webp",
     name: { sr: "Rabenhorst Wheatgrass", hu: "Rabenhorst Wheatgrass", en: "Rabenhorst Wheatgrass" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4343,6 +4509,7 @@ export const products: Product[] = [
     id: "rabenhorst-cranbery-167",
     category: "supplements",
     priceRsd: 1499,
+    image: "/images/products/rabenhorst-cranbery-167.webp",
     name: { sr: "Rabenhorst Cranbery", hu: "Rabenhorst Cranbery", en: "Rabenhorst Cranbery" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4367,6 +4534,7 @@ export const products: Product[] = [
     id: "volim-jabuke-and-drena-168",
     category: "supplements",
     priceRsd: 350,
+    image: "/images/products/volim-jabuke-and-drena-168.webp",
     name: { sr: "Volim Jabuke & Drena", hu: "Volim Jabuke & Drena", en: "Volim Jabuke & Drena" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4391,6 +4559,7 @@ export const products: Product[] = [
     id: "marella-kupina-169",
     category: "supplements",
     priceRsd: 425,
+    image: "/images/products/marella-kupina-169.webp",
     name: { sr: "Marella Kupina", hu: "Marella Kupina", en: "Marella Kupina" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4415,6 +4584,7 @@ export const products: Product[] = [
     id: "marella-aronijamenta-170",
     category: "teas",
     priceRsd: 480,
+    image: "/images/products/marella-aronijamenta-170.webp",
     name: { sr: "Marella AronijaMenta", hu: "Marella AronijaMenta", en: "Marella AronijaMenta" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
@@ -4439,6 +4609,7 @@ export const products: Product[] = [
     id: "marella-limun-menta-171",
     category: "supplements",
     priceRsd: 169,
+    image: "/images/products/marella-limun-menta-171.webp",
     name: { sr: "Marella Limun Menta", hu: "Marella Limun Menta", en: "Marella Limun Menta" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4463,6 +4634,7 @@ export const products: Product[] = [
     id: "detox-morning-250ml-172",
     category: "supplements",
     priceRsd: 185,
+    image: "/images/products/detox-morning-250ml-172.webp",
     name: { sr: "Detox Morning 250ml", hu: "Detox Morning 250ml", en: "Detox Morning 250ml" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4487,6 +4659,7 @@ export const products: Product[] = [
     id: "detox-evening-250ml-173",
     category: "supplements",
     priceRsd: 185,
+    image: "/images/products/detox-evening-250ml-173.webp",
     name: { sr: "Detox Evening 250ml", hu: "Detox Evening 250ml", en: "Detox Evening 250ml" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4511,6 +4684,7 @@ export const products: Product[] = [
     id: "detox-afternoon-250ml-174",
     category: "supplements",
     priceRsd: 185,
+    image: "/images/products/detox-afternoon-250ml-174.webp",
     name: { sr: "Detox Afternoon 250ml", hu: "Detox Afternoon 250ml", en: "Detox Afternoon 250ml" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4535,6 +4709,7 @@ export const products: Product[] = [
     id: "detox-morning-750ml-175",
     category: "supplements",
     priceRsd: 450,
+    image: "/images/products/detox-morning-750ml-175.webp",
     name: { sr: "Detox Morning - 750ml", hu: "Detox Morning - 750ml", en: "Detox Morning - 750ml" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4559,6 +4734,7 @@ export const products: Product[] = [
     id: "detox-evening-750ml-176",
     category: "supplements",
     priceRsd: 450,
+    image: "/images/products/detox-evening-750ml-176.webp",
     name: { sr: "Detox Evening - 750ml", hu: "Detox Evening - 750ml", en: "Detox Evening - 750ml" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4583,6 +4759,7 @@ export const products: Product[] = [
     id: "detox-afternoon-750ml-177",
     category: "supplements",
     priceRsd: 450,
+    image: "/images/products/detox-afternoon-750ml-177.webp",
     name: {
       sr: "Detox Afternoon - 750ml",
       hu: "Detox Afternoon - 750ml",
@@ -4611,6 +4788,7 @@ export const products: Product[] = [
     id: "vegetaria-speltino-integralno-brasno-178",
     category: "food",
     priceRsd: 215,
+    image: "/images/products/vegetaria-speltino-integralno-brasno-178.webp",
     name: {
       sr: "Vegetaria Speltino integralno brasno",
       hu: "Vegetaria Speltino integralno brasno",
@@ -4639,6 +4817,7 @@ export const products: Product[] = [
     id: "speltino-meko-brasno-179",
     category: "food",
     priceRsd: 485,
+    image: "/images/products/speltino-meko-brasno-179.webp",
     name: { sr: "Speltino meko brasno", hu: "Speltino meko brasno", en: "Speltino meko brasno" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -4663,6 +4842,7 @@ export const products: Product[] = [
     id: "om-made-big-gric-cili-180",
     category: "food",
     priceRsd: 660,
+    image: "/images/products/om-made-big-gric-cili-180.webp",
     name: { sr: "Om Made Big Gric Čili", hu: "Om Made Big Gric Čili", en: "Om Made Big Gric Čili" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
@@ -4687,6 +4867,7 @@ export const products: Product[] = [
     id: "organska-maca-181",
     category: "supplements",
     priceRsd: 1340,
+    image: "/images/products/organska-maca-181.webp",
     name: { sr: "Organska MaČa", hu: "Organska MaČa", en: "Organska MaČa" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4711,6 +4892,7 @@ export const products: Product[] = [
     id: "organski-moringa-182",
     category: "supplements",
     priceRsd: 690,
+    image: "/images/products/organski-moringa-182.webp",
     name: { sr: "Organski Moringa", hu: "Organski Moringa", en: "Organski Moringa" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4735,6 +4917,7 @@ export const products: Product[] = [
     id: "organska-crna-maka-183",
     category: "supplements",
     priceRsd: 670,
+    image: "/images/products/organska-crna-maka-183.webp",
     name: { sr: "Organska crna maka", hu: "Organska crna maka", en: "Organska crna maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4759,6 +4942,7 @@ export const products: Product[] = [
     id: "organska-zlatna-maka-184",
     category: "supplements",
     priceRsd: 670,
+    image: "/images/products/organska-zlatna-maka-184.webp",
     name: { sr: "Organska zlatna maka", hu: "Organska zlatna maka", en: "Organska zlatna maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
@@ -4783,6 +4967,7 @@ export const products: Product[] = [
     id: "organska-crvena-maka-185",
     category: "supplements",
     priceRsd: 670,
+    image: "/images/products/organska-crvena-maka-185.webp",
     name: { sr: "Organska crvena maka", hu: "Organska crvena maka", en: "Organska crvena maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
