@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { StoryCounters } from "@/components/StoryCounters";
 import { STORE } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
-const shopSign = { url: "/images/shop-sign.webp" };
+const shopStorefront = { url: "/images/uzlet.webp" };
 const shopShelves = { url: "/images/shop-shelves.webp" };
 const shopCounter = { url: "/images/shop-counter.webp" };
 const shopCollage = { url: "/images/shop-logo-collage.jpg" };
@@ -59,12 +59,12 @@ function StoryPage() {
         <Reveal delay={0.1}>
           <div className="grid grid-cols-2 gap-3">
             <img
-              src={shopSign.url}
-              alt="Tabla Naturalis ispred radnje"
-              width={784}
-              height={1045}
+              src={shopStorefront.url}
+              alt="Naturalis storefront"
+              width={2048}
+              height={1536}
               loading="lazy"
-              className="row-span-2 h-full w-full rounded-3xl object-cover shadow-soft"
+              className="col-span-2 aspect-[4/3] h-full w-full rounded-3xl object-cover shadow-soft"
             />
             <img
               src={shopCounter.url}
