@@ -239,7 +239,7 @@ function Index() {
             >
               <Link
                 to="/proizvodi"
-                search={(p) => p}
+                search={(p) => ({ ...p, tag: c.id })}
                 className="group relative block aspect-[4/5] overflow-hidden rounded-3xl shadow-soft sm:aspect-[5/4]"
               >
                 <img

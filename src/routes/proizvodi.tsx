@@ -22,6 +22,7 @@ export const Route = createFileRoute("/proizvodi")({
 
 function ProductsPage() {
   const { tr } = useLang();
+  const search = Route.useSearch();
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:py-16">
       <Reveal className="grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
@@ -35,7 +36,7 @@ function ProductsPage() {
         </a>
       </Reveal>
       <div className="mt-10">
-        <ProductGrid />
+        <ProductGrid initialTag={search.tag} />
       </div>
     </div>
   );

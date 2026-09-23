@@ -6,19 +6,29 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { STORE, categories, tagLabels, type Product } from "@/data/products";
+import {
+  STORE,
+  categories,
+  getProductTags,
+  tagLabels,
+  type Product,
+  type Tag,
+} from "@/data/products";
 import { t, useLang } from "@/lib/i18n";
 import { ProductPlaceholder } from "./ProductPlaceholder";
 
 export function ProductQuickView({
   product,
   onClose,
+  onTagSelect,
 }: {
   product: Product | null;
   onClose: () => void;
+  onTagSelect?: (tag: Tag) => void;
 }) {
   const { lang, tr } = useLang();
   const cat = product ? categories.find((c) => c.id === product.category) : null;
+  const productTags = product ? getProductTags(product) : [];
   const mail = product
     ? `mailto:${STORE.email}?subject=${encodeURIComponent(`Naturalis – ${tr(product.name)}`)}&body=${encodeURIComponent(`${tr(t.products.ask)}: ${tr(product.name)}\n\n`)}`
     : "#";
@@ -58,15 +68,19 @@ export function ProductQuickView({
                 )}{" "}
                 RSD
               </p>
-              {product.tags.length > 0 && (
+              {productTags.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-1.5">
-                  {product.tags.map((tag) => (
-                    <span
+                  {productTags.map((tag) => (
+                    <button
                       key={tag}
-                      className="rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[11px] font-semibold text-white"
+                      type="button"
+                      onClick={() => onTagSelect?.(tag)}
+                      aria-label={`${tr(t.products.filterByTags)}: ${tr(tagLabels[tag])}`}
+                      disabled={!onTagSelect}
+                      className="rounded-full border border-white/15 bg-white/10 px-2.5 py-1 text-[11px] font-semibold text-white transition-transform hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white disabled:cursor-default disabled:hover:scale-100"
                     >
                       {tr(tagLabels[tag])}
-                    </span>
+                    </button>
                   ))}
                 </div>
               )}

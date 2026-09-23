@@ -1,35 +1,54 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowDown, ArrowUp, Heart } from "lucide-react";
 import { ProductCard } from "./ProductCard";
 import { ProductQuickView } from "./ProductQuickView";
-import { categories, products, type CategoryId, type Product } from "@/data/products";
+import {
+  getProductTags,
+  products,
+  tagLabels,
+  tagOrder,
+  type Product,
+  type Tag,
+} from "@/data/products";
 import { t, useLang } from "@/lib/i18n";
 import { useFavorites } from "@/lib/useFavorites";
 import { cn } from "@/lib/utils";
 
-type Filter = "all" | "fav" | CategoryId;
+type Filter = "all" | "fav" | Tag;
 type Sort = "default" | "lowest" | "highest";
 
 export function ProductGrid({
   items = products,
   showFilters = true,
+  initialTag,
 }: {
   items?: Product[];
   showFilters?: boolean;
+  initialTag?: Tag;
 }) {
   const { tr } = useLang();
   const favs = useFavorites();
-  const [filter, setFilter] = useState<Filter>("all");
+  const [filter, setFilter] = useState<Filter>(initialTag ?? "all");
   const [sort, setSort] = useState<Sort>("default");
   const [open, setOpen] = useState<Product | null>(null);
+
+  const availableTags = tagOrder.filter((tag) =>
+    items.some((product) => getProductTags(product).includes(tag)),
+  );
+
+  useEffect(() => {
+    if (initialTag) setFilter(initialTag);
+  }, [initialTag]);
+
+  const setTagFilter = (next: Filter) => setFilter(next);
 
   const filtered =
     filter === "all"
       ? items
       : filter === "fav"
         ? items.filter((p) => favs.has(p.id))
-        : items.filter((p) => p.category === filter);
+        : items.filter((p) => getProductTags(p).includes(filter));
 
   const visible =
     sort === "default"
@@ -50,30 +69,35 @@ export function ProductGrid({
     <div>
       {showFilters && (
         <div className="mb-8 space-y-4">
-          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
+          <div
+            className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0"
+            role="group"
+            aria-label={tr(t.products.filterByTags)}
+          >
             <button
               type="button"
               className={pill(filter === "all")}
-              onClick={() => setFilter("all")}
+              aria-pressed={filter === "all"}
+              onClick={() => setTagFilter("all")}
             >
               {tr(t.products.all)}
             </button>
-            {categories
-              .filter((c) => c.id !== "eco")
-              .map((c) => (
-                <button
-                  key={c.id}
-                  type="button"
-                  className={pill(filter === c.id)}
-                  onClick={() => setFilter(c.id)}
-                >
-                  {tr(c.label)}
-                </button>
-              ))}
+            {availableTags.map((tag) => (
+              <button
+                key={tag}
+                type="button"
+                aria-pressed={filter === tag}
+                className={pill(filter === tag)}
+                onClick={() => setTagFilter(tag)}
+              >
+                {tr(tagLabels[tag])}
+              </button>
+            ))}
             <button
               type="button"
               className={cn(pill(filter === "fav"), "inline-flex items-center gap-1.5")}
-              onClick={() => setFilter("fav")}
+              aria-pressed={filter === "fav"}
+              onClick={() => setTagFilter("fav")}
             >
               <Heart
                 className={cn("h-3.5 w-3.5", favs.ids.length > 0 && "fill-accent text-accent")}
@@ -142,13 +166,25 @@ export function ProductGrid({
                 fav={favs.has(p.id)}
                 onFav={() => favs.toggle(p.id)}
                 onOpen={() => setOpen(p)}
+                onTagSelect={showFilters ? setTagFilter : undefined}
               />
             ))}
           </AnimatePresence>
         </div>
       )}
 
-      <ProductQuickView product={open} onClose={() => setOpen(null)} />
+      <ProductQuickView
+        product={open}
+        onClose={() => setOpen(null)}
+        onTagSelect={
+          showFilters
+            ? (tag) => {
+                setTagFilter(tag);
+                setOpen(null);
+              }
+            : undefined
+        }
+      />
     </div>
   );
 }

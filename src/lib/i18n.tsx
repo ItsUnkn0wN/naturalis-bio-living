@@ -146,6 +146,11 @@ export const t = {
       en: "Browse the products, prices and categories. Bulk products have their own section; stock changes, so call or visit us to confirm availability.",
     },
     all: { sr: "Sve", hu: "Összes", en: "All" },
+    filterByTags: {
+      sr: "Filtriraj po oznakama",
+      hu: "Szűrés címkék szerint",
+      en: "Filter by tags",
+    },
     bulk: { sr: "Kimérős termékek", hu: "Kimérős termékek", en: "Bulk products" },
     sort: { sr: "Sortiraj po ceni", hu: "Rendezés ár szerint", en: "Sort by price" },
     lowestPrice: { sr: "Najniža cena", hu: "Legalacsonyabb ár", en: "Lowest price" },

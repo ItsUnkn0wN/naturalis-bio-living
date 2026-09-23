@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LangProvider, isLang, type Lang } from "@/lib/i18n";
+import { isTag, type Tag } from "@/data/products";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ThemeProvider } from "@/components/ThemeToggle";
@@ -74,9 +75,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  validateSearch: (s: Record<string, unknown>): { lang?: Lang } => {
+  validateSearch: (s: Record<string, unknown>): { lang?: Lang; tag?: Tag } => {
     const l = s["lang"];
-    return isLang(l) ? { lang: l } : {};
+    const tag = s["tag"];
+    return {
+      ...(isLang(l) ? { lang: l } : {}),
+      ...(isTag(tag) ? { tag } : {}),
+    };
   },
   head: () => ({
     meta: [

@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 import { motion } from "motion/react";
-import { tagLabels, type Product } from "@/data/products";
+import { getProductTags, tagLabels, type Product, type Tag } from "@/data/products";
 import { t, useLang } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import { ProductPlaceholder } from "./ProductPlaceholder";
@@ -10,13 +10,16 @@ export function ProductCard({
   fav,
   onFav,
   onOpen,
+  onTagSelect,
 }: {
   product: Product;
   fav: boolean;
   onFav: () => void;
   onOpen: () => void;
+  onTagSelect?: (tag: Tag) => void;
 }) {
   const { lang, tr } = useLang();
+  const productTags = getProductTags(product);
   return (
     <motion.article
       layout
@@ -25,37 +28,44 @@ export function ProductCard({
       exit={{ opacity: 0, scale: 0.97 }}
       className="group relative flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-soft transition-shadow hover:shadow-lift"
     >
-      <button
-        type="button"
-        onClick={onOpen}
-        className="relative block aspect-square overflow-hidden text-left"
-      >
-        {product.image ? (
-          <img
-            src={product.image}
-            alt={tr(product.name)}
-            width={816}
-            height={816}
-            loading="lazy"
-            className="h-full w-full object-contain object-center bg-white/35 p-4 transition-transform duration-700 group-hover:scale-[1.03] dark:bg-black/10"
-          />
-        ) : (
-          <ProductPlaceholder category={product.category} />
-        )}
+      <div className="relative aspect-square overflow-hidden">
+        <button
+          type="button"
+          onClick={onOpen}
+          aria-label={`${tr(t.products.quickView)}: ${tr(product.name)}`}
+          className="block h-full w-full text-left"
+        >
+          {product.image ? (
+            <img
+              src={product.image}
+              alt={tr(product.name)}
+              width={816}
+              height={816}
+              loading="lazy"
+              className="h-full w-full object-contain object-center bg-white/35 p-4 transition-transform duration-700 group-hover:scale-[1.03] dark:bg-black/10"
+            />
+          ) : (
+            <ProductPlaceholder category={product.category} />
+          )}
+        </button>
         <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
-          {product.tags.map((tag) => (
-            <span
+          {productTags.map((tag) => (
+            <button
               key={tag}
+              type="button"
+              onClick={() => onTagSelect?.(tag)}
+              aria-label={`${tr(t.products.filterByTags)}: ${tr(tagLabels[tag])}`}
+              disabled={!onTagSelect}
               className={cn(
-                "rounded-full px-2.5 py-1 text-[11px] font-semibold backdrop-blur",
+                "rounded-full px-2.5 py-1 text-[11px] font-semibold backdrop-blur transition-transform hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-default disabled:hover:scale-100",
                 tag === "new" ? "bg-accent text-accent-foreground" : "bg-sand/85 text-foreground",
               )}
             >
               {tr(tagLabels[tag])}
-            </span>
+            </button>
           ))}
         </div>
-      </button>
+      </div>
       <button
         type="button"
         onClick={onFav}
