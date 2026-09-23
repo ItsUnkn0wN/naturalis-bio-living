@@ -27,25 +27,25 @@ export const t = {
   cookies: {
     eyebrow: { sr: "Vaša privatnost", hu: "Az Ön adatvédelme", en: "Your privacy" },
     title: {
-      sr: "Kolačići, po vašoj meri",
-      hu: "Sütik, az Ön választása szerint",
-      en: "Cookies, your choice",
+      sr: "Lokalno čuvanje, po vašoj meri",
+      hu: "Helyi tárolás, az Ön választása szerint",
+      en: "Local storage, your choice",
     },
     description: {
-      sr: "Neophodni kolačići omogućavaju da sajt radi. Ostale koristimo samo uz vašu dozvolu.",
-      hu: "A szükséges sütik biztosítják az oldal működését. A többit csak az Ön engedélyével használjuk.",
-      en: "Required cookies keep the site working. We only use the others with your permission.",
+      sr: "Sajt koristi lokalno čuvanje za jezik, temu, sačuvane proizvode i ovaj izbor. Ne koristimo analitiku ni marketing.",
+      hu: "A weboldal helyi tárolást használ a nyelvhez, témához, mentett termékekhez és ehhez a választáshoz. Nem használunk analitikát vagy marketinget.",
+      en: "The site uses local storage for language, theme, saved products and this choice. We do not use analytics or marketing.",
     },
     details: {
       sr: "Pogledajte šta prihvatate",
       hu: "Nézze meg, mit fogad el",
       en: "See what you accept",
     },
-    required: { sr: "Neophodni", hu: "Szükséges", en: "Required" },
+    required: { sr: "Osnovno funkcionisanje", hu: "Alapműködés", en: "Basic operation" },
     requiredInfo: {
-      sr: "Pamte jezik, temu i vaš izbor kolačića. Uvek su uključeni.",
-      hu: "Megjegyzik a nyelvet, a témát és a sütiválasztást. Mindig aktívak.",
-      en: "Remember language, theme and cookie choice. Always active.",
+      sr: "Stranica može da se učita i bez ovog lokalnog čuvanja, ali se izbori tada neće pamtiti.",
+      hu: "Az oldal e helyi tárolás nélkül is betöltődik, de a választások nem maradnak meg.",
+      en: "The page can load without this local storage, but choices will not persist.",
     },
     preferences: { sr: "Podešavanja", hu: "Beállítások", en: "Preferences" },
     preferencesInfo: {
@@ -53,14 +53,16 @@ export const t = {
       hu: "Megjegyzik a mentett termékeket és az oldalon végzett választásait.",
       en: "Remember saved products and choices you make on the site.",
     },
-    analytics: { sr: "Analitika", hu: "Analitika", en: "Analytics" },
-    analyticsInfo: {
-      sr: "Pomaže nam da razumemo koje stranice posetioci koriste.",
-      hu: "Segít megérteni, mely oldalakat használják a látogatók.",
-      en: "Helps us understand which pages visitors use.",
+    acceptAll: {
+      sr: "Dozvoli funkcionalno čuvanje",
+      hu: "Funkcionális tárolás engedélyezése",
+      en: "Allow functional storage",
     },
-    acceptAll: { sr: "Prihvati sve", hu: "Összes elfogadása", en: "Accept all" },
-    requiredOnly: { sr: "Samo neophodni", hu: "Csak szükséges", en: "Required only" },
+    requiredOnly: {
+      sr: "Bez lokalnog čuvanja",
+      hu: "Helyi tárolás nélkül",
+      en: "No local storage",
+    },
     saveSelection: { sr: "Sačuvaj izbor", hu: "Választás mentése", en: "Save selection" },
   },
   hero: {
@@ -290,6 +292,16 @@ export const t = {
       hu: "Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš",
       en: "Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš",
     },
+  },
+  legal: {
+    sectionLabel: { sr: "Pravne stranice", hu: "Jogi oldalak", en: "Legal pages" },
+    backHome: { sr: "Nazad na početnu", hu: "Vissza a kezdőlapra", en: "Back to home" },
+    pageNavigation: {
+      sr: "Navigacija pravnih stranica",
+      hu: "Jogi oldalak navigációja",
+      en: "Legal page navigation",
+    },
+    lastUpdated: { sr: "Veb verzija", hu: "Webes verzió", en: "Web version" },
   },
   seo: {
     home: {

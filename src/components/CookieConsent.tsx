@@ -10,7 +10,6 @@ const CONSENT_KEY = "naturalis-cookie-consent";
 type Consent = {
   required: true;
   preferences: boolean;
-  analytics: boolean;
 };
 
 export function CookieConsent() {
@@ -18,7 +17,6 @@ export function CookieConsent() {
   const [visible, setVisible] = useState(false);
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [preferences, setPreferences] = useState(true);
-  const [analytics, setAnalytics] = useState(true);
 
   useEffect(() => {
     setVisible(localStorage.getItem(CONSENT_KEY) === null);
@@ -50,7 +48,9 @@ export function CookieConsent() {
           </div>
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{tr(t.cookies.description)}</p>
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+          {tr(t.cookies.description)}
+        </p>
 
         <button
           type="button"
@@ -59,31 +59,51 @@ export function CookieConsent() {
           className="mt-3 flex w-full items-center justify-between border-y border-border/70 py-2.5 text-left text-sm font-semibold text-foreground"
         >
           {tr(t.cookies.details)}
-          <ChevronDown className={cn("h-4 w-4 transition-transform", detailsOpen && "rotate-180")} aria-hidden="true" />
+          <ChevronDown
+            className={cn("h-4 w-4 transition-transform", detailsOpen && "rotate-180")}
+            aria-hidden="true"
+          />
         </button>
 
         {detailsOpen && (
           <div className="space-y-3 border-b border-border/70 py-3">
-            <ConsentRow label={tr(t.cookies.required)} description={tr(t.cookies.requiredInfo)} checked disabled onChange={() => undefined} />
-            <ConsentRow label={tr(t.cookies.preferences)} description={tr(t.cookies.preferencesInfo)} checked={preferences} onChange={setPreferences} />
-            <ConsentRow label={tr(t.cookies.analytics)} description={tr(t.cookies.analyticsInfo)} checked={analytics} onChange={setAnalytics} />
+            <ConsentRow
+              label={tr(t.cookies.required)}
+              description={tr(t.cookies.requiredInfo)}
+              checked
+              disabled
+              onChange={() => undefined}
+            />
+            <ConsentRow
+              label={tr(t.cookies.preferences)}
+              description={tr(t.cookies.preferencesInfo)}
+              checked={preferences}
+              onChange={setPreferences}
+            />
           </div>
         )}
 
         <div className="mt-4 grid gap-2 sm:grid-cols-2">
-          <Button className="h-11 rounded-full" onClick={() => save({ required: true, preferences: true, analytics: true })}>
+          <Button
+            className="h-11 rounded-full"
+            onClick={() => save({ required: true, preferences: true })}
+          >
             {tr(t.cookies.acceptAll)}
           </Button>
-          <Button variant="outline" className="h-11 rounded-full bg-card/60" onClick={() => save({ required: true, preferences: false, analytics: false })}>
+          <Button
+            variant="outline"
+            className="h-11 rounded-full bg-card/60"
+            onClick={() => save({ required: true, preferences: false })}
+          >
             {tr(t.cookies.requiredOnly)}
           </Button>
         </div>
 
-        {detailsOpen && (preferences !== true || analytics !== true) && (
+        {detailsOpen && preferences !== true && (
           <Button
             variant="ghost"
             className="mt-2 h-9 w-full rounded-full text-primary"
-            onClick={() => save({ required: true, preferences, analytics })}
+            onClick={() => save({ required: true, preferences })}
           >
             <Check className="h-4 w-4" aria-hidden="true" />
             {tr(t.cookies.saveSelection)}

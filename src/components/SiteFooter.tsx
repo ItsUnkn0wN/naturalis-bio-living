@@ -3,6 +3,8 @@ import { Facebook, Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "./Logo";
 import { t, useLang } from "@/lib/i18n";
 import { STORE, fmtHours } from "@/data/products";
+import { legalNav } from "@/data/legal";
+import { legalPath } from "./LegalPage";
 
 export function SiteFooter() {
   const { tr, lang } = useLang();
@@ -70,6 +72,22 @@ export function SiteFooter() {
                 {tr(t.nav.contact)}
               </Link>
             </li>
+          </ul>
+          <h3 className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+            {tr(t.legal.sectionLabel)}
+          </h3>
+          <ul className="mt-3 space-y-2 text-sm">
+            {legalNav.map((item) => (
+              <li key={item.id}>
+                <Link
+                  to={legalPath(item.id) as never}
+                  search={(p) => p}
+                  className="hover:text-primary"
+                >
+                  {tr(item.label)}
+                </Link>
+              </li>
+            ))}
           </ul>
           <h3 className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             {tr(t.contact.hours)}

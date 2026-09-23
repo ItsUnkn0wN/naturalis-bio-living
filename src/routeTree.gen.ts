@@ -10,18 +10,43 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as KontaktRouteImport } from './routes/kontakt'
+import { Route as PolitikaKolacicaRouteImport } from './routes/politika-kolacica'
+import { Route as PolitikaPrivatnostiRouteImport } from './routes/politika-privatnosti'
+import { Route as PravnoObavestenjeRouteImport } from './routes/pravno-obavestenje'
 import { Route as PricaRouteImport } from './routes/prica'
 import { Route as ProizvodiRouteImport } from './routes/proizvodi'
+import { Route as UsloviKoriscenjaRouteImport } from './routes/uslovi-koriscenja'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ImpressumRoute = ImpressumRouteImport.update({
+  id: '/impressum',
+  path: '/impressum',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const KontaktRoute = KontaktRouteImport.update({
   id: '/kontakt',
   path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaKolacicaRoute = PolitikaKolacicaRouteImport.update({
+  id: '/politika-kolacica',
+  path: '/politika-kolacica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PolitikaPrivatnostiRoute = PolitikaPrivatnostiRouteImport.update({
+  id: '/politika-privatnosti',
+  path: '/politika-privatnosti',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PravnoObavestenjeRoute = PravnoObavestenjeRouteImport.update({
+  id: '/pravno-obavestenje',
+  path: '/pravno-obavestenje',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PricaRoute = PricaRouteImport.update({
@@ -34,39 +59,92 @@ const ProizvodiRoute = ProizvodiRouteImport.update({
   path: '/proizvodi',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UsloviKoriscenjaRoute = UsloviKoriscenjaRouteImport.update({
+  id: '/uslovi-koriscenja',
+  path: '/uslovi-koriscenja',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/pravno-obavestenje': typeof PravnoObavestenjeRoute
   '/prica': typeof PricaRoute
   '/proizvodi': typeof ProizvodiRoute
+  '/uslovi-koriscenja': typeof UsloviKoriscenjaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/pravno-obavestenje': typeof PravnoObavestenjeRoute
   '/prica': typeof PricaRoute
   '/proizvodi': typeof ProizvodiRoute
+  '/uslovi-koriscenja': typeof UsloviKoriscenjaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/impressum': typeof ImpressumRoute
   '/kontakt': typeof KontaktRoute
+  '/politika-kolacica': typeof PolitikaKolacicaRoute
+  '/politika-privatnosti': typeof PolitikaPrivatnostiRoute
+  '/pravno-obavestenje': typeof PravnoObavestenjeRoute
   '/prica': typeof PricaRoute
   '/proizvodi': typeof ProizvodiRoute
+  '/uslovi-koriscenja': typeof UsloviKoriscenjaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/kontakt' | '/prica' | '/proizvodi'
+  fullPaths:
+    | '/'
+    | '/impressum'
+    | '/kontakt'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/pravno-obavestenje'
+    | '/prica'
+    | '/proizvodi'
+    | '/uslovi-koriscenja'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/kontakt' | '/prica' | '/proizvodi'
-  id: '__root__' | '/' | '/kontakt' | '/prica' | '/proizvodi'
+  to:
+    | '/'
+    | '/impressum'
+    | '/kontakt'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/pravno-obavestenje'
+    | '/prica'
+    | '/proizvodi'
+    | '/uslovi-koriscenja'
+  id:
+    | '__root__'
+    | '/'
+    | '/impressum'
+    | '/kontakt'
+    | '/politika-kolacica'
+    | '/politika-privatnosti'
+    | '/pravno-obavestenje'
+    | '/prica'
+    | '/proizvodi'
+    | '/uslovi-koriscenja'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ImpressumRoute: typeof ImpressumRoute
   KontaktRoute: typeof KontaktRoute
+  PolitikaKolacicaRoute: typeof PolitikaKolacicaRoute
+  PolitikaPrivatnostiRoute: typeof PolitikaPrivatnostiRoute
+  PravnoObavestenjeRoute: typeof PravnoObavestenjeRoute
   PricaRoute: typeof PricaRoute
   ProizvodiRoute: typeof ProizvodiRoute
+  UsloviKoriscenjaRoute: typeof UsloviKoriscenjaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -78,11 +156,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/impressum': {
+      id: '/impressum'
+      path: '/impressum'
+      fullPath: '/impressum'
+      preLoaderRoute: typeof ImpressumRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/kontakt': {
       id: '/kontakt'
       path: '/kontakt'
       fullPath: '/kontakt'
       preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-kolacica': {
+      id: '/politika-kolacica'
+      path: '/politika-kolacica'
+      fullPath: '/politika-kolacica'
+      preLoaderRoute: typeof PolitikaKolacicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politika-privatnosti': {
+      id: '/politika-privatnosti'
+      path: '/politika-privatnosti'
+      fullPath: '/politika-privatnosti'
+      preLoaderRoute: typeof PolitikaPrivatnostiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pravno-obavestenje': {
+      id: '/pravno-obavestenje'
+      path: '/pravno-obavestenje'
+      fullPath: '/pravno-obavestenje'
+      preLoaderRoute: typeof PravnoObavestenjeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/prica': {
@@ -99,14 +205,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProizvodiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/uslovi-koriscenja': {
+      id: '/uslovi-koriscenja'
+      path: '/uslovi-koriscenja'
+      fullPath: '/uslovi-koriscenja'
+      preLoaderRoute: typeof UsloviKoriscenjaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ImpressumRoute: ImpressumRoute,
   KontaktRoute: KontaktRoute,
+  PolitikaKolacicaRoute: PolitikaKolacicaRoute,
+  PolitikaPrivatnostiRoute: PolitikaPrivatnostiRoute,
+  PravnoObavestenjeRoute: PravnoObavestenjeRoute,
   PricaRoute: PricaRoute,
   ProizvodiRoute: ProizvodiRoute,
+  UsloviKoriscenjaRoute: UsloviKoriscenjaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
