@@ -88,9 +88,9 @@ export function ProductGrid({
           </div>
           <motion.div
             layout
-            className="flex flex-wrap items-center gap-2 rounded-2xl border border-border/70 bg-card/50 p-2 shadow-sm"
+            className="grid gap-2 rounded-2xl border border-border/70 bg-card/50 p-2.5 shadow-sm sm:flex sm:flex-wrap sm:items-center"
           >
-            <span className="px-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+            <span className="px-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-muted-foreground sm:px-2 sm:text-xs">
               {tr(t.products.sort)}
             </span>
             <button
@@ -98,7 +98,7 @@ export function ProductGrid({
               aria-pressed={sort === "lowest"}
               className={cn(
                 pill(sort === "lowest"),
-                "inline-flex items-center gap-1.5 px-3 py-1.5 text-xs",
+                "inline-flex min-h-10 w-full items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:w-auto",
               )}
               onClick={() => setSort(sort === "lowest" ? "default" : "lowest")}
             >
@@ -109,7 +109,7 @@ export function ProductGrid({
               aria-pressed={sort === "highest"}
               className={cn(
                 pill(sort === "highest"),
-                "inline-flex items-center gap-1.5 px-3 py-1.5 text-xs",
+                "inline-flex min-h-10 w-full items-center justify-center gap-1.5 px-3 py-1.5 text-xs sm:w-auto",
               )}
               onClick={() => setSort(sort === "highest" ? "default" : "highest")}
             >
@@ -118,7 +118,7 @@ export function ProductGrid({
             {sort !== "default" && (
               <button
                 type="button"
-                className="px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="min-h-9 px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground sm:w-auto"
                 onClick={() => setSort("default")}
               >
                 {tr(t.products.sortDefault)}
