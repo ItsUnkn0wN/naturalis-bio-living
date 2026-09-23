@@ -34,7 +34,7 @@ export function ProductQuickView({
                 alt={tr(product.name)}
                 width={816}
                 height={816}
-                className="aspect-[4/3] h-full w-full bg-sage-soft object-contain p-8 sm:aspect-[5/4] lg:aspect-auto lg:min-h-[38rem]"
+                className="aspect-[4/3] h-full w-full bg-sage-soft object-contain object-center p-8 sm:aspect-[5/4] lg:aspect-auto lg:min-h-[38rem]"
               />
             ) : (
               <div className="aspect-[4/3] sm:aspect-[5/4] lg:min-h-[38rem] lg:rounded-l-[2rem]">
