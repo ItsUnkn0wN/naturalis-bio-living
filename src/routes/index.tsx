@@ -141,37 +141,37 @@ function Index() {
             />
           ))}
         </div>
-        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
+        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-8 px-4 pb-10 pt-6 sm:gap-10 sm:px-6 sm:pb-16 sm:pt-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:gap-12 lg:pt-16 xl:gap-16">
           <motion.div
             data-hero-grid="fixed"
-            className="min-w-0 rounded-[2rem] glass p-7 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14"
+            className="min-w-0 rounded-[2rem] glass p-5 shadow-soft sm:p-10 lg:flex lg:h-[48rem] lg:min-h-0 lg:flex-col lg:justify-center lg:p-12 xl:p-14"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-display text-5xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
+            <h1 className="font-display text-4xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
               {tr(t.hero.title)}
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-[1.65] text-foreground/80 sm:mt-9 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">
+            <p className="mt-5 max-w-2xl text-base leading-[1.55] text-foreground/80 sm:mt-9 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">
               {tr(t.hero.sub)}
             </p>
-            <div className="mt-11 flex flex-wrap items-center gap-4">
+            <div className="mt-7 flex flex-wrap items-center gap-3 sm:mt-11 sm:gap-4">
               <Link
                 to="/proizvodi"
                 search={(p) => p}
-                className="relative z-10 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-4 text-base font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                className="relative z-10 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:px-7 sm:py-4 sm:text-base"
               >
                 {tr(t.hero.cta)} <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href={`tel:${STORE.phoneTel}`}
-                className="relative z-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/70 px-7 py-4 text-base font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                className="relative z-10 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-card/70 px-5 py-3 text-sm font-semibold text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:px-7 sm:py-4 sm:text-base"
               >
                 <Phone className="h-4 w-4" /> {tr(t.hero.call)}
               </a>
             </div>
             {status && (
-              <p className="mt-9 flex items-center gap-2 text-base font-medium text-primary">
+              <p className="mt-5 flex items-center gap-2 text-sm font-medium text-primary sm:mt-9 sm:text-base">
                 <span
                   className={`h-2 w-2 rounded-full ${status.kind === "open" ? "bg-sage animate-pulse" : "bg-muted-foreground"}`}
                 />

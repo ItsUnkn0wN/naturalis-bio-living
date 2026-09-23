@@ -40,12 +40,12 @@ export const legalPages: Record<LegalPageId, LegalPage> = {
           p("Trgovački naziv: Naturalis", "Kereskedelmi név: Naturalis", "Trading name: Naturalis"),
           p(
             "Odgovorno lice navedeno u projektu: Róbert Lénárt",
-            "A projektben megnevezett felelős személy: Róbert Lénárt",
+            "Megnevezett felelős személy: Róbert Lénárt",
             "Responsible person recorded in the project: Róbert Lénárt",
           ),
           p(
             "Godina početka rada navedena u projektu: 2009.",
-            "A projektben szereplő kezdési év: 2009.",
+            "Kezdési év 2009",
             "Year of commencement recorded in the project: 2009.",
           ),
         ],

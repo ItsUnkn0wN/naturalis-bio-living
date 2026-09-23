@@ -5,7 +5,6 @@ import {
   Droplets,
   Flame,
   Heart,
-  Home,
   Leaf,
   Phone,
   RotateCcw,
@@ -32,7 +31,6 @@ const goals: { id: Goal; icon: LucideIcon }[] = [
   { id: "energy", icon: Flame },
   { id: "skin", icon: Heart },
   { id: "glutenfree", icon: Sprout },
-  { id: "eco", icon: Home },
 ];
 
 export function BioMatchQuiz() {
@@ -111,7 +109,7 @@ export function BioMatchQuiz() {
                   exit={{ opacity: 0, x: -20 }}
                 >
                   <h3 className="font-display text-xl">{tr(t.quiz.q2)}</h3>
-                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     {goals.map(({ id, icon: Icon }) => (
                       <button
                         key={id}

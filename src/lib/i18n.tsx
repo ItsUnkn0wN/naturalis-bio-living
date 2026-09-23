@@ -121,7 +121,7 @@ export const t = {
         hu: "Olajokat, cseppeket, étrend-kiegészítőket",
         en: "Oils, drops & supplements",
       },
-      care: { sr: "Negu i eko dom", hu: "Ápolást és öko otthont", en: "Care & eco home" },
+      care: { sr: "Negu i eko dom", hu: "Ápolást", en: "Care" },
     },
     goals: {
       immunity: { sr: "Jači imunitet", hu: "Erősebb immunrendszer", en: "Stronger immunity" },
@@ -129,11 +129,6 @@ export const t = {
       energy: { sr: "Više energije", hu: "Több energia", en: "More energy" },
       skin: { sr: "Lepa koža", hu: "Szép bőr", en: "Healthy skin" },
       glutenfree: { sr: "Život bez glutena", hu: "Gluténmentes élet", en: "Gluten-free living" },
-      eco: {
-        sr: "Čist dom bez hemije",
-        hu: "Tiszta otthon vegyszer nélkül",
-        en: "A chemical-free home",
-      },
     },
   },
   products: {
@@ -183,7 +178,7 @@ export const t = {
   },
   reviews: {
     eyebrow: { sr: "Utisci kupaca", hu: "Vásárlói vélemények", en: "Customer reviews" },
-    title: { sr: "Reči naših kupaca", hu: "Vásárlóink szavai", en: "What our customers say" },
+    title: { sr: "Reči naših kupca", hu: "Vásárlóink szavai", en: "What our customers say" },
     ariaLabel: { sr: "Recenzije kupaca", hu: "Vásárlói vélemények", en: "Customer reviews" },
   },
   story: {
@@ -281,7 +276,7 @@ export const t = {
   },
   footer: {
     blurb: {
-      sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu. Inspirisano prirodom od 2009.",
+      sr: "Bio prodavnica u Malom Iđošu: ulja, čajevi, zdrava hrana i prirodna kozmetika od 2009.",
       hu: "Természetes és bio termékek boltja Kishegyesen. A természet ihlette, 2009 óta.",
       en: "Natural and bio products shop in Mali Iđoš. Inspired by nature since 2009.",
     },
@@ -311,7 +306,7 @@ export const t = {
         en: "Naturalis Mali Iđoš – bio & natural products",
       },
       desc: {
-        sr: "Prodavnica prirodnih i bio proizvoda u Malom Iđošu od 2009: hladno ceđena ulja, biljne kapi, čajevi, bezglutenska hrana, suplementi i prirodna kozmetika.",
+        sr: "Bio prodavnica u Malom Iđošu: hladno ceđena ulja, čajevi, zdrava hrana i prirodna kozmetika. Stručan savet od 2009.",
         hu: "Természetes és bio termékek boltja Kishegyesen 2009 óta: hidegen sajtolt olajok, gyógynövénycseppek, teák, gluténmentes élelmiszer, étrend-kiegészítők és természetes kozmetikumok.",
         en: "Natural and bio products shop in Mali Iđoš since 2009: cold-pressed oils, herbal drops, teas, gluten-free food, supplements and natural cosmetics.",
       },

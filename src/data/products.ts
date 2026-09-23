@@ -365,7 +365,7 @@ export const products: Product[] = [
     priceRsd: 490,
     image: "/images/products/magne-d-oro-b-complex-10.webp",
     name: {
-      sr: "Magne D'Oro B- Complex",
+      sr: "Magne D'Oro B-kompleks",
       hu: "Magne D'Oro B- Complex",
       en: "Magne D'Oro B- Complex",
     },
@@ -1042,7 +1042,7 @@ export const products: Product[] = [
     priceRsd: 1390,
     image: "/images/products/nutriversum-vitaminb-complex-36.webp",
     name: {
-      sr: "Nutriversum VitaminB Complex",
+      sr: "Nutriversum Vitamin B kompleks",
       hu: "Nutriversum VitaminB Complex",
       en: "Nutriversum VitaminB Complex",
     },
@@ -1199,7 +1199,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 1950,
     image: "/images/products/haya-l-theanie-42.webp",
-    name: { sr: "Haya L-Theanie", hu: "Haya L-Theanie", en: "Haya L-Theanie" },
+    name: { sr: "Haya L-teanin", hu: "Haya L-Theanie", en: "Haya L-Theanie" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -1695,7 +1695,7 @@ export const products: Product[] = [
     priceRsd: 940,
     image: "/images/products/stara-planinska-riznica-eliksir-kapi-61.webp",
     name: {
-      sr: "Stara Planinska Riznica Eliksir kapi",
+      sr: "Stara Planinska Riznica eliksir kapi",
       hu: "Stara Planinska Riznica Eliksir kapi",
       en: "Stara Planinska Riznica Eliksir kapi",
     },
@@ -2111,7 +2111,7 @@ export const products: Product[] = [
     priceRsd: 465,
     image: "/images/products/granumfood-ulje-od-repice-77.webp",
     name: {
-      sr: "GranumFood Ulje od Repice",
+      sr: "GranumFood Ulje od repice",
       hu: "GranumFood Ulje od Repice",
       en: "GranumFood Ulje od Repice",
     },
@@ -2139,7 +2139,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 1360,
     image: "/images/products/linum-oraha-78.webp",
-    name: { sr: "Linum Oraha", hu: "Linum Oraha", en: "Linum Oraha" },
+    name: { sr: "Linum Ulje od oraha", hu: "Linum Oraha", en: "Linum Oraha" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -2164,7 +2164,7 @@ export const products: Product[] = [
     category: "oils",
     priceRsd: 620,
     image: "/images/products/palmino-ulje-79.webp",
-    name: { sr: "Palmino Ulje", hu: "Palmino Ulje", en: "Palmino Ulje" },
+    name: { sr: "Palmino ulje", hu: "Palmino Ulje", en: "Palmino Ulje" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
       hu: "Proizvod iz ponude ulja i biljnih preparata.",
@@ -2190,7 +2190,7 @@ export const products: Product[] = [
     priceRsd: 395,
     image: "/images/products/granumfood-balzamiko-sirce-od-nara-80.webp",
     name: {
-      sr: "GranumFood Balzamiko Sirce od nara",
+      sr: "GranumFood Balzamiko sirće od nara",
       hu: "GranumFood Balzamiko Sirce od nara",
       en: "GranumFood Balzamiko Sirce od nara",
     },
@@ -2219,7 +2219,7 @@ export const products: Product[] = [
     priceRsd: 525,
     image: "/images/products/monari-federzoni-aceto-balsamico-di-modena-igp-81.webp",
     name: {
-      sr: "Monari Federzoni Aceto Balsamico Di Modena IGP",
+      sr: "Monari Federzoni Aceto Balsamico di Modena IGP",
       hu: "Monari Federzoni Aceto Balsamico Di Modena IGP",
       en: "Monari Federzoni Aceto Balsamico Di Modena IGP",
     },
@@ -2247,7 +2247,7 @@ export const products: Product[] = [
     category: "oils",
     priceRsd: 499,
     image: "/images/products/heinz-soja-sauce-82.webp",
-    name: { sr: "Heinz Soja Sauce", hu: "Heinz Soja Sauce", en: "Heinz Soja Sauce" },
+    name: { sr: "Heinz soja sos", hu: "Heinz Soja Sauce", en: "Heinz Soja Sauce" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
       hu: "Proizvod iz ponude ulja i biljnih preparata.",
@@ -2273,7 +2273,7 @@ export const products: Product[] = [
     priceRsd: 1320,
     image: "/images/products/granumfood-ulje-semena-grozda-83.webp",
     name: {
-      sr: "GranumFood Ulje Semena Grozda",
+      sr: "GranumFood Ulje od semenki grožđa",
       hu: "GranumFood Ulje Semena Grozda",
       en: "GranumFood Ulje Semena Grozda",
     },
@@ -2302,7 +2302,7 @@ export const products: Product[] = [
     priceRsd: 1350,
     image: "/images/products/il-capitano-ulje-od-kostice-grozda-84.webp",
     name: {
-      sr: "Il Capitano Ulje od Kostice Grozda",
+      sr: "Il Capitano Ulje od koštice grožđa",
       hu: "Il Capitano Ulje od Kostice Grozda",
       en: "Il Capitano Ulje od Kostice Grozda",
     },
@@ -2418,7 +2418,7 @@ export const products: Product[] = [
     priceRsd: 585,
     image: "/images/products/panonsko-sunflower-seed-oil-88.webp",
     name: {
-      sr: "Panonsko Sunflower Seed Oil",
+      sr: "Panonsko suncokretovo ulje",
       hu: "Panonsko Sunflower Seed Oil",
       en: "Panonsko Sunflower Seed Oil",
     },
@@ -2446,7 +2446,7 @@ export const products: Product[] = [
     category: "teas",
     priceRsd: 179,
     image: "/images/products/fructus-sipak-rosehip-89.webp",
-    name: { sr: "Fructus Sipak Rosehip", hu: "Fructus Sipak Rosehip", en: "Fructus Sipak Rosehip" },
+    name: { sr: "Fructus šipak", hu: "Fructus Sipak Rosehip", en: "Fructus Sipak Rosehip" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
       hu: "Čaj és gyógynövényes termék a Naturalis kínálatából.",
@@ -2472,7 +2472,7 @@ export const products: Product[] = [
     priceRsd: 179,
     image: "/images/products/fructus-divlja-tresnja-wild-cherry-90.webp",
     name: {
-      sr: "Fructus Divlja Tresnja Wild Cherry",
+      sr: "Fructus divlja trešnja",
       hu: "Fructus Divlja Tresnja Wild Cherry",
       en: "Fructus Divlja Tresnja Wild Cherry",
     },
@@ -2501,7 +2501,7 @@ export const products: Product[] = [
     priceRsd: 179,
     image: "/images/products/fructus-sumsko-voce-forest-fruit-91.webp",
     name: {
-      sr: "Fructus Sumsko Voce Forest Fruit",
+      sr: "Fructus šumsko voće",
       hu: "Fructus Sumsko Voce Forest Fruit",
       en: "Fructus Sumsko Voce Forest Fruit",
     },
@@ -2530,7 +2530,7 @@ export const products: Product[] = [
     priceRsd: 179,
     image: "/images/products/fructus-aronija-borovnica-92.webp",
     name: {
-      sr: "Fructus Aronija Borovnica",
+      sr: "Fructus aronija i borovnica",
       hu: "Fructus Aronija Borovnica",
       en: "Fructus Aronija Borovnica",
     },
@@ -2742,7 +2742,7 @@ export const products: Product[] = [
     priceRsd: 915,
     image: "/images/products/vitamix-hair-skin-and-nails-100.webp",
     name: {
-      sr: "Vitamix Hair,Skin and Nails",
+      sr: "Vitamix Hair, Skin and Nails",
       hu: "Vitamix Hair,Skin and Nails",
       en: "Vitamix Hair,Skin and Nails",
     },
@@ -2796,7 +2796,7 @@ export const products: Product[] = [
     priceRsd: 1100,
     image: "/images/products/vitamix-za-zglobove-i-misice-102.webp",
     name: {
-      sr: "Vitamix Za zglobove i Misice",
+      sr: "Vitamix za zglobove i mišiće",
       hu: "Vitamix Za zglobove i Misice",
       en: "Vitamix Za zglobove i Misice",
     },
@@ -2824,7 +2824,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 1390,
     image: "/images/products/vitamix-za-oci-103.webp",
-    name: { sr: "Vitamix Za Oci", hu: "Vitamix Za Oci", en: "Vitamix Za Oci" },
+    name: { sr: "Vitamix za oči", hu: "Vitamix Za Oci", en: "Vitamix Za Oci" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -2850,7 +2850,7 @@ export const products: Product[] = [
     priceRsd: 880,
     image: "/images/products/vitamix-za-memoriju-i-koncetraciju-104.webp",
     name: {
-      sr: "Vitamix Za Memoriju I Koncetraciju",
+      sr: "Vitamix za memoriju i koncentraciju",
       hu: "Vitamix Za Memoriju I Koncetraciju",
       en: "Vitamix Za Memoriju I Koncetraciju",
     },
@@ -2954,7 +2954,7 @@ export const products: Product[] = [
     priceRsd: 480,
     image: "/images/products/ziya-dede-atom-propolis-caj-108.webp",
     name: {
-      sr: "Ziya Dede Atom Propolis Caj",
+      sr: "Ziya Dede Atom propolis čaj",
       hu: "Ziya Dede Atom Propolis Caj",
       en: "Ziya Dede Atom Propolis Caj",
     },
@@ -2982,7 +2982,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 480,
     image: "/images/products/ziya-dede-atom-cayi-109.webp",
-    name: { sr: "Ziya Dede Atom Cayi", hu: "Ziya Dede Atom Cayi", en: "Ziya Dede Atom Cayi" },
+    name: { sr: "Ziya Dede Atom čaj", hu: "Ziya Dede Atom Cayi", en: "Ziya Dede Atom Cayi" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3033,7 +3033,7 @@ export const products: Product[] = [
     priceRsd: 95,
     image: "/images/products/fructus-majcina-dusica-111.webp",
     name: {
-      sr: "Fructus Majcina Dusica",
+      sr: "Fructus majčina dušica",
       hu: "Fructus Majcina Dusica",
       en: "Fructus Majcina Dusica",
     },
@@ -3187,7 +3187,7 @@ export const products: Product[] = [
     priceRsd: 149,
     image: "/images/products/fructus-zeleni-caj-sa-limunom-117.webp",
     name: {
-      sr: "Fructus Zeleni Caj Sa Limunom",
+      sr: "Fructus zeleni čaj sa limunom",
       hu: "Fructus Zeleni Caj Sa Limunom",
       en: "Fructus Zeleni Caj Sa Limunom",
     },
@@ -3215,7 +3215,7 @@ export const products: Product[] = [
     category: "teas",
     priceRsd: 115,
     image: "/images/products/fructus-zeleni-caj-118.webp",
-    name: { sr: "Fructus Zeleni Caj", hu: "Fructus Zeleni Caj", en: "Fructus Zeleni Caj" },
+    name: { sr: "Fructus zeleni čaj", hu: "Fructus Zeleni Caj", en: "Fructus Zeleni Caj" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
       hu: "Čaj és gyógynövényes termék a Naturalis kínálatából.",
@@ -3265,7 +3265,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 140,
     image: "/images/products/vega-razeno-120.webp",
-    name: { sr: "Vega Razeno", hu: "Vega Razeno", en: "Vega Razeno" },
+    name: { sr: "Vega raženo brašno", hu: "Vega Razeno", en: "Vega Razeno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3290,7 +3290,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 119,
     image: "/images/products/vega-psenicno-121.webp",
-    name: { sr: "Vega Psenicno", hu: "Vega Psenicno", en: "Vega Psenicno" },
+    name: { sr: "Vega pšenično brašno", hu: "Vega Psenicno", en: "Vega Psenicno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3315,7 +3315,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 100,
     image: "/images/products/deljin-jecmeno-122.webp",
-    name: { sr: "Deljin Jecmeno", hu: "Deljin Jecmeno", en: "Deljin Jecmeno" },
+    name: { sr: "Deljin ječmeno brašno", hu: "Deljin Jecmeno", en: "Deljin Jecmeno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3340,7 +3340,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 128,
     image: "/images/products/deljin-ovseno-123.webp",
-    name: { sr: "Deljin Ovseno", hu: "Deljin Ovseno", en: "Deljin Ovseno" },
+    name: { sr: "Deljin ovseno brašno", hu: "Deljin Ovseno", en: "Deljin Ovseno" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3365,7 +3365,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 350,
     image: "/images/products/deljin-heljdino-124.webp",
-    name: { sr: "Deljin Heljdino", hu: "Deljin Heljdino", en: "Deljin Heljdino" },
+    name: { sr: "Deljin heljdino brašno", hu: "Deljin Heljdino", en: "Deljin Heljdino" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3390,7 +3390,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 290,
     image: "/images/products/ekomark-cikorija-125.webp",
-    name: { sr: "Ekomark Cikorija", hu: "Ekomark Cikorija", en: "Ekomark Cikorija" },
+    name: { sr: "Ekomark cikorija", hu: "Ekomark Cikorija", en: "Ekomark Cikorija" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3415,7 +3415,7 @@ export const products: Product[] = [
     category: "oils",
     priceRsd: 655,
     image: "/images/products/deverra-gel-gavez-126.webp",
-    name: { sr: "Deverra Gel Gavez", hu: "Deverra Gel Gavez", en: "Deverra Gel Gavez" },
+    name: { sr: "Deverra gel od gaveza", hu: "Deverra Gel Gavez", en: "Deverra Gel Gavez" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
       hu: "Proizvod iz ponude ulja i biljnih preparata.",
@@ -3440,7 +3440,7 @@ export const products: Product[] = [
     category: "oils",
     priceRsd: 440,
     image: "/images/products/mast-protiv-hemoroida-127.webp",
-    name: { sr: "Mast Protiv Hemoroida", hu: "Mast Protiv Hemoroida", en: "Mast Protiv Hemoroida" },
+    name: { sr: "Mast protiv hemoroida", hu: "Mast Protiv Hemoroida", en: "Mast Protiv Hemoroida" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
       hu: "Proizvod iz ponude ulja i biljnih preparata.",
@@ -3490,7 +3490,7 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 125,
     image: "/images/products/psenici-griz-129.webp",
-    name: { sr: "Psenici Griz", hu: "Psenici Griz", en: "Psenici Griz" },
+    name: { sr: "Pšenični griz", hu: "Psenici Griz", en: "Psenici Griz" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -3515,7 +3515,7 @@ export const products: Product[] = [
     category: "oils",
     priceRsd: 1250,
     image: "/images/products/kokosovo-ulje-130.webp",
-    name: { sr: "Kokosovo Ulje", hu: "Kokosovo Ulje", en: "Kokosovo Ulje" },
+    name: { sr: "Kokosovo ulje", hu: "Kokosovo Ulje", en: "Kokosovo Ulje" },
     short: {
       sr: "Ulje, sirće ili biljni preparat iz Naturalis ponude.",
       hu: "Proizvod iz ponude ulja i biljnih preparata.",
@@ -3590,7 +3590,7 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 510,
     image: "/images/products/kikiriki-puter-133.webp",
-    name: { sr: "Kikiriki Puter", hu: "Kikiriki Puter", en: "Kikiriki Puter" },
+    name: { sr: "Kikiriki puter", hu: "Kikiriki Puter", en: "Kikiriki Puter" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -3616,7 +3616,7 @@ export const products: Product[] = [
     priceRsd: 580,
     image: "/images/products/granumfood-bundevin-puter-134.webp",
     name: {
-      sr: "Granumfood Bundevin Puter",
+      sr: "GranumFood bundevin puter",
       hu: "Granumfood Bundevin Puter",
       en: "Granumfood Bundevin Puter",
     },
@@ -3719,7 +3719,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 860,
     image: "/images/products/lesnik-krem-kamaz-138.webp",
-    name: { sr: "Lesnik Krem Kamaz", hu: "Lesnik Krem Kamaz", en: "Lesnik Krem Kamaz" },
+    name: { sr: "Lešnik krem namaz", hu: "Lesnik Krem Kamaz", en: "Lesnik Krem Kamaz" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -3773,7 +3773,7 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 225,
     image: "/images/products/sunoko-secer-smedi-140.webp",
-    name: { sr: "Sunoko Secer Smedi", hu: "Sunoko Secer Smedi", en: "Sunoko Secer Smedi" },
+    name: { sr: "Sunoko smeđi šećer", hu: "Sunoko Secer Smedi", en: "Sunoko Secer Smedi" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -3798,7 +3798,7 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 795,
     image: "/images/products/beyond-brezin-secer-141.webp",
-    name: { sr: "Beyond Brezin Secer", hu: "Beyond Brezin Secer", en: "Beyond Brezin Secer" },
+    name: { sr: "Beyond brezin šećer", hu: "Beyond Brezin Secer", en: "Beyond Brezin Secer" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -3849,7 +3849,7 @@ export const products: Product[] = [
     priceRsd: 540,
     image: "/images/products/sweet-adventure-2-brezin-secer-143.webp",
     name: {
-      sr: "Sweet Adventure 2 Brezin Secer",
+      sr: "Sweet Adventure 2 brezin šećer",
       hu: "Sweet Adventure 2 Brezin Secer",
       en: "Sweet Adventure 2 Brezin Secer",
     },
@@ -3906,7 +3906,11 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 485,
     image: "/images/products/sanaterra-agava-sirup-145.webp",
-    name: { sr: "Sanaterra Agava Sirup", hu: "Sanaterra Agava Sirup", en: "Sanaterra Agava Sirup" },
+    name: {
+      sr: "Sanaterra agavin sirup",
+      hu: "Sanaterra Agava Sirup",
+      en: "Sanaterra Agava Sirup",
+    },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -4384,7 +4388,7 @@ export const products: Product[] = [
     priceRsd: 1450,
     image: "/images/products/morsus-gel-sa-effektom-hiadenja-162.webp",
     name: {
-      sr: "Morsus Gel sa effektom Hiadenja",
+      sr: "Morsus gel sa efektom hlađenja",
       hu: "Morsus Gel sa effektom Hiadenja",
       en: "Morsus Gel sa effektom Hiadenja",
     },
@@ -4516,7 +4520,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 1499,
     image: "/images/products/rabenhorst-cranbery-167.webp",
-    name: { sr: "Rabenhorst Cranbery", hu: "Rabenhorst Cranbery", en: "Rabenhorst Cranbery" },
+    name: { sr: "Rabenhorst Cranberry", hu: "Rabenhorst Cranbery", en: "Rabenhorst Cranbery" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4541,7 +4545,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 350,
     image: "/images/products/volim-jabuke-and-drena-168.webp",
-    name: { sr: "Volim Jabuke & Drena", hu: "Volim Jabuke & Drena", en: "Volim Jabuke & Drena" },
+    name: { sr: "Volim Jabuke & Dren", hu: "Volim Jabuke & Drena", en: "Volim Jabuke & Drena" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4591,7 +4595,7 @@ export const products: Product[] = [
     category: "teas",
     priceRsd: 480,
     image: "/images/products/marella-aronijamenta-170.webp",
-    name: { sr: "Marella AronijaMenta", hu: "Marella AronijaMenta", en: "Marella AronijaMenta" },
+    name: { sr: "Marella aronija i menta", hu: "Marella AronijaMenta", en: "Marella AronijaMenta" },
     short: {
       sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
       hu: "Čaj és gyógynövényes termék a Naturalis kínálatából.",
@@ -4796,7 +4800,7 @@ export const products: Product[] = [
     priceRsd: 215,
     image: "/images/products/vegetaria-speltino-integralno-brasno-178.webp",
     name: {
-      sr: "Vegetaria Speltino integralno brasno",
+      sr: "Vegetaria Speltino integralno brašno",
       hu: "Vegetaria Speltino integralno brasno",
       en: "Vegetaria Speltino integralno brasno",
     },
@@ -4824,7 +4828,7 @@ export const products: Product[] = [
     category: "food",
     priceRsd: 485,
     image: "/images/products/speltino-meko-brasno-179.webp",
-    name: { sr: "Speltino meko brasno", hu: "Speltino meko brasno", en: "Speltino meko brasno" },
+    name: { sr: "Speltino meko brašno", hu: "Speltino meko brasno", en: "Speltino meko brasno" },
     short: {
       sr: "Namirnica iz Naturalis ponude.",
       hu: "Proizvod iz ponude zdrave hrane.",
@@ -4874,7 +4878,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 1340,
     image: "/images/products/organska-maca-181.webp",
-    name: { sr: "Organska MaČa", hu: "Organska MaČa", en: "Organska MaČa" },
+    name: { sr: "Organska maca", hu: "Organska MaČa", en: "Organska MaČa" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4899,7 +4903,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 690,
     image: "/images/products/organski-moringa-182.webp",
-    name: { sr: "Organski Moringa", hu: "Organski Moringa", en: "Organski Moringa" },
+    name: { sr: "Organska moringa", hu: "Organski Moringa", en: "Organski Moringa" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4924,7 +4928,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 670,
     image: "/images/products/organska-crna-maka-183.webp",
-    name: { sr: "Organska crna maka", hu: "Organska crna maka", en: "Organska crna maka" },
+    name: { sr: "Organska crna maca", hu: "Organska crna maka", en: "Organska crna maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4949,7 +4953,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 670,
     image: "/images/products/organska-zlatna-maka-184.webp",
-    name: { sr: "Organska zlatna maka", hu: "Organska zlatna maka", en: "Organska zlatna maka" },
+    name: { sr: "Organska zlatna maca", hu: "Organska zlatna maka", en: "Organska zlatna maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -4974,7 +4978,7 @@ export const products: Product[] = [
     category: "supplements",
     priceRsd: 670,
     image: "/images/products/organska-crvena-maka-185.webp",
-    name: { sr: "Organska crvena maka", hu: "Organska crvena maka", en: "Organska crvena maka" },
+    name: { sr: "Organska crvena maca", hu: "Organska crvena maka", en: "Organska crvena maka" },
     short: {
       sr: "Dodatak ishrani iz Naturalis ponude.",
       hu: "Étrend-kiegészítő a Naturalis kínálatából.",
@@ -5000,7 +5004,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2050,
     image: "/images/products/kimerski-gujina-trava-seme-1.webp",
-    name: { sr: "Gujina Trava Seme", hu: "Gujina Trava Seme", en: "Gujina Trava Seme" },
+    name: { sr: "Seme gujine trave", hu: "Gujina Trava Seme", en: "Gujina Trava Seme" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5100,7 +5104,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 4260,
     image: "/images/products/kimerski-precica-5.webp",
-    name: { sr: "Precica", hu: "Precica", en: "Precica" },
+    name: { sr: "Prečica", hu: "Precica", en: "Precica" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5175,7 +5179,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1200,
     image: "/images/products/kimerski-ivanjsko-8.webp",
-    name: { sr: "Ivanjsko", hu: "Ivanjsko", en: "Ivanjsko" },
+    name: { sr: "Ivanjsko cveće", hu: "Ivanjsko", en: "Ivanjsko" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5225,7 +5229,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2850,
     image: "/images/products/kimerski-kicica-10.webp",
-    name: { sr: "Kicica", hu: "Kicica", en: "Kicica" },
+    name: { sr: "Kićica", hu: "Kicica", en: "Kicica" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5275,7 +5279,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 4999,
     image: "/images/products/kimerski-beli-slez-12.webp",
-    name: { sr: "Beli Slez", hu: "Beli Slez", en: "Beli Slez" },
+    name: { sr: "Beli slez", hu: "Beli Slez", en: "Beli Slez" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5300,7 +5304,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1330,
     image: "/images/products/kimerski-gavez-koren-13.webp",
-    name: { sr: "Gavez Koren", hu: "Gavez Koren", en: "Gavez Koren" },
+    name: { sr: "Koren gaveza", hu: "Gavez Koren", en: "Gavez Koren" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5375,7 +5379,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2200,
     image: "/images/products/kimerski-kakao-tamni-16.webp",
-    name: { sr: "Kakao Tamni", hu: "Kakao Tamni", en: "Kakao Tamni" },
+    name: { sr: "Tamni kakao", hu: "Kakao Tamni", en: "Kakao Tamni" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5400,7 +5404,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 380,
     image: "/images/products/kimerski-rogac-17.webp",
-    name: { sr: "Rogac", hu: "Rogac", en: "Rogac" },
+    name: { sr: "Rogač", hu: "Rogac", en: "Rogac" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5425,7 +5429,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2200,
     image: "/images/products/kimerski-govedi-zelatin-18.webp",
-    name: { sr: "Govedi Zelatin", hu: "Govedi Zelatin", en: "Govedi Zelatin" },
+    name: { sr: "Goveđi želatin", hu: "Govedi Zelatin", en: "Govedi Zelatin" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5450,7 +5454,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 760,
     image: "/images/products/kimerski-slag-prah-19.webp",
-    name: { sr: "Slag Prah", hu: "Slag Prah", en: "Slag Prah" },
+    name: { sr: "Šlag u prahu", hu: "Slag Prah", en: "Slag Prah" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5500,7 +5504,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 490,
     image: "/images/products/kimerski-mlekou-prah-21.webp",
-    name: { sr: "Mlekou Prah", hu: "Mlekou Prah", en: "Mlekou Prah" },
+    name: { sr: "Mleko u prahu", hu: "Mlekou Prah", en: "Mlekou Prah" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5525,7 +5529,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 340,
     image: "/images/products/kimerski-vanilin-secer-22.webp",
-    name: { sr: "Vanilin Secer", hu: "Vanilin Secer", en: "Vanilin Secer" },
+    name: { sr: "Vanilin šećer", hu: "Vanilin Secer", en: "Vanilin Secer" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5550,7 +5554,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 320,
     image: "/images/products/kimerski-secer-u-prahu-23.webp",
-    name: { sr: "Secer U Prahu", hu: "Secer U Prahu", en: "Secer U Prahu" },
+    name: { sr: "Šećer u prahu", hu: "Secer U Prahu", en: "Secer U Prahu" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5575,7 +5579,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 900,
     image: "/images/products/kimerski-banana-cips-24.webp",
-    name: { sr: "Banana Cips", hu: "Banana Cips", en: "Banana Cips" },
+    name: { sr: "Banana čips", hu: "Banana Cips", en: "Banana Cips" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5600,7 +5604,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 490,
     image: "/images/products/kimerski-kokosovo-br-25.webp",
-    name: { sr: "Kokosovo br", hu: "Kokosovo br", en: "Kokosovo br" },
+    name: { sr: "Kokosovo brašno", hu: "Kokosovo br", en: "Kokosovo br" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5625,7 +5629,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 390,
     image: "/images/products/kimerski-mleveni-keks-26.webp",
-    name: { sr: "Mleveni Keks", hu: "Mleveni Keks", en: "Mleveni Keks" },
+    name: { sr: "Mleveni keks", hu: "Mleveni Keks", en: "Mleveni Keks" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5650,7 +5654,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1490,
     image: "/images/products/kimerski-dumbir-kocke-27.webp",
-    name: { sr: "Dumbir Kocke", hu: "Dumbir Kocke", en: "Dumbir Kocke" },
+    name: { sr: "Đumbir kocke", hu: "Dumbir Kocke", en: "Dumbir Kocke" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5750,7 +5754,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1750,
     image: "/images/products/kimerski-godzi-bobice-31.webp",
-    name: { sr: "godži bobice", hu: "godži bobice", en: "godži bobice" },
+    name: { sr: "Goji bobice", hu: "godži bobice", en: "godži bobice" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5775,7 +5779,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 860,
     image: "/images/products/kimerski-jabuka-plod-32.webp",
-    name: { sr: "Jabuka Plod", hu: "Jabuka Plod", en: "Jabuka Plod" },
+    name: { sr: "Plod jabuke", hu: "Jabuka Plod", en: "Jabuka Plod" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5800,7 +5804,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 3870,
     image: "/images/products/kimerski-brazil-di-33.webp",
-    name: { sr: "Brazil Dió", hu: "Brazil Dió", en: "Brazil Dió" },
+    name: { sr: "Brazilski orah", hu: "Brazil Dió", en: "Brazil Dió" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5825,7 +5829,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2340,
     image: "/images/products/kimerski-pistaci-34.webp",
-    name: { sr: "Pistaci", hu: "Pistaci", en: "Pistaci" },
+    name: { sr: "Pistaći", hu: "Pistaci", en: "Pistaci" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5850,7 +5854,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1300,
     image: "/images/products/kimerski-barack-mag-35.webp",
-    name: { sr: "Barack Mag", hu: "Barack Mag", en: "Barack Mag" },
+    name: { sr: "Badem", hu: "Barack Mag", en: "Barack Mag" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5875,7 +5879,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1590,
     image: "/images/products/kimerski-s-badem-36.webp",
-    name: { sr: "S.Badem", hu: "S.Badem", en: "S.Badem" },
+    name: { sr: "S. badem", hu: "S.Badem", en: "S.Badem" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5925,7 +5929,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1990,
     image: "/images/products/kimerski-s-lesnik-38.webp",
-    name: { sr: "S. Lešnik", hu: "S. Lešnik", en: "S. Lešnik" },
+    name: { sr: "S. lešnik", hu: "S. Lešnik", en: "S. Lešnik" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -5975,7 +5979,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1790,
     image: "/images/products/kimerski-p-badem-40.webp",
-    name: { sr: "P. Badem", hu: "P. Badem", en: "P. Badem" },
+    name: { sr: "P. badem", hu: "P. Badem", en: "P. Badem" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6000,7 +6004,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2290,
     image: "/images/products/kimerski-p-lesnik-41.webp",
-    name: { sr: "P. Lešnik", hu: "P. Lešnik", en: "P. Lešnik" },
+    name: { sr: "P. lešnik", hu: "P. Lešnik", en: "P. Lešnik" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6025,7 +6029,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1370,
     image: "/images/products/kimerski-pomelo-kandirani-42.webp",
-    name: { sr: "Pomelo Kandirani", hu: "Pomelo Kandirani", en: "Pomelo Kandirani" },
+    name: { sr: "Kandirani pomelo", hu: "Pomelo Kandirani", en: "Pomelo Kandirani" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6075,7 +6079,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1250,
     image: "/images/products/kimerski-ananas-kandirani-44.webp",
-    name: { sr: "Ananas Kandirani", hu: "Ananas Kandirani", en: "Ananas Kandirani" },
+    name: { sr: "Kandirani ananas", hu: "Ananas Kandirani", en: "Ananas Kandirani" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6101,7 +6105,7 @@ export const products: Product[] = [
     priceRsd: 690,
     image: "/images/products/kimerski-mleveni-integralnikeks-bez-secera-45.webp",
     name: {
-      sr: "Mleveni integralnikeks bez secera",
+      sr: "Mleveni integralni keks bez šećera",
       hu: "Mleveni integralnikeks bez secera",
       en: "Mleveni integralnikeks bez secera",
     },
@@ -6129,7 +6133,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1370,
     image: "/images/products/kimerski-papaja-kandirani-46.webp",
-    name: { sr: "Papaja Kandirani", hu: "Papaja Kandirani", en: "Papaja Kandirani" },
+    name: { sr: "Kandirana papaja", hu: "Papaja Kandirani", en: "Papaja Kandirani" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6179,7 +6183,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1750,
     image: "/images/products/kimerski-aronija-suva-48.webp",
-    name: { sr: "Aronija Suva", hu: "Aronija Suva", en: "Aronija Suva" },
+    name: { sr: "Suva aronija", hu: "Aronija Suva", en: "Aronija Suva" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6204,7 +6208,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 625,
     image: "/images/products/kimerski-pec-leblebija-49.webp",
-    name: { sr: "Peč. Leblebija", hu: "Peč. Leblebija", en: "Peč. Leblebija" },
+    name: { sr: "Pečena leblebija", hu: "Peč. Leblebija", en: "Peč. Leblebija" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6229,7 +6233,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1120,
     image: "/images/products/kimerski-beli-luk-granula-50.webp",
-    name: { sr: "Beli Luk Granula", hu: "Beli Luk Granula", en: "Beli Luk Granula" },
+    name: { sr: "Beli luk u granulama", hu: "Beli Luk Granula", en: "Beli Luk Granula" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6254,7 +6258,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 750,
     image: "/images/products/kimerski-voroshagyma-pehely-51.webp",
-    name: { sr: "Vöröshagyma Pehely", hu: "Vöröshagyma Pehely", en: "Vöröshagyma Pehely" },
+    name: { sr: "Luk u pahuljicama", hu: "Vöröshagyma Pehely", en: "Vöröshagyma Pehely" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6329,7 +6333,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 315,
     image: "/images/products/kimerski-pud-vanilla-54.webp",
-    name: { sr: "Pud Vanilla", hu: "Pud Vanilla", en: "Pud Vanilla" },
+    name: { sr: "Puding vanila", hu: "Pud Vanilla", en: "Pud Vanilla" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6354,7 +6358,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1990,
     image: "/images/products/kimerski-tucana-paprika-55.webp",
-    name: { sr: "Tucana Paprika", hu: "Tucana Paprika", en: "Tucana Paprika" },
+    name: { sr: "Tučena paprika", hu: "Tucana Paprika", en: "Tucana Paprika" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6379,7 +6383,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1990,
     image: "/images/products/kimerski-ljuta-paprika-56.webp",
-    name: { sr: "Ljuta Paprika", hu: "Ljuta Paprika", en: "Ljuta Paprika" },
+    name: { sr: "Ljuta paprika", hu: "Ljuta Paprika", en: "Ljuta Paprika" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6404,7 +6408,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1250,
     image: "/images/products/kimerski-curekota-57.webp",
-    name: { sr: "čurekota", hu: "čurekota", en: "čurekota" },
+    name: { sr: "Čurekota", hu: "čurekota", en: "čurekota" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6479,7 +6483,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 740,
     image: "/images/products/kimerski-povrce-sus-60.webp",
-    name: { sr: "Povrče suš", hu: "Povrče suš", en: "Povrče suš" },
+    name: { sr: "Sušeno povrće", hu: "Povrče suš", en: "Povrče suš" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6554,7 +6558,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 140,
     image: "/images/products/kimerski-psenica-belija-63.webp",
-    name: { sr: "Psenica Belija", hu: "Psenica Belija", en: "Psenica Belija" },
+    name: { sr: "Bela pšenica", hu: "Psenica Belija", en: "Psenica Belija" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6579,7 +6583,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 660,
     image: "/images/products/kimerski-mrkva-sus-64.webp",
-    name: { sr: "Mrkva suš", hu: "Mrkva suš", en: "Mrkva suš" },
+    name: { sr: "Sušena šargarepa", hu: "Mrkva suš", en: "Mrkva suš" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6629,7 +6633,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1150,
     image: "/images/products/kimerski-dumbir-prah-66.webp",
-    name: { sr: "Dumbir Prah", hu: "Dumbir Prah", en: "Dumbir Prah" },
+    name: { sr: "Đumbir u prahu", hu: "Dumbir Prah", en: "Dumbir Prah" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6654,7 +6658,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 860,
     image: "/images/products/kimerski-kim-zrno-67.webp",
-    name: { sr: "Kim Zrno", hu: "Kim Zrno", en: "Kim Zrno" },
+    name: { sr: "Kim u zrnu", hu: "Kim Zrno", en: "Kim Zrno" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6679,7 +6683,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1150,
     image: "/images/products/kimerski-kim-mleveni-68.webp",
-    name: { sr: "Kim Mleveni", hu: "Kim Mleveni", en: "Kim Mleveni" },
+    name: { sr: "Mleveni kim", hu: "Kim Mleveni", en: "Kim Mleveni" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6704,7 +6708,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2190,
     image: "/images/products/kimerski-biber-mleveni-69.webp",
-    name: { sr: "Biber Mleveni", hu: "Biber Mleveni", en: "Biber Mleveni" },
+    name: { sr: "Mleveni biber", hu: "Biber Mleveni", en: "Biber Mleveni" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6729,7 +6733,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2060,
     image: "/images/products/kimerski-biber-zrno-70.webp",
-    name: { sr: "Biber Zrno", hu: "Biber Zrno", en: "Biber Zrno" },
+    name: { sr: "Biber u zrnu", hu: "Biber Zrno", en: "Biber Zrno" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6754,7 +6758,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 250,
     image: "/images/products/kimerski-pir-integ-71.webp",
-    name: { sr: "Pir Integ", hu: "Pir Integ", en: "Pir Integ" },
+    name: { sr: "Integralni pir", hu: "Pir Integ", en: "Pir Integ" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6779,7 +6783,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 275,
     image: "/images/products/kimerski-pir-vitamin-72.webp",
-    name: { sr: "Pir. Vitamin", hu: "Pir. Vitamin", en: "Pir. Vitamin" },
+    name: { sr: "Pir vitamin", hu: "Pir. Vitamin", en: "Pir. Vitamin" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6854,7 +6858,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1880,
     image: "/images/products/kimerski-susam-crni-75.webp",
-    name: { sr: "Susam Crni", hu: "Susam Crni", en: "Susam Crni" },
+    name: { sr: "Crni susam", hu: "Susam Crni", en: "Susam Crni" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6904,7 +6908,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 800,
     image: "/images/products/kimerski-cija-seme-77.webp",
-    name: { sr: "Cija seme", hu: "Cija seme", en: "Cija seme" },
+    name: { sr: "Čija semena", hu: "Cija seme", en: "Cija seme" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -6979,7 +6983,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 300,
     image: "/images/products/kimerski-naut-sirovi-80.webp",
-    name: { sr: "Naut Sirovi", hu: "Naut Sirovi", en: "Naut Sirovi" },
+    name: { sr: "Sirovi naut", hu: "Naut Sirovi", en: "Naut Sirovi" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7004,7 +7008,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 770,
     image: "/images/products/kimerski-mini-snek-mix-81.webp",
-    name: { sr: "Mini Snek Mix", hu: "Mini Snek Mix", en: "Mini Snek Mix" },
+    name: { sr: "Mini snek mix", hu: "Mini Snek Mix", en: "Mini Snek Mix" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7029,7 +7033,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 660,
     image: "/images/products/kimerski-biogric-chili-82.webp",
-    name: { sr: "Biogric Chili", hu: "Biogric Chili", en: "Biogric Chili" },
+    name: { sr: "Biogric čili", hu: "Biogric Chili", en: "Biogric Chili" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7054,7 +7058,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 660,
     image: "/images/products/kimerski-biogric-badem-mix-83.webp",
-    name: { sr: "Biogric Badem Mix", hu: "Biogric Badem Mix", en: "Biogric Badem Mix" },
+    name: { sr: "Biogric badem mix", hu: "Biogric Badem Mix", en: "Biogric Badem Mix" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7079,7 +7083,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 660,
     image: "/images/products/kimerski-biogric-lan-84.webp",
-    name: { sr: "Biogric Lan", hu: "Biogric Lan", en: "Biogric Lan" },
+    name: { sr: "Biogric lan", hu: "Biogric Lan", en: "Biogric Lan" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7104,7 +7108,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 660,
     image: "/images/products/kimerski-biogric-susam-85.webp",
-    name: { sr: "Biogric Susam", hu: "Biogric Susam", en: "Biogric Susam" },
+    name: { sr: "Biogric susam", hu: "Biogric Susam", en: "Biogric Susam" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7129,7 +7133,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 650,
     image: "/images/products/kimerski-sojini-odresci-86.webp",
-    name: { sr: "Sojini Odresci", hu: "Sojini Odresci", en: "Sojini Odresci" },
+    name: { sr: "Sojini odresci", hu: "Sojini Odresci", en: "Sojini Odresci" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7154,7 +7158,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 580,
     image: "/images/products/kimerski-sojii-komad-87.webp",
-    name: { sr: "Sojii Komad", hu: "Sojii Komad", en: "Sojii Komad" },
+    name: { sr: "Sojini komadići", hu: "Sojii Komad", en: "Sojii Komad" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7179,7 +7183,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 3100,
     image: "/images/products/kimerski-beli-biber-88.webp",
-    name: { sr: "Beli Biber", hu: "Beli Biber", en: "Beli Biber" },
+    name: { sr: "Beli biber", hu: "Beli Biber", en: "Beli Biber" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7204,7 +7208,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 520,
     image: "/images/products/kimerski-kikiriki-slani-89.webp",
-    name: { sr: "Kikiriki slani", hu: "Kikiriki slani", en: "Kikiriki slani" },
+    name: { sr: "Slani kikiriki", hu: "Kikiriki slani", en: "Kikiriki slani" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7229,7 +7233,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 520,
     image: "/images/products/kimerski-kikiriki-neslani-90.webp",
-    name: { sr: "Kikiriki neslani", hu: "Kikiriki neslani", en: "Kikiriki neslani" },
+    name: { sr: "Neslani kikiriki", hu: "Kikiriki neslani", en: "Kikiriki neslani" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7254,7 +7258,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1050,
     image: "/images/products/kimerski-diabettino-cimet-91.webp",
-    name: { sr: "Diabettino Cimet", hu: "Diabettino Cimet", en: "Diabettino Cimet" },
+    name: { sr: "Diabettino cimet", hu: "Diabettino Cimet", en: "Diabettino Cimet" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7329,7 +7333,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1160,
     image: "/images/products/kimerski-maticnjak-94.webp",
-    name: { sr: "Maticnjak", hu: "Maticnjak", en: "Maticnjak" },
+    name: { sr: "Matičnjak", hu: "Maticnjak", en: "Maticnjak" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7354,7 +7358,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1440,
     image: "/images/products/kimerski-breza-list-95.webp",
-    name: { sr: "Breza list", hu: "Breza list", en: "Breza list" },
+    name: { sr: "List breze", hu: "Breza list", en: "Breza list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7379,7 +7383,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 600,
     image: "/images/products/kimerski-sena-list-96.webp",
-    name: { sr: "Sena list", hu: "Sena list", en: "Sena list" },
+    name: { sr: "List sene", hu: "Sena list", en: "Sena list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7404,7 +7408,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1570,
     image: "/images/products/kimerski-krusina-fragula-97.webp",
-    name: { sr: "Krusina Fragula", hu: "Krusina Fragula", en: "Krusina Fragula" },
+    name: { sr: "Krušina (Frangula)", hu: "Krusina Fragula", en: "Krusina Fragula" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7429,7 +7433,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 4280,
     image: "/images/products/kimerski-plucnjak-98.webp",
-    name: { sr: "Plucnjak", hu: "Plucnjak", en: "Plucnjak" },
+    name: { sr: "Plućnjak", hu: "Plucnjak", en: "Plucnjak" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7454,7 +7458,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 540,
     image: "/images/products/kimerski-brsljan-list-99.webp",
-    name: { sr: "Brsljan list", hu: "Brsljan list", en: "Brsljan list" },
+    name: { sr: "List bršljana", hu: "Brsljan list", en: "Brsljan list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7479,7 +7483,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1820,
     image: "/images/products/kimerski-sene-morac-100.webp",
-    name: { sr: "Sene Morac", hu: "Sene Morac", en: "Sene Morac" },
+    name: { sr: "Seme morača", hu: "Sene Morac", en: "Sene Morac" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7504,7 +7508,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2990,
     image: "/images/products/kimerski-kleka-plod-101.webp",
-    name: { sr: "Kleka Plod", hu: "Kleka Plod", en: "Kleka Plod" },
+    name: { sr: "Plod kleke", hu: "Kleka Plod", en: "Kleka Plod" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7529,7 +7533,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1100,
     image: "/images/products/kimerski-seme-anis-102.webp",
-    name: { sr: "Seme Anis", hu: "Seme Anis", en: "Seme Anis" },
+    name: { sr: "Seme anisa", hu: "Seme Anis", en: "Seme Anis" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7554,7 +7558,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 910,
     image: "/images/products/kimerski-grcko-seme-103.webp",
-    name: { sr: "Grcko seme", hu: "Grcko seme", en: "Grcko seme" },
+    name: { sr: "Grčko seme", hu: "Grcko seme", en: "Grcko seme" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7604,7 +7608,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1050,
     image: "/images/products/kimerski-crni-slez-105.webp",
-    name: { sr: "Crni Slez", hu: "Crni Slez", en: "Crni Slez" },
+    name: { sr: "Crni slez", hu: "Crni Slez", en: "Crni Slez" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7654,7 +7658,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2200,
     image: "/images/products/kimerski-slatki-koren-107.webp",
-    name: { sr: "Slatki Koren", hu: "Slatki Koren", en: "Slatki Koren" },
+    name: { sr: "Slatki koren", hu: "Slatki Koren", en: "Slatki Koren" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7679,7 +7683,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 800,
     image: "/images/products/kimerski-cikorija-vodopija-108.webp",
-    name: { sr: "Cikorija Vodopija", hu: "Cikorija Vodopija", en: "Cikorija Vodopija" },
+    name: { sr: "Cikorija vodopija", hu: "Cikorija Vodopija", en: "Cikorija Vodopija" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7704,7 +7708,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1100,
     image: "/images/products/kimerski-maslacak-list-109.webp",
-    name: { sr: "Maslacak list", hu: "Maslacak list", en: "Maslacak list" },
+    name: { sr: "List maslačka", hu: "Maslacak list", en: "Maslacak list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7754,7 +7758,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1380,
     image: "/images/products/kimerski-malina-list-111.webp",
-    name: { sr: "Malina list .", hu: "Malina list .", en: "Malina list ." },
+    name: { sr: "List maline", hu: "Malina list .", en: "Malina list ." },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7804,7 +7808,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 850,
     image: "/images/products/kimerski-orah-list-113.webp",
-    name: { sr: "Orah List", hu: "Orah List", en: "Orah List" },
+    name: { sr: "List oraha", hu: "Orah List", en: "Orah List" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7879,7 +7883,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1170,
     image: "/images/products/kimerski-ocajnica-116.webp",
-    name: { sr: "Ocajnica", hu: "Ocajnica", en: "Ocajnica" },
+    name: { sr: "Očajnica", hu: "Ocajnica", en: "Ocajnica" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7904,7 +7908,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 920,
     image: "/images/products/kimerski-kupina-list-117.webp",
-    name: { sr: "Kupina list", hu: "Kupina list", en: "Kupina list" },
+    name: { sr: "List kupine", hu: "Kupina list", en: "Kupina list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7929,7 +7933,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2750,
     image: "/images/products/kimerski-kopriva-seme-118.webp",
-    name: { sr: "Kopriva seme", hu: "Kopriva seme", en: "Kopriva seme" },
+    name: { sr: "Seme koprive", hu: "Kopriva seme", en: "Kopriva seme" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7954,7 +7958,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2270,
     image: "/images/products/kimerski-kopriva-koren-119.webp",
-    name: { sr: "Kopriva Koren", hu: "Kopriva Koren", en: "Kopriva Koren" },
+    name: { sr: "Koren koprive", hu: "Kopriva Koren", en: "Kopriva Koren" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -7979,7 +7983,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1280,
     image: "/images/products/kimerski-persun-list-120.webp",
-    name: { sr: "Persun list", hu: "Persun list", en: "Persun list" },
+    name: { sr: "List peršuna", hu: "Persun list", en: "Persun list" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8004,7 +8008,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1645,
     image: "/images/products/kimerski-srdacica-121.webp",
-    name: { sr: "Srdacica", hu: "Srdacica", en: "Srdacica" },
+    name: { sr: "Srdačica", hu: "Srdacica", en: "Srdacica" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8029,7 +8033,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1850,
     image: "/images/products/kimerski-zeleni-caj-122.webp",
-    name: { sr: "Zeleni Caj", hu: "Zeleni Caj", en: "Zeleni Caj" },
+    name: { sr: "Zeleni čaj", hu: "Zeleni Caj", en: "Zeleni Caj" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8054,7 +8058,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1580,
     image: "/images/products/kimerski-sipak-123.webp",
-    name: { sr: "Sipak", hu: "Sipak", en: "Sipak" },
+    name: { sr: "Šipak", hu: "Sipak", en: "Sipak" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8104,7 +8108,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1510,
     image: "/images/products/kimerski-zalfija-125.webp",
-    name: { sr: "Zalfija", hu: "Zalfija", en: "Zalfija" },
+    name: { sr: "Žalfija", hu: "Zalfija", en: "Zalfija" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8154,7 +8158,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1320,
     image: "/images/products/kimerski-hajducka-127.webp",
-    name: { sr: "Hajducka", hu: "Hajducka", en: "Hajducka" },
+    name: { sr: "Hajdučka trava", hu: "Hajducka", en: "Hajducka" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8229,7 +8233,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 2350,
     image: "/images/products/kimerski-crni-caj-130.webp",
-    name: { sr: "Crni Caj", hu: "Crni Caj", en: "Crni Caj" },
+    name: { sr: "Crni čaj", hu: "Crni Caj", en: "Crni Caj" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8254,7 +8258,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 3450,
     image: "/images/products/kimerski-cvet-zova-131.webp",
-    name: { sr: "Cvet Zova", hu: "Cvet Zova", en: "Cvet Zova" },
+    name: { sr: "Cvet zove", hu: "Cvet Zova", en: "Cvet Zova" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8404,7 +8408,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 295,
     image: "/images/products/kimerski-kokicar-137.webp",
-    name: { sr: "Kokicar", hu: "Kokicar", en: "Kokicar" },
+    name: { sr: "Kokičar", hu: "Kokicar", en: "Kokicar" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8429,7 +8433,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 225,
     image: "/images/products/kimerski-grasak-prot-138.webp",
-    name: { sr: "Grasak Prot", hu: "Grasak Prot", en: "Grasak Prot" },
+    name: { sr: "Grašak protein", hu: "Grasak Prot", en: "Grasak Prot" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
@@ -8454,7 +8458,7 @@ export const products: Product[] = [
     category: "bulk",
     priceRsd: 1450,
     image: "/images/products/kimerski-rtanjski-139.webp",
-    name: { sr: "Rtanjski", hu: "Rtanjski", en: "Rtanjski" },
+    name: { sr: "Rtanjski čaj", hu: "Rtanjski", en: "Rtanjski" },
     short: {
       sr: "Kimérős proizvod — cena je za 1 kg.",
       hu: "Kimért termék — az ár 1 kg-ra vonatkozik.",
