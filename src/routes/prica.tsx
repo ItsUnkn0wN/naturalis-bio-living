@@ -41,7 +41,6 @@ function StoryPage() {
           </h1>
           <div className="mt-6 space-y-5 text-lg leading-relaxed text-foreground/80">
             <p>{tr(t.story.p1)}</p>
-            <p>{tr(t.story.p2)}</p>
             <p className="font-display text-xl italic text-primary">{tr(t.story.p3)}</p>
           </div>
           <div className="mt-8 flex items-center gap-4 rounded-3xl border border-border bg-card p-4 shadow-soft">
