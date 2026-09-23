@@ -43,7 +43,7 @@ function StoryPage() {
             <p>{tr(t.story.p1)}</p>
             <p className="font-display text-xl italic text-primary">{tr(t.story.p3)}</p>
           </div>
-          <div className="mt-8 flex items-center gap-4 rounded-3xl border border-border bg-card p-4 shadow-soft">
+          <div className="mt-6 flex items-center gap-4 rounded-3xl border border-border bg-card p-4 shadow-soft">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-sun font-display text-xl text-forest-deep">
               RL
             </span>
