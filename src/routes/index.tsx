@@ -12,7 +12,9 @@ import { STORE, categories, featuredProducts } from "@/data/products";
 import { t, useLang, langFromSearch } from "@/lib/i18n";
 import { getStoreStatus, type StoreStatus } from "@/lib/hours";
 const shopShelves = { url: "/images/shop-shelves.webp" };
-const homepageCategories = categories.filter((category) => category.id !== "eco");
+const homepageCategories = categories.filter(
+  (category) => category.id !== "eco" && category.id !== "bulk",
+);
 
 export const Route = createFileRoute("/")({
   head: ({ match }) => {

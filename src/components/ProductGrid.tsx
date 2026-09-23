@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { AnimatePresence } from "motion/react";
-import { Heart } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { ArrowDown, ArrowUp, Heart } from "lucide-react";
 import { ProductCard } from "./ProductCard";
 import { ProductQuickView } from "./ProductQuickView";
 import { categories, products, type CategoryId, type Product } from "@/data/products";
@@ -9,6 +9,7 @@ import { useFavorites } from "@/lib/useFavorites";
 import { cn } from "@/lib/utils";
 
 type Filter = "all" | "fav" | CategoryId;
+type Sort = "default" | "lowest" | "highest";
 
 export function ProductGrid({
   items = products,
@@ -20,14 +21,22 @@ export function ProductGrid({
   const { tr } = useLang();
   const favs = useFavorites();
   const [filter, setFilter] = useState<Filter>("all");
+  const [sort, setSort] = useState<Sort>("default");
   const [open, setOpen] = useState<Product | null>(null);
 
-  const visible =
+  const filtered =
     filter === "all"
       ? items
       : filter === "fav"
         ? items.filter((p) => favs.has(p.id))
         : items.filter((p) => p.category === filter);
+
+  const visible =
+    sort === "default"
+      ? filtered
+      : [...filtered].sort((a, b) =>
+          sort === "lowest" ? a.priceRsd - b.priceRsd : b.priceRsd - a.priceRsd,
+        );
 
   const pill = (active: boolean) =>
     cn(
@@ -40,37 +49,82 @@ export function ProductGrid({
   return (
     <div>
       {showFilters && (
-        <div className="-mx-4 mb-8 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
-          <button type="button" className={pill(filter === "all")} onClick={() => setFilter("all")}>
-            {tr(t.products.all)}
-          </button>
-          {categories
-            .filter((c) => c.id !== "eco")
-            .map((c) => (
-              <button
-                key={c.id}
-                type="button"
-                className={pill(filter === c.id)}
-                onClick={() => setFilter(c.id)}
-              >
-                {tr(c.label)}
-              </button>
-            ))}
-          <button
-            type="button"
-            className={cn(pill(filter === "fav"), "inline-flex items-center gap-1.5")}
-            onClick={() => setFilter("fav")}
+        <div className="mb-8 space-y-4">
+          <div className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0">
+            <button
+              type="button"
+              className={pill(filter === "all")}
+              onClick={() => setFilter("all")}
+            >
+              {tr(t.products.all)}
+            </button>
+            {categories
+              .filter((c) => c.id !== "eco")
+              .map((c) => (
+                <button
+                  key={c.id}
+                  type="button"
+                  className={pill(filter === c.id)}
+                  onClick={() => setFilter(c.id)}
+                >
+                  {tr(c.label)}
+                </button>
+              ))}
+            <button
+              type="button"
+              className={cn(pill(filter === "fav"), "inline-flex items-center gap-1.5")}
+              onClick={() => setFilter("fav")}
+            >
+              <Heart
+                className={cn("h-3.5 w-3.5", favs.ids.length > 0 && "fill-accent text-accent")}
+              />{" "}
+              {tr(t.products.favorites)}
+              {favs.ready && favs.ids.length > 0 && (
+                <span className="rounded-full bg-accent px-1.5 text-[10px] text-accent-foreground">
+                  {favs.ids.length}
+                </span>
+              )}
+            </button>
+          </div>
+          <motion.div
+            layout
+            className="flex flex-wrap items-center gap-2 rounded-2xl border border-border/70 bg-card/50 p-2 shadow-sm"
           >
-            <Heart
-              className={cn("h-3.5 w-3.5", favs.ids.length > 0 && "fill-accent text-accent")}
-            />{" "}
-            {tr(t.products.favorites)}
-            {favs.ready && favs.ids.length > 0 && (
-              <span className="rounded-full bg-accent px-1.5 text-[10px] text-accent-foreground">
-                {favs.ids.length}
-              </span>
+            <span className="px-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+              {tr(t.products.sort)}
+            </span>
+            <button
+              type="button"
+              aria-pressed={sort === "lowest"}
+              className={cn(
+                pill(sort === "lowest"),
+                "inline-flex items-center gap-1.5 px-3 py-1.5 text-xs",
+              )}
+              onClick={() => setSort(sort === "lowest" ? "default" : "lowest")}
+            >
+              <ArrowUp className="h-3.5 w-3.5" /> {tr(t.products.lowestPrice)}
+            </button>
+            <button
+              type="button"
+              aria-pressed={sort === "highest"}
+              className={cn(
+                pill(sort === "highest"),
+                "inline-flex items-center gap-1.5 px-3 py-1.5 text-xs",
+              )}
+              onClick={() => setSort(sort === "highest" ? "default" : "highest")}
+            >
+              <ArrowDown className="h-3.5 w-3.5" /> {tr(t.products.highestPrice)}
+            </button>
+            {sort !== "default" && (
+              <button
+                type="button"
+                className="px-2 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+                onClick={() => setSort("default")}
+              >
+                {tr(t.products.sortDefault)}
+              </button>
             )}
-          </button>
+          </motion.div>
         </div>
       )}
 
