@@ -91,7 +91,7 @@ export const tagLabels: Record<Tag, Localized> = {
   supplements: { sr: "Suplementi", hu: "Étrend-kiegészítők", en: "Supplements" },
   cosmetics: { sr: "Prirodna kozmetika", hu: "Természetes kozmetikum", en: "Natural cosmetics" },
   eco: { sr: "Eko dom", hu: "Öko otthon", en: "Eco home" },
-  bulk: { sr: "Kimérős", hu: "Kimérős", en: "Bulk" },
+  bulk: { sr: "Rinfuzna", hu: "Kimérős", en: "Bulk" },
   bio: { sr: "Bio", hu: "Bio", en: "Bio" },
   glutenfree: { sr: "Bez glutena", hu: "Gluténmentes", en: "Gluten-free" },
   local: { sr: "Domaće", hu: "Hazai", en: "Local" },
