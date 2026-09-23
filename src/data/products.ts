@@ -9,7 +9,7 @@ export type Need = "food" | "remedies" | "care";
  * its category tag automatically, so a visible tag always has a matching
  * filter and no product is left untagged.
  */
-export type Tag = CategoryId | "bio" | "glutenfree" | "local" | "coldpressed" | "vegan" | "new";
+export type Tag = CategoryId | "bio" | "glutenfree" | "local" | "vegan" | "new";
 
 export const categories: { id: CategoryId; label: Localized; blurb: Localized; image: string }[] = [
   {
@@ -95,7 +95,6 @@ export const tagLabels: Record<Tag, Localized> = {
   bio: { sr: "Bio", hu: "Bio", en: "Bio" },
   glutenfree: { sr: "Bez glutena", hu: "Gluténmentes", en: "Gluten-free" },
   local: { sr: "Domaće", hu: "Hazai", en: "Local" },
-  coldpressed: { sr: "Hladno ceđeno", hu: "Hidegen sajtolt", en: "Cold-pressed" },
   vegan: { sr: "Vegan", hu: "Vegán", en: "Vegan" },
   new: { sr: "Novo", hu: "Új", en: "New" },
 };
@@ -111,7 +110,6 @@ const tagSet = new Set<Tag>([
   "bio",
   "glutenfree",
   "local",
-  "coldpressed",
   "vegan",
   "new",
 ]);
@@ -135,7 +133,6 @@ export const tagOrder: Tag[] = [
   "bio",
   "glutenfree",
   "local",
-  "coldpressed",
   "vegan",
   "new",
 ];
@@ -2053,7 +2050,7 @@ export const products: Product[] = [
       hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
       en: "Use according to the instructions on the package. Ask us in-store for more information.",
     },
-    tags: ["local", "coldpressed"],
+    tags: ["local"],
     goals: ["digestion"],
     needs: ["food", "remedies"],
   },
@@ -2153,7 +2150,7 @@ export const products: Product[] = [
       hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
       en: "Use according to the instructions on the package. Ask us in-store for more information.",
     },
-    tags: ["local", "coldpressed"],
+    tags: ["local"],
     goals: ["energy"],
     needs: ["food", "remedies"],
   },
@@ -2182,7 +2179,7 @@ export const products: Product[] = [
       hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
       en: "Use according to the instructions on the package. Ask us in-store for more information.",
     },
-    tags: ["local", "coldpressed"],
+    tags: ["local"],
     goals: ["digestion"],
     needs: ["food", "remedies"],
   },
@@ -2344,7 +2341,7 @@ export const products: Product[] = [
       hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
       en: "Use according to the instructions on the package. Ask us in-store for more information.",
     },
-    tags: ["local", "coldpressed"],
+    tags: ["local"],
     goals: ["digestion"],
     needs: ["food", "remedies"],
   },
