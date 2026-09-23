@@ -5856,7 +5856,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -5904,7 +5904,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -5928,7 +5928,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -5952,7 +5952,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -5976,7 +5976,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6460,7 +6460,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6700,7 +6700,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6724,7 +6724,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6748,7 +6748,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6772,7 +6772,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6796,7 +6796,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6820,7 +6820,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6844,7 +6844,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6892,7 +6892,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6916,7 +6916,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -6988,7 +6988,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -7012,7 +7012,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -7036,7 +7036,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -7132,7 +7132,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
@@ -7156,7 +7156,7 @@ export const products: Product[] = [
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
     tags: ["bulk"],
-    goals: ["glutenfree"],
+    goals: ["energy"],
     needs: ["food"],
   },
   {
