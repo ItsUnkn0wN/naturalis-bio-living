@@ -129,6 +129,11 @@ export function LegalPage({ pageId }: { pageId: LegalPageId }) {
               </Link>
             )}
           </nav>
+          {pageId === "cookies" && (
+            <p className="mt-10 text-center text-[0.65rem] text-muted-foreground/70">
+              Website made by Kalmár Alex
+            </p>
+          )}
         </article>
       </div>
     </div>
