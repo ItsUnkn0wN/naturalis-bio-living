@@ -5015,7 +5015,7 @@ export const STORE = {
   mb: "62766492",
   pib: "107474144",
   since: 2009,
-  facebook: "https://www.facebook.com/search/top?q=naturalis%20mali%20i%C4%91o%C5%A1",
+  facebook: "https://www.facebook.com/profile.php?id=100063485562815",
   mapsQuery: "Zanatlijska 10, 24321 Mali Iđoš, Srbija",
   lat: 45.7083,
   lng: 19.6636,
