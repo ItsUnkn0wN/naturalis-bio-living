@@ -6075,7 +6075,7 @@ export const products: Product[] = [
       hu: "Felhasználás szerint alkalmazza. Tanácsért kérdezzen az üzletben.",
       en: "Use according to the intended purpose. Ask in-store for guidance.",
     },
-    tags: ["bulk", "glutenfree"],
+    tags: ["bulk"],
     goals: ["energy"],
     needs: ["food"],
   },
