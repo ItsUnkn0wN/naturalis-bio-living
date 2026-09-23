@@ -32,17 +32,20 @@ export function CookieConsent() {
   return (
     <aside
       aria-labelledby="cookie-consent-title"
-      className="fixed bottom-3 left-3 z-50 w-[calc(100%-1.5rem)] max-w-[25rem] animate-fade-in overflow-hidden rounded-lg border border-border/80 bg-card/85 shadow-lift backdrop-blur-xl sm:bottom-5 sm:left-5"
+      className="fixed bottom-2 left-2 z-50 max-h-[calc(100dvh-1rem)] w-[calc(100%-1rem)] max-w-[25rem] animate-fade-in overflow-y-auto overflow-x-hidden rounded-2xl border border-border/80 bg-card/85 shadow-lift backdrop-blur-xl sm:bottom-5 sm:left-5 sm:w-[calc(100%-2rem)]"
     >
       <div className="h-1 bg-primary" />
-      <div className="p-4 sm:p-5">
+      <div className="p-3.5 sm:p-5">
         <div className="flex items-start gap-3">
           <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-secondary text-primary">
             <Cookie className="h-5 w-5" aria-hidden="true" />
           </span>
           <div className="min-w-0">
             <p className="eyebrow">{tr(t.cookies.eyebrow)}</p>
-            <h2 id="cookie-consent-title" className="mt-1 text-xl font-semibold text-foreground">
+            <h2
+              id="cookie-consent-title"
+              className="mt-1 text-lg font-semibold leading-snug text-foreground sm:text-xl"
+            >
               {tr(t.cookies.title)}
             </h2>
           </div>

@@ -149,10 +149,10 @@ function Index() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-display text-6xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
+            <h1 className="font-display text-5xl font-medium leading-[1.02] text-foreground sm:text-7xl lg:text-[4.5rem] xl:text-[4.75rem]">
               {tr(t.hero.title)}
             </h1>
-            <p className="mt-9 max-w-2xl text-xl leading-[1.7] text-foreground/80 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">
+            <p className="mt-8 max-w-2xl text-lg leading-[1.65] text-foreground/80 sm:mt-9 sm:text-[1.35rem] lg:text-[1.25rem] lg:leading-[1.6]">
               {tr(t.hero.sub)}
             </p>
             <div className="mt-11 flex flex-wrap items-center gap-4">
