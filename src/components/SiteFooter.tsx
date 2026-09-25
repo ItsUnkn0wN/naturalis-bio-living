@@ -80,7 +80,7 @@ export function SiteFooter() {
             {legalNav.map((item) => (
               <li key={item.id}>
                 <Link
-                  to={legalPath(item.id) as never}
+                  to={legalPath(item.id)}
                   search={(p) => p}
                   className="hover:text-primary"
                 >

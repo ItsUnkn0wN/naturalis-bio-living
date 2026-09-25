@@ -88,14 +88,14 @@ export function CookieConsent() {
 
         <div className="mt-4 grid gap-2 sm:grid-cols-2">
           <Button
-            className="h-11 rounded-full"
+            className="h-auto min-h-11 rounded-full px-4 py-2.5 leading-snug whitespace-normal break-words text-center"
             onClick={() => save({ required: true, preferences: true })}
           >
             {tr(t.cookies.acceptAll)}
           </Button>
           <Button
             variant="outline"
-            className="h-11 rounded-full bg-card/60"
+            className="h-auto min-h-11 rounded-full bg-card/60 px-4 py-2.5 leading-snug whitespace-normal break-words text-center"
             onClick={() => save({ required: true, preferences: false })}
           >
             {tr(t.cookies.requiredOnly)}

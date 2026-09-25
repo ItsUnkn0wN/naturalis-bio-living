@@ -3,8 +3,15 @@ import { ArrowLeft, ArrowRight, ShieldCheck } from "lucide-react";
 import { legalNav, legalPages, type LegalPageId } from "@/data/legal";
 import { t, useLang } from "@/lib/i18n";
 
-export const legalPath = (id: LegalPageId) => {
-  const paths: Record<LegalPageId, string> = {
+export type LegalRoutePath =
+  | "/impressum"
+  | "/pravno-obavestenje"
+  | "/uslovi-koriscenja"
+  | "/politika-privatnosti"
+  | "/politika-kolacica";
+
+export const legalPath = (id: LegalPageId): LegalRoutePath => {
+  const paths: Record<LegalPageId, LegalRoutePath> = {
     impressum: "/impressum",
     notice: "/pravno-obavestenje",
     terms: "/uslovi-koriscenja",
@@ -34,7 +41,7 @@ export function LegalPage({ pageId }: { pageId: LegalPageId }) {
               {legalNav.map((item) => (
                 <Link
                   key={item.id}
-                  to={legalPath(item.id) as never}
+                  to={legalPath(item.id)}
                   search={(p) => p}
                   className={`rounded-2xl px-3 py-2.5 text-sm transition-colors ${
                     item.id === pageId
@@ -108,7 +115,7 @@ export function LegalPage({ pageId }: { pageId: LegalPageId }) {
           >
             {previous ? (
               <Link
-                to={legalPath(previous.id) as never}
+                to={legalPath(previous.id)}
                 search={(p) => p}
                 className="inline-flex max-w-[48%] items-center gap-2 text-sm font-semibold text-primary hover:underline"
               >
@@ -120,7 +127,7 @@ export function LegalPage({ pageId }: { pageId: LegalPageId }) {
             )}
             {next && (
               <Link
-                to={legalPath(next.id) as never}
+                to={legalPath(next.id)}
                 search={(p) => p}
                 className="ml-auto inline-flex max-w-[48%] items-center gap-2 text-right text-sm font-semibold text-primary hover:underline"
               >
