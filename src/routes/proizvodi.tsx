@@ -36,7 +36,7 @@ function ProductsPage() {
         </a>
       </Reveal>
       <div className="mt-10">
-        <ProductGrid initialTag={search.tag} />
+        <ProductGrid {...(search.tag ? { initialTag: search.tag } : {})} />
       </div>
     </div>
   );
