@@ -129,6 +129,7 @@ export const t = {
       energy: { sr: "Više energije", hu: "Több energia", en: "More energy" },
       skin: { sr: "Lepa koža", hu: "Szép bőr", en: "Healthy skin" },
       glutenfree: { sr: "Život bez glutena", hu: "Gluténmentes élet", en: "Gluten-free living" },
+      eco: { sr: "Eko domaćinstvo", hu: "Öko otthon", en: "Eco home" },
     },
   },
   products: {

@@ -166,7 +166,7 @@ export function ProductGrid({
                 fav={favs.has(p.id)}
                 onFav={() => favs.toggle(p.id)}
                 onOpen={() => setOpen(p)}
-                onTagSelect={showFilters ? setTagFilter : undefined}
+                {...(showFilters ? { onTagSelect: setTagFilter } : {})}
               />
             ))}
           </AnimatePresence>
@@ -176,14 +176,14 @@ export function ProductGrid({
       <ProductQuickView
         product={open}
         onClose={() => setOpen(null)}
-        onTagSelect={
-          showFilters
-            ? (tag) => {
+        {...(showFilters
+          ? {
+              onTagSelect: (tag: Tag) => {
                 setTagFilter(tag);
                 setOpen(null);
-              }
-            : undefined
-        }
+              },
+            }
+          : {})}
       />
     </div>
   );
