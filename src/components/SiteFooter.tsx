@@ -89,22 +89,6 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
-          <h3 className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
-            {tr(t.contact.hours)}
-          </h3>
-          <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
-            <li>
-              {t.days[lang][0]} – {t.days[lang][4]}:{" "}
-              <span className="text-foreground">{fmtHours(STORE.hours[0], "")}</span>
-            </li>
-            <li>
-              {t.days[lang][5]}:{" "}
-              <span className="text-foreground">{fmtHours(STORE.hours[5], "")}</span>
-            </li>
-            <li>
-              {t.days[lang][6]}: <span className="text-foreground">{tr(t.contact.closed)}</span>
-            </li>
-          </ul>
         </div>
 
         <div className="self-start rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground md:col-span-2 lg:col-span-1">
