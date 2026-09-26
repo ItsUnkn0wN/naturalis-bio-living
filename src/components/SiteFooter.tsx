@@ -11,7 +11,7 @@ export function SiteFooter() {
 
   return (
     <footer className="mt-24 border-t border-border bg-sand-deep/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.3fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 pt-14 pb-8 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.25fr_1fr_1fr]">
         <div className="min-w-0">
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
