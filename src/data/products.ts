@@ -8602,6 +8602,31 @@ export const products: Product[] = [
     goals: [],
     needs: ["remedies"],
   },
+  {
+    id: "laku-noc-caj-fructus-188",
+    category: "teas",
+    priceRsd: 530,
+    image: "/images/products/laku-noc-caj-fructus-188.webp",
+    name: { sr: "Fructus Laku Noć", hu: "Fructus Laku Noc", en: "Fructus Laku Noc" },
+    short: {
+      sr: "Čaj ili biljni proizvod iz Naturalis ponude.",
+      hu: "Čaj és gyógynövényes termék a Naturalis kínálatából.",
+      en: "Tea or herbal product from the Naturalis range.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: ["local"],
+    goals: [],
+    needs: ["remedies", "food"],
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
