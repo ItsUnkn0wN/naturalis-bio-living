@@ -8552,6 +8552,31 @@ export const products: Product[] = [
     goals: ["digestion"],
     needs: ["remedies"],
   },
+  {
+    id: "sed-san-kapi-186",
+    category: "oils",
+    priceRsd: 345,
+    image: "/images/products/sed-san-kapi-186.webp",
+    name: { sr: "Sed-San kapi", hu: "Sed-San kapi", en: "Sed-San drops" },
+    short: {
+      sr: "Biljni preparat iz Naturalis ponude.",
+      hu: "Növényi készítmény a Naturalis kínálatából.",
+      en: "Botanical product from the Naturalis range.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: [],
+    goals: [],
+    needs: ["remedies"],
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
