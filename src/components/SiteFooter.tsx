@@ -92,16 +92,7 @@ export function SiteFooter() {
         </div>
 
         <div className="md:col-span-2 lg:col-span-1">
-          <div className="rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground">
-            <p className="font-medium text-foreground">{tr(t.footer.legal)}</p>
-            <p className="mt-2">
-              MB {STORE.mb} · PIB {STORE.pib}
-            </p>
-            <p>
-              {tr(t.story.owner)}: {STORE.owner} · {STORE.since}–
-            </p>
-          </div>
-          <h3 className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          <h3 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             {tr(t.contact.hours)}
           </h3>
           <ul className="mt-3 space-y-1 text-sm text-muted-foreground">
@@ -117,6 +108,15 @@ export function SiteFooter() {
               {t.days[lang][6]}: <span className="text-foreground">{tr(t.contact.closed)}</span>
             </li>
           </ul>
+          <div className="mt-8 rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground">
+            <p className="font-medium text-foreground">{tr(t.footer.legal)}</p>
+            <p className="mt-2">
+              MB {STORE.mb} · PIB {STORE.pib}
+            </p>
+            <p>
+              {tr(t.story.owner)}: {STORE.owner} · {STORE.since}–
+            </p>
+          </div>
         </div>
       </div>
       <div className="border-t border-border py-3.5 text-center text-xs text-muted-foreground">
