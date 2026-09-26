@@ -8627,6 +8627,31 @@ export const products: Product[] = [
     goals: [],
     needs: ["remedies", "food"],
   },
+  {
+    id: "cvekla-100-fructal-189",
+    category: "food",
+    priceRsd: 665,
+    image: "/images/products/cvekla-100-fructal-189.webp",
+    name: { sr: "Cvekla 100% Fructal", hu: "Cvekla 100% Fructal", en: "100% Fructal Beetroot" },
+    short: {
+      sr: "Namirnica iz Naturalis ponude.",
+      hu: "Proizvod iz ponude zdrave hrane.",
+      en: "Food product from the Naturalis range.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: [],
+    goals: ["energy"],
+    needs: ["food"],
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
