@@ -107,7 +107,7 @@ export function SiteFooter() {
           </ul>
         </div>
 
-        <div className="rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground">
+        <div className="self-start rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground md:col-span-2 lg:col-span-1">
           <p className="font-medium text-foreground">{tr(t.footer.legal)}</p>
           <p className="mt-2">
             MB {STORE.mb} · PIB {STORE.pib}
