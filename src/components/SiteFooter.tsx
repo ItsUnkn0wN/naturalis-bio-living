@@ -11,7 +11,7 @@ export function SiteFooter() {
 
   return (
     <footer className="mt-24 border-t border-border bg-sand-deep/60">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-[1.3fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 pt-14 pb-8 sm:px-6 md:grid-cols-2 lg:grid-cols-[1.25fr_1fr_1fr]">
         <div className="min-w-0">
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
@@ -89,6 +89,18 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="md:col-span-2 lg:col-span-1">
+          <div className="rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground">
+            <p className="font-medium text-foreground">{tr(t.footer.legal)}</p>
+            <p className="mt-2">
+              MB {STORE.mb} · PIB {STORE.pib}
+            </p>
+            <p>
+              {tr(t.story.owner)}: {STORE.owner} · {STORE.since}–
+            </p>
+          </div>
           <h3 className="mt-8 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
             {tr(t.contact.hours)}
           </h3>
@@ -106,18 +118,8 @@ export function SiteFooter() {
             </li>
           </ul>
         </div>
-
-        <div className="rounded-2xl border border-border bg-card/60 p-5 text-xs leading-relaxed text-muted-foreground">
-          <p className="font-medium text-foreground">{tr(t.footer.legal)}</p>
-          <p className="mt-2">
-            MB {STORE.mb} · PIB {STORE.pib}
-          </p>
-          <p>
-            {tr(t.story.owner)}: {STORE.owner} · {STORE.since}–
-          </p>
-        </div>
       </div>
-      <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
+      <div className="border-t border-border py-3.5 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Naturalis Mali Iđoš. {tr(t.footer.rights)}
       </div>
     </footer>
