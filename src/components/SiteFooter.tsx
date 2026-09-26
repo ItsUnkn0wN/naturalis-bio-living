@@ -117,7 +117,7 @@ export function SiteFooter() {
           </p>
         </div>
       </div>
-      <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
+      <div className="border-t border-border py-3.5 text-center text-xs text-muted-foreground">
         © {new Date().getFullYear()} Naturalis Mali Iđoš. {tr(t.footer.rights)}
       </div>
     </footer>
