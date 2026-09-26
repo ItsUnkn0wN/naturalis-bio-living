@@ -8577,6 +8577,31 @@ export const products: Product[] = [
     goals: [],
     needs: ["remedies"],
   },
+  {
+    id: "relax-kapi-deverra-187",
+    category: "oils",
+    priceRsd: 530,
+    image: "/images/products/relax-kapi-deverra-187.webp",
+    name: { sr: "Relax kapi Deverra", hu: "Relax kapi Deverra", en: "Relax Deverra drops" },
+    short: {
+      sr: "Biljni preparat iz Naturalis ponude.",
+      hu: "Növényi készítmény a Naturalis kínálatából.",
+      en: "Botanical product from the Naturalis range.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: [],
+    goals: [],
+    needs: ["remedies"],
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
