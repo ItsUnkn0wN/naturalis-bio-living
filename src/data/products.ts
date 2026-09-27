@@ -8824,6 +8824,93 @@ export const products: Product[] = [
     goals: ["skin"],
     needs: ["care"],
   },
+  {
+    id: "hederavita-coenzyme-q10-daycream-196",
+    category: "cosmetics",
+    priceRsd: 730,
+    image: "/images/products/hederavita-coenzyme-q10-daycream-196.webp",
+    name: {
+      sr: "HederaVita Coenzyme Q10 Daycream",
+      hu: "HederaVita Koenzim Q10 nappali krém",
+      en: "HederaVita Coenzyme Q10 Daycream",
+    },
+    short: {
+      sr: "Prirodna nega i kozmetika.",
+      hu: "Természetes testápolás és kozmetikum.",
+      en: "Natural care and cosmetics.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: ["local"],
+    goals: ["skin"],
+    needs: ["care"],
+  },
+  {
+    id: "hederavita-collagen-vitamin-c-daycream-197",
+    category: "cosmetics",
+    priceRsd: 730,
+    image: "/images/products/hederavita-collagen-vitamin-c-daycream-197.webp",
+    name: {
+      sr: "HederaVita Collagen + Vitamin C Daycream",
+      hu: "HederaVita Kollagén + C-vitamin nappali krém",
+      en: "HederaVita Collagen + Vitamin C Daycream",
+    },
+    short: {
+      sr: "Prirodna nega i kozmetika.",
+      hu: "Természetes testápolás és kozmetikum.",
+      en: "Natural care and cosmetics.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: ["local"],
+    goals: ["skin"],
+    needs: ["care"],
+  },
+  {
+    id: "hederavita-vitamin-e-daycream-198",
+    category: "cosmetics",
+    priceRsd: 730,
+    image: "/images/products/hederavita-vitamin-e-daycream-198.webp",
+    name: {
+      sr: "HederaVita Vitamin E Daycream",
+      hu: "HederaVita E-vitamin nappali krém",
+      en: "HederaVita Vitamin E Daycream",
+    },
+    short: {
+      sr: "Prirodna nega i kozmetika.",
+      hu: "Természetes testápolás és kozmetikum.",
+      en: "Natural care and cosmetics.",
+    },
+    desc: {
+      sr: "Deklaracija i sastav dostupni su na pakovanju. Pitajte nas u prodavnici za savet.",
+      hu: "A címke és az összetétel a csomagoláson található. Tanácsért kérdezzen üzletünkben.",
+      en: "Ingredients and declaration are on the package. Ask us in-store for advice.",
+    },
+    usage: {
+      sr: "Koristite prema deklaraciji na pakovanju. Pitajte nas u prodavnici za dodatne informacije.",
+      hu: "Használja a csomagoláson található utasítás szerint. További információért kérdezzen üzletünkben.",
+      en: "Use according to the instructions on the package. Ask us in-store for more information.",
+    },
+    tags: ["local"],
+    goals: ["skin"],
+    needs: ["care"],
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);
