@@ -24,7 +24,7 @@ csütörtök	8:00
 
 –15:00
 
-024 4731608
+0628373863
 
 
 
@@ -34,7 +34,7 @@ Entity Name: Naturalis (Robert Lenart PR Trgovinska Radnja Naturalis)
 
 Location: Zanatlijska 10, 24321 Mali Iđoš, Vojvodina, Serbia  
 
-Phone: +381 (0)24 731608 | Mobile: +381 (0)63 547580  
+Phone: 0628373863
 
 Email: lenart.robert.magda@gmail.com  
 
@@ -126,7 +126,7 @@ Act as a Principal UI/UX Architect and Lead Frontend Engineer specializing in mo
 
 - Subheadline highlighting local trust, natural remedies, and healthy lifestyle items.
 
-- Dual CTAs: Primary "Explore Catalogue", Secondary "Call Store (024 731608)".
+- Dual CTAs: Primary "Explore Catalogue", Secondary "Call Store (0628373863)".
 
 
 
@@ -178,7 +178,7 @@ Act as a Principal UI/UX Architect and Lead Frontend Engineer specializing in mo
 
 - One-click action buttons:
 
-  - "Direct Call": `tel:+381244731608`
+  - "Direct Call": `tel:+381628373863`
 
   - "Send Email": `lenart.robert.magda@gmail.com`
 

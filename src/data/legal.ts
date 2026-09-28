@@ -58,7 +58,7 @@ export const legalPages: Record<LegalPageId, LegalPage> = {
             "Zanatlijska 10, 24321 Kishegyes, Szerbia",
             "Zanatlijska 10, 24321 Mali Iđoš, Serbia",
           ),
-          p("Telefon: 024 4731 608", "Telefon: 024 4731 608", "Telephone: 024 4731 608"),
+          p("Telefon: 0628373863", "Telefon: 0628373863", "Telephone: 0628373863"),
           p(
             "E-pošta: lenart.robert.magda@gmail.com",
             "E-mail: lenart.robert.magda@gmail.com",
@@ -256,9 +256,9 @@ export const legalPages: Record<LegalPageId, LegalPage> = {
         title: p("Ko je operator", "Ki az üzemeltető", "Who operates the site"),
         paragraphs: [
           p(
-            "Operator je Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Mali Iđoš, Srbija. Kontakt: lenart.robert.magda@gmail.com i 024 4731 608.",
-            "Az üzemeltető a Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Kishegyes, Szerbia. Kapcsolat: lenart.robert.magda@gmail.com és 024 4731 608.",
-            "The operator is Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Mali Iđoš, Serbia. Contact: lenart.robert.magda@gmail.com and 024 4731 608.",
+            "Operator je Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Mali Iđoš, Srbija. Kontakt: lenart.robert.magda@gmail.com i 0628373863.",
+            "Az üzemeltető a Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Kishegyes, Szerbia. Kapcsolat: lenart.robert.magda@gmail.com és 0628373863.",
+            "The operator is Robert Lenart PR Trgovinska radnja Naturalis Mali Iđoš, Zanatlijska 10, 24321 Mali Iđoš, Serbia. Contact: lenart.robert.magda@gmail.com and 0628373863.",
           ),
         ],
       },
@@ -315,9 +315,9 @@ export const legalPages: Record<LegalPageId, LegalPage> = {
         title: p("Prava i kontakt", "Jogok és kapcsolat", "Rights and contact"),
         paragraphs: [
           p(
-            "Za pitanja o ličnim podacima ili zahtev za ostvarivanje prava obratite se operatoru na lenart.robert.magda@gmail.com ili telefonom 024 4731 608. Primena, obim i rok odgovora zavise od konkretnog zahteva i obaveznog prava koje se primenjuje. Prigovor nadležnom nadzornom organu može se podneti ako smatrate da je obrada nezakonita; konkretan organ i postupak nisu navedeni u projektu i ne izmišljamo ih.",
-            "Személyes adatokkal kapcsolatos kérdéssel vagy jogérvényesítési kérelemmel forduljon az üzemeltetőhöz a lenart.robert.magda@gmail.com címen vagy a 024 4731 608-as telefonszámon. A válasz alkalmazása, terjedelme és határideje a konkrét kéréstől és a kötelezően alkalmazandó jogtól függ. Ha az adatkezelést jogellenesnek tartja, panasszal fordulhat az illetékes felügyeleti hatósághoz; a projekt nem nevezi meg a konkrét hatóságot és nem találjuk ki.",
-            "For questions about personal data or to exercise a right, contact the operator at lenart.robert.magda@gmail.com or 024 4731 608. The applicable process, scope and response time depend on the request and mandatory applicable law. If you believe processing is unlawful, you may complain to the competent supervisory authority; the project does not identify a specific authority and we do not invent one.",
+            "Za pitanja o ličnim podacima ili zahtev za ostvarivanje prava obratite se operatoru na lenart.robert.magda@gmail.com ili telefonom 0628373863. Primena, obim i rok odgovora zavise od konkretnog zahteva i obaveznog prava koje se primenjuje. Prigovor nadležnom nadzornom organu može se podneti ako smatrate da je obrada nezakonita; konkretan organ i postupak nisu navedeni u projektu i ne izmišljamo ih.",
+            "Személyes adatokkal kapcsolatos kérdéssel vagy jogérvényesítési kérelemmel forduljon az üzemeltetőhöz a lenart.robert.magda@gmail.com címen vagy a 0628373863-as telefonszámon. A válasz alkalmazása, terjedelme és határideje a konkrét kéréstől és a kötelezően alkalmazandó jogtól függ. Ha az adatkezelést jogellenesnek tartja, panasszal fordulhat az illetékes felügyeleti hatósághoz; a projekt nem nevezi meg a konkrét hatóságot és nem találjuk ki.",
+            "For questions about personal data or to exercise a right, contact the operator at lenart.robert.magda@gmail.com or 0628373863. The applicable process, scope and response time depend on the request and mandatory applicable law. If you believe processing is unlawful, you may complain to the competent supervisory authority; the project does not identify a specific authority and we do not invent one.",
           ),
         ],
       },

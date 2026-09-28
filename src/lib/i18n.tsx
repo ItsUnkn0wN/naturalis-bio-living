@@ -77,7 +77,7 @@ export const t = {
       en: "Cold-pressed oils, herbal drops, teas, gluten-free food and natural cosmetics – carefully chosen, with advice given in person at Zanatlijska 10.",
     },
     cta: { sr: "Pogledaj ponudu", hu: "Nézze meg a kínálatot", en: "Browse the range" },
-    call: { sr: "Pozovi 024 4731 608", hu: "Hívjon: 024 4731 608", en: "Call 024 4731 608" },
+    call: { sr: "Pozovi 0628373863", hu: "Hívjon: 0628373863", en: "Call 0628373863" },
     openNow: { sr: "Otvoreno sada", hu: "Most nyitva", en: "Open now" },
     opensLater: { sr: "Danas otvara u", hu: "Ma nyit:", en: "Opens today at" },
     closedNow: { sr: "Danas je već zatvoreno", hu: "Ma már zárva", en: "Already closed today" },

@@ -7,7 +7,7 @@ A warm, handmade-feeling website for the Naturalis health-food shop at Zanatlijs
 ## Research findings (used as facts)
 
 - Store: Robert Lenart PR Trgovinska radnja Naturalis, Zanatlijska 10, 24321 Mali Iđoš. Active since 14 March 2012. MB 62766492, PIB 107474144.
-- Phone 024 731608 / mobile 063 547580, email lenart.robert.magda@gmail.com.
+- Phone 0628373863, email lenart.robert.magda@gmail.com.
 - Hours: Mon–Fri 8:00–15:00, Sat 8:00–12:00, Sun closed.
 - Facebook page "Naturalis": new Hedera Vita face creams & serums (Face Fluid Awakening Energy, Anti-Ox eye serum), "stock refilled, lots of news".
 - Photos show the assortment: cold-pressed oils, herbal tinctures/drops, teas, spices, honey and jams, gluten-free and diet foods, healthy snacks, vitamins and supplements, natural cosmetics, bulk herbs/nuts/dried fruit in jars.
@@ -27,11 +27,11 @@ Language is a URL search param (`?lang=hu`) remembered in the browser; header ha
 ## Key sections and components
 
 - **Header**: sticky, frosted glass, real logo (recreated as SVG: green hand-lettered wordmark + sun), links Proizvodi · Bio-Match · Priča · Kontakt, language switcher, "Pozovi" call button on mobile.
-- **Hero**: headline in the tone of "Zdravlje počinje na polici pored vas" (Health starts on the shelf next to you), subline about certified bio food, herbal remedies and local advice; primary CTA "Pogledaj ponudu", secondary "Pozovi 024 731608". Soft floating leaf/seed particles (CSS, lightweight).
+- **Hero**: headline in the tone of "Zdravlje počinje na polici pored vas" (Health starts on the shelf next to you), subline about certified bio food, herbal remedies and local advice; primary CTA "Pogledaj ponudu", secondary "Pozovi 0628373863". Soft floating leaf/seed particles (CSS, lightweight).
 - **Bio-Match quiz** (3 steps): what you're looking for → your goal (immunity, digestion, energy, skin & beauty, gluten-free living, eco home) → 3 recommended categories/products with "Ask in store" action. State kept with React state; result also offers WhatsApp/tel link.
 - **Product grid**: cards with image, eco labels ("Bio", "Bez glutena", "Domaće", "Hladno ceđeno"), heart favourite, quick-view dialog with description, usage tips and call/email buttons.
 - **Story**: split layout with shop photos (from your uploads via Lovable assets) and counters.
-- **Contact hub**: embedded map, one-tap actions (`tel:+38124731608`, `tel:+38163547580`, `mailto:`, Google Maps directions), hours card marking today, inquiry form.
+- **Contact hub**: embedded map, one-tap actions (`tel:+381628373863`, `mailto:`, Google Maps directions), hours card marking today, inquiry form.
 - **Footer**: 3 compact columns (shop info + registration numbers, links, hours) and a "natural tips" email signup field (stores nothing yet – just a mailto until a backend is wanted). No fake social links; Facebook link only.
 
 ## Visual direction
@@ -52,6 +52,6 @@ Language is a URL search param (`?lang=hu`) remembered in the browser; header ha
 
 ## Open points (I will assume the defaults unless you say otherwise)
 
-1. Phone: your Google listing shows "024 4731608" while the business record shows "024 731608". Default: show **024 731608** and mobile 063 547580.
+1. Phone: use **0628373863** as the sole business phone number throughout the site.
 2. Logo: recreate the green wordmark + sun as SVG (default) or use only the photo of the sign.
 3. Newsletter/inquiry form: mailto-only for now (default); Lovable Cloud can be added later to store signups.
