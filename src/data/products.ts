@@ -9593,7 +9593,11 @@ export const products: Product[] = [
     category: "food",
     image: "/images/products/4x-sladji-224.webp",
     priceRsd: 770,
-    name: { sr: "4x slađi", hu: "4× édesebb", en: "4× sweeter" },
+    name: {
+      sr: "Sweet Adventure 4x slađi",
+      hu: "Sweet Adventure 4x Édesebb",
+      en: "Sweet Adventure 4x sweeter",
+    },
     short: {
       sr: "Prehrambeni proizvod iz ponude Naturalis.",
       hu: "Élelmiszer a Naturalis kínálatából.",
