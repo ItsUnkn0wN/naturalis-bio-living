@@ -8959,6 +8959,7 @@ export const products: Product[] = [
   {
     id: "speltin-griz-200",
     category: "food",
+    image: "/images/products/speltin-griz-200.webp",
     priceRsd: 275,
     name: { sr: "Speltin griz", hu: "Tönkölydara", en: "Spelt semolina" },
     short: {
@@ -8983,6 +8984,7 @@ export const products: Product[] = [
   {
     id: "integralni-pirin-cani-griz-201",
     category: "food",
+    image: "/images/products/integralni-pirin-cani-griz-201.webp",
     priceRsd: 249,
     name: {
       sr: "Integralni pirinčani griz",
@@ -9011,6 +9013,7 @@ export const products: Product[] = [
   {
     id: "bezgluteinska-prezla-202",
     category: "food",
+    image: "/images/products/bezgluteinska-prezla-202.webp",
     priceRsd: 299,
     name: {
       sr: "Bezgluteinska prezla",
@@ -9039,6 +9042,7 @@ export const products: Product[] = [
   {
     id: "proseni-griz-203",
     category: "food",
+    image: "/images/products/proseni-griz-203.webp",
     priceRsd: 265,
     name: { sr: "Proseni griz", hu: "Kölesdara", en: "Millet semolina" },
     short: {
@@ -9063,6 +9067,7 @@ export const products: Product[] = [
   {
     id: "pirincana-fida-204",
     category: "food",
+    image: "/images/products/pirincana-fida-204.webp",
     priceRsd: 235,
     name: { sr: "Pirinčana fida", hu: "Rizstészta", en: "Rice vermicelli" },
     short: {
@@ -9087,6 +9092,7 @@ export const products: Product[] = [
   {
     id: "prosena-fida-205",
     category: "food",
+    image: "/images/products/prosena-fida-205.webp",
     priceRsd: 235,
     name: { sr: "Prosena fida", hu: "Kölescérnametélt", en: "Millet vermicelli" },
     short: {
@@ -9111,6 +9117,7 @@ export const products: Product[] = [
   {
     id: "pirincani-grkljancici-206",
     category: "food",
+    image: "/images/products/pirincani-grkljancici-206.webp",
     priceRsd: 385,
     name: { sr: "Pirinčani grkljančići", hu: "Rizstészta-darabok", en: "Rice pasta pieces" },
     short: {
@@ -9135,6 +9142,7 @@ export const products: Product[] = [
   {
     id: "proseni-grkljancici-207",
     category: "food",
+    image: "/images/products/proseni-grkljancici-207.webp",
     priceRsd: 315,
     name: { sr: "Proseni grkljančići", hu: "Köles tésztadarabok", en: "Millet pasta pieces" },
     short: {
@@ -9159,6 +9167,7 @@ export const products: Product[] = [
   {
     id: "heljdine-pahuljice-208",
     category: "food",
+    image: "/images/products/heljdine-pahuljice-208.webp",
     priceRsd: 625,
     name: { sr: "Pahuljice od heljde", hu: "Hajdinapehely", en: "Buckwheat flakes" },
     short: {
@@ -9183,6 +9192,7 @@ export const products: Product[] = [
   {
     id: "tapioka-skrob-209",
     category: "food",
+    image: "/images/products/tapioka-skrob-209.webp",
     priceRsd: 385,
     name: { sr: "Tapioka skrob", hu: "Tápiókakeményítő", en: "Tapioca starch" },
     short: {
@@ -9207,6 +9217,7 @@ export const products: Product[] = [
   {
     id: "heljda-oljustena-210",
     category: "food",
+    image: "/images/products/heljda-oljustena-210.webp",
     priceRsd: 390,
     name: { sr: "Heljda oljuštena", hu: "Hántolt hajdina", en: "Hulled buckwheat" },
     short: {
@@ -9231,6 +9242,7 @@ export const products: Product[] = [
   {
     id: "integralno-pirincano-brasno-211",
     category: "food",
+    image: "/images/products/integralno-pirincano-brasno-211.webp",
     priceRsd: 255,
     name: {
       sr: "Integralno pirinčano brašno",
@@ -9259,6 +9271,7 @@ export const products: Product[] = [
   {
     id: "brasno-od-leblebije-212",
     category: "food",
+    image: "/images/products/brasno-od-leblebije-212.webp",
     priceRsd: 385,
     name: { sr: "Brašno od leblebije", hu: "Csicseriborsó-liszt", en: "Chickpea flour" },
     short: {
@@ -9283,6 +9296,7 @@ export const products: Product[] = [
   {
     id: "proseno-brasno-213",
     category: "food",
+    image: "/images/products/proseno-brasno-213.webp",
     priceRsd: 179,
     name: { sr: "Proseno brašno", hu: "Kölesliszt", en: "Millet flour" },
     short: {
@@ -9307,6 +9321,7 @@ export const products: Product[] = [
   {
     id: "kukuruzno-zuto-brasno-214",
     category: "food",
+    image: "/images/products/kukuruzno-zuto-brasno-214.webp",
     priceRsd: 130,
     name: {
       sr: "Kukuruzno žuto brašno (1 kg)",
@@ -9335,6 +9350,7 @@ export const products: Product[] = [
   {
     id: "kukuruzno-belo-brasno-215",
     category: "food",
+    image: "/images/products/kukuruzno-belo-brasno-215.webp",
     priceRsd: 80,
     name: {
       sr: "Kukuruzno belo brašno (500 g)",
@@ -9363,6 +9379,7 @@ export const products: Product[] = [
   {
     id: "psenicna-trava-100g-216",
     category: "supplements",
+    image: "/images/products/psenicna-trava-100g-216.webp",
     priceRsd: 640,
     name: { sr: "Pšenična trava (100 g)", hu: "Búzafű (100 g)", en: "Wheatgrass (100 g)" },
     short: {
@@ -9387,6 +9404,7 @@ export const products: Product[] = [
   {
     id: "ashwagandha-powder-100g-217",
     category: "supplements",
+    image: "/images/products/ashwagandha-powder-100g-217.webp",
     priceRsd: 810,
     name: { sr: "Ašvaganda (100 g)", hu: "Ashwagandha por (100 g)", en: "Ashwagandha (100 g)" },
     short: {
@@ -9411,6 +9429,7 @@ export const products: Product[] = [
   {
     id: "trifala-100g-218",
     category: "supplements",
+    image: "/images/products/trifala-100g-218.webp",
     priceRsd: 700,
     name: { sr: "Trifala (100 g)", hu: "Triphala (100 g)", en: "Triphala (100 g)" },
     short: {
@@ -9435,6 +9454,7 @@ export const products: Product[] = [
   {
     id: "psyllium-100g-219",
     category: "food",
+    image: "/images/products/psyllium-100g-219.webp",
     priceRsd: 600,
     name: { sr: "Psyllium (100 g)", hu: "Útifűmaghéj (100 g)", en: "Psyllium (100 g)" },
     short: {
@@ -9459,6 +9479,7 @@ export const products: Product[] = [
   {
     id: "organski-kakao-100g-220",
     category: "food",
+    image: "/images/products/organski-kakao-100g-220.webp",
     priceRsd: 370,
     name: { sr: "Organski kakao (100 g)", hu: "Bio kakaó (100 g)", en: "Organic cocoa (100 g)" },
     short: {
@@ -9483,6 +9504,7 @@ export const products: Product[] = [
   {
     id: "spirulina-prah-100g-221",
     category: "supplements",
+    image: "/images/products/spirulina-prah-100g-221.webp",
     priceRsd: 925,
     name: {
       sr: "Spirulina u prahu (100 g)",
@@ -9511,6 +9533,7 @@ export const products: Product[] = [
   {
     id: "spirulina-tablete-100g-222",
     category: "supplements",
+    image: "/images/products/spirulina-tablete-100g-222.webp",
     priceRsd: 790,
     name: {
       sr: "Spirulina tablete (100 g)",
@@ -9539,6 +9562,7 @@ export const products: Product[] = [
   {
     id: "cejlonski-cimet-100g-223",
     category: "food",
+    image: "/images/products/cejlonski-cimet-100g-223.webp",
     priceRsd: 460,
     name: {
       sr: "Cejlonski cimet (100 g)",
@@ -9567,6 +9591,7 @@ export const products: Product[] = [
   {
     id: "4x-sladji-224",
     category: "food",
+    image: "/images/products/4x-sladji-224.webp",
     priceRsd: 770,
     name: { sr: "4x slađi", hu: "4× édesebb", en: "4× sweeter" },
     short: {
