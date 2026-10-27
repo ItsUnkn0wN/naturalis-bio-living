@@ -9619,6 +9619,134 @@ export const products: Product[] = [
   },
 ];
 
+const packageDetails = {
+  sr: "Deklaracija i sastav dostupni su na pakovanju. Za detalje pitajte u prodavnici.",
+  hu: "Az összetétel és a termékadatok a csomagoláson találhatók. Részletekért érdeklődjön üzletünkben.",
+  en: "See the package for ingredients and product details. Ask us in-store if you need more information.",
+};
+const supplementUsage = {
+  sr: "Koristite prema deklaraciji na pakovanju.",
+  hu: "Használja a csomagoláson található útmutató szerint.",
+  en: "Use according to the instructions on the package.",
+};
+const drinkUsage = {
+  sr: "Konzumirati prema deklaraciji na pakovanju.",
+  hu: "Fogyassza a csomagoláson található útmutató szerint.",
+  en: "Consume according to the instructions on the package.",
+};
+products.push(
+  {
+    id: "ostrovit-siberian-ginseng-225",
+    category: "supplements",
+    priceRsd: 2220,
+    image: "/images/products/ostrovit-siberian-ginseng.png",
+    name: {
+      sr: "Ostrovit Siberian Ginseng",
+      hu: "Ostrovit Siberian Ginseng",
+      en: "Ostrovit Siberian Ginseng",
+    },
+    short: {
+      sr: "Dodatak ishrani iz ponude Naturalis.",
+      hu: "Étrend-kiegészítő a Naturalis kínálatából.",
+      en: "Dietary supplement from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: supplementUsage,
+    tags: ["vegan"],
+    goals: [],
+    needs: ["remedies"],
+  },
+  {
+    id: "ros-gelmikor-226",
+    category: "supplements",
+    priceRsd: 1890,
+    image: "/images/products/ros-gelmikor.png",
+    name: { sr: "Ros Gelmikor", hu: "Ros Gelmikor", en: "Ros Gelmikor" },
+    short: {
+      sr: "Biljni dodatak ishrani iz ponude Naturalis.",
+      hu: "Növényi étrend-kiegészítő a Naturalis kínálatából.",
+      en: "Herbal dietary supplement from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: supplementUsage,
+    tags: [],
+    goals: [],
+    needs: ["remedies"],
+  },
+  {
+    id: "marella-divlja-borovnica-227",
+    category: "food",
+    priceRsd: 560,
+    image: "/images/products/marella-divlja-borovnica.png",
+    name: {
+      sr: "Marella Divlja Borovnica",
+      hu: "Marella Divlja Borovnica",
+      en: "Marella Divlja Borovnica",
+    },
+    short: {
+      sr: "Voćni napitak iz ponude Naturalis.",
+      hu: "Gyümölcsital a Naturalis kínálatából.",
+      en: "Fruit drink from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: drinkUsage,
+    tags: [],
+    goals: [],
+    needs: ["food"],
+  },
+  {
+    id: "marella-carrot-juice-228",
+    category: "food",
+    priceRsd: 399,
+    image: "/images/products/marella-carrot-juice.png",
+    name: { sr: "Marella Carrot Juice", hu: "Marella Carrot Juice", en: "Marella Carrot Juice" },
+    short: {
+      sr: "Sok od šargarepe iz ponude Naturalis.",
+      hu: "Sárgarépalé a Naturalis kínálatából.",
+      en: "Carrot juice from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: drinkUsage,
+    tags: [],
+    goals: [],
+    needs: ["food"],
+  },
+  {
+    id: "marella-banana-229",
+    category: "food",
+    priceRsd: 380,
+    image: "/images/products/marella-banana.png",
+    name: { sr: "Marella Banana", hu: "Marella Banana", en: "Marella Banana" },
+    short: {
+      sr: "Voćni napitak iz ponude Naturalis.",
+      hu: "Gyümölcsital a Naturalis kínálatából.",
+      en: "Fruit drink from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: drinkUsage,
+    tags: [],
+    goals: [],
+    needs: ["food"],
+  },
+  {
+    id: "marella-paradajz-230",
+    category: "food",
+    priceRsd: 265,
+    image: "/images/products/marella-paradajz.png",
+    name: { sr: "Marella Paradajz", hu: "Marella Paradajz", en: "Marella Paradajz" },
+    short: {
+      sr: "Sok od paradajza iz ponude Naturalis.",
+      hu: "Paradicsomlé a Naturalis kínálatából.",
+      en: "Tomato juice from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: drinkUsage,
+    tags: [],
+    goals: [],
+    needs: ["food"],
+  },
+);
+
 export const featuredProducts = products.filter((p) => p.featured);
 
 export function recommend(need: Need, goal: Goal): Product[] {
