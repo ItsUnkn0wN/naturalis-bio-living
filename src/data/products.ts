@@ -9762,6 +9762,27 @@ products.push(
     goals: [],
     needs: ["remedies"],
   },
+  {
+    id: "super-collagen-c-advance-232",
+    category: "supplements",
+    priceRsd: 2490,
+    image: "/images/products/super-collagen-c-advance-232.webp",
+    name: {
+      sr: "Super Collagen+C Advance",
+      hu: "Super Collagen+C Advance",
+      en: "Super Collagen+C Advance",
+    },
+    short: {
+      sr: "Dodatak ishrani iz ponude Naturalis.",
+      hu: "Étrend-kiegészítő a Naturalis kínálatából.",
+      en: "Dietary supplement from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: supplementUsage,
+    tags: [],
+    goals: [],
+    needs: ["remedies"],
+  },
 );
 
 export const featuredProducts = products.filter((p) => p.featured);
