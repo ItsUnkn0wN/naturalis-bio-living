@@ -9745,6 +9745,23 @@ products.push(
     goals: [],
     needs: ["food"],
   },
+  {
+    id: "now-boron-231",
+    category: "supplements",
+    priceRsd: 2070,
+    image: "/images/products/now-boron-231.webp",
+    name: { sr: "Now Boron", hu: "Now Boron", en: "NOW Boron" },
+    short: {
+      sr: "Dodatak ishrani iz ponude Naturalis.",
+      hu: "Étrend-kiegészítő a Naturalis kínálatából.",
+      en: "Dietary supplement from the Naturalis range.",
+    },
+    desc: packageDetails,
+    usage: supplementUsage,
+    tags: [],
+    goals: [],
+    needs: ["remedies"],
+  },
 );
 
 export const featuredProducts = products.filter((p) => p.featured);
